@@ -1,0 +1,51 @@
+'use client';
+
+import { IFocus } from '@/config/focuses';
+import { routes } from '@/config/routes';
+import Link from 'next/link';
+
+interface IFocusesProps {
+  title?: string;
+  subtitle?: string;
+  focuses: IFocus[];
+  striped?: boolean;
+}
+
+export const Focuses: React.FC<IFocusesProps> = ({
+  title = 'Areas we could focus on',
+  subtitle = "We provide support for a wide range of concerns and challenges.",
+  focuses,
+  striped,
+}) => {
+  return (
+    <>
+      <div className="text-center max-w-3xl mx-auto mb-16">
+        <h2 className="text-4xl font-bold mb-6 text-gray-800">{title}</h2>
+        <p className="text-xl text-gray-600">{subtitle}</p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {focuses.map(focus => {
+          return (
+            <Link
+              key={focus.title}
+              className={`${striped ? 'bg-white' : 'bg-secondary'} p-8 rounded-xl shadow text-center hover:shadow-md transition-shadow flex flex-col justify-center`}
+              href={routes.focuses.show(focus.slug)} >
+
+              <h3 className="text-lg font-bold text-primary">{focus.title}</h3>
+            </Link>
+          );
+        })}
+      </div>
+
+      <div className="text-center max-w-3xl mx-auto mt-12 text-gray-500">
+        <p>
+          Don't see your specific concern listed? Please <Link href={routes.contact()} className='text-primary hover:underline'>reach out</Link> to us anyway.
+        </p>
+        <p>
+          We may be able to help you or refer you to someone who can.
+        </p>
+      </div>
+    </>
+  );
+};
