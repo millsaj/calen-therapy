@@ -121,7 +121,7 @@ export const commonItems = [
 When creating pages, import the section components and provide the necessary data:
 
 ```tsx
-import { MySection, commonItems } from '@/components/MySection';
+import { MySection, commonItems } from '@app/_components/MySection';
 
 export default function SomePage() {
   return (
@@ -242,7 +242,7 @@ export const NavigationMenu = () => {
 All images should be loaded from /config/images like this:
 
 ```tsx
-import { images } from '@/config/images'
+import { images } from '@app/_config/images'
 import Image from 'next/image';
 
 <Image
@@ -258,7 +258,7 @@ import Image from 'next/image';
 All internal and external links should be decided by config/routes and use the Link component. Example:
 
 ```tsx
-import { routes } from '@/config/routes'
+import { routes } from '@app/_config/routes'
 import Link from 'next/link';
 
 <Link

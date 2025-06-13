@@ -32,14 +32,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Project Structure
 
-- `/src/app` - Next.js App Router pages and layouts
-- `/src/components` - React components
+- `/app` - Next.js App Router pages and layouts
+- `/app/_components` - Reusable React components
   - `/layout` - Layout components like Header, Footer
-  - `/sections` - Section components for building pages
-  - `/ui` - Reusable UI components
+- `/app/_config` - Sitewide config or data files
 - `/public` - Static assets
-- `/src/lib` - Utility functions and shared logic
-- `/src/types` - TypeScript type definitions
+
+In typescript you can access `/app/*` with `import "@app/_components/layout/Footer"`.
 
 ## Tech Stack
 
@@ -53,4 +52,4 @@ See the AI_README.md file for detailed component design conventions and content 
 
 ## Deployment
 
-This project can be deployed using [Vercel](https://vercel.com/) or any other preferred hosting service that supports Next.js.
+This project is deployed using netifly.
