@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import NormalPageHero from '@app/_components/hero/NormalPageHero';
 import { CallToAction } from '@app/_components/sections/CallToAction';
 import { StripedSection } from '@app/_components/sections/StripedSection';

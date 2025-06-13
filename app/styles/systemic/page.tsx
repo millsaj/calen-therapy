@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import { routes } from '@app/_config/routes';
 import { StylePage } from '../StylePage';
 
 export default function SystemicPage() {
@@ -9,17 +7,17 @@ export default function SystemicPage() {
         title: "Systemic Therapy",
         subtitle: "Understanding relationships and patterns in your life systems"
       }}
-      intro={{
-        title: "What is Systemic Therapy?",
-        body: (
-          <>
-            <p className='mb-4'>
-              Systemic therapy is an approach that focuses on understanding people in relationships and dealing with the interactions of groups. It addresses problems in the context of the various systems and relationships in which people are embedded, including families, communities, and organisations.
-            </p>
-            <p>
-              Rather than focusing solely on the individual, systemic therapy explores the dynamics between people and how these interactions contribute to difficulties or provide resources for solutions. This therapy helps identify and modify unhelpful patterns of relating and communicating that might be maintaining problems.
-            </p>
-          </>
+            intro={{
+              title: "What is Systemic Therapy?",
+              body: (
+                <>
+                  <p className='mb-4'>
+                    Systemic therapy is an approach that focuses on understanding people in relationships and dealing with the interactions of groups. It addresses problems in the context of the various systems and relationships in which people are embedded, including families, communities, and organisations.
+                  </p>
+                  <p>
+                    Rather than focusing solely on the individual, systemic therapy explores the dynamics between people and how these interactions contribute to difficulties or provide resources for solutions. This therapy helps identify and modify unhelpful patterns of relating and communicating that might be maintaining problems.
+                  </p>
+                </>
         )
       }}
       why={{

@@ -61,7 +61,7 @@ export default function InPersonPage() {
               <li className="mb-2"><strong>Ritual of Attending:</strong> The act of traveling to therapy can provide valuable transition time to prepare mentally before sessions and process afterwards.</li>
             </ul>
 
-            <p className="mb-4">We understand that different preferences and circumstances might make either in-person or <Link href={routes.sessionTypes.online()} className="text-primary hover:underline">online sessions</Link> more suitable for you. We're happy to discuss which option might work best for your specific situation.</p>
+            <p className="mb-4">We understand that different preferences and circumstances might make either in-person or <Link href={routes.sessionTypes.online()} className="text-primary hover:underline hover:text-accent">online sessions</Link> more suitable for you. We're happy to discuss which option might work best for your specific situation.</p>
           </>
         )}
       </StripedSection>
@@ -89,9 +89,9 @@ export default function InPersonPage() {
 
               <h3 className="text-xl font-semibold mb-3">Get Directions:</h3>
               <div className="flex flex-col space-y-2">
-                <a href={mapLinks.google} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google Maps</a>
-                <a href={mapLinks.apple} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Apple Maps</a>
-                <a href={mapLinks.openStreetMap} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">OpenStreetMap</a>
+                <a href={mapLinks.google} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline hover:text-accent">Google Maps</a>
+                <a href={mapLinks.apple} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline hover:text-accent">Apple Maps</a>
+                <a href={mapLinks.openStreetMap} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline hover:text-accent">OpenStreetMap</a>
               </div>
             </div>
 
@@ -112,7 +112,7 @@ export default function InPersonPage() {
                 <li>There is one step at the entrance to the therapy room</li>
                 <li>Support handles are available to assist with access</li>
                 <li>Private driveway parking available close to the entrance</li>
-                <li>Please <Link className='text-primary hover:underline' href={routes.contact()}>contact us</Link> in advance if you have specific accessibility requirements</li>
+                <li>Please <Link className='text-primary hover:underline hover:text-accent' href={routes.contact()}>contact us</Link> in advance if you have specific accessibility requirements</li>
               </ul>
             </div>
           </div>

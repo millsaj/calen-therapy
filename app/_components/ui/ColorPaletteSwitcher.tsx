@@ -6,37 +6,55 @@ export type TColorPalette = {
   name: string;
   primary: string;
   secondary: string;
-  // accent: string;
+  accent: string;
+};
+
+const generateAccent = (hex: string, percent: number): string => {
+  // Remove '#' if present
+  hex = hex.replace(/^#/, '');
+  // Parse r, g, b
+  let r = parseInt(hex.substring(0, 2), 16);
+  let g = parseInt(hex.substring(2, 4), 16);
+  let b = parseInt(hex.substring(4, 6), 16);
+
+  // Increase each channel by percent
+  r = Math.min(255, Math.round(r - (255 - r) * percent));
+  g = Math.min(255, Math.round(g - (255 - g) * percent));
+  b = Math.min(255, Math.round(b - (255 - b) * percent));
+
+  // Convert back to hex
+  const toHex = (n: number) => n.toString(16).padStart(2, '0');
+  return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
 };
 
 const colorPalettes: TColorPalette[] = [
-  { name: 'Steel Blue', primary: '#577590', secondary: '#F1F6FA' },
-  { name: 'Slate Teal', primary: '#4C6A6D', secondary: '#E6F0EF' },
-  { name: 'Muted Indigo', primary: '#5A5D9C', secondary: '#F3F4FA' },
-  { name: 'Dusty Rose', primary: '#A26769', secondary: '#F8F3F2' },
-  { name: 'Olive Green', primary: '#6B7A52', secondary: '#F4F7F2' },
-  { name: 'Deep Sage', primary: '#6C8A7B', secondary: '#F1F7F5' },
-  { name: 'Soft Plum', primary: '#7C6A8A', secondary: '#F6F3F9' },
-  { name: 'Ocean Mist', primary: '#4E7C86', secondary: '#F0F7F9' },
-  { name: 'Warm Taupe', primary: '#8B7E74', secondary: '#F8F6F4' },
-  { name: 'Calm Navy', primary: '#3A506B', secondary: '#F2F6FA' },
-  { name: 'Forest Shadow', primary: '#4B6043', secondary: '#F3F7F1' },
-  { name: 'Blue Spruce', primary: '#5B7B7A', secondary: '#F1F7F7' },
-  { name: 'Lavender Gray', primary: '#8D99AE', secondary: '#F6F7FA' },
-  { name: 'Muted Jade', primary: '#5C8374', secondary: '#F2F8F6' },
-  { name: 'Dusky Sky', primary: '#6D8EA0', secondary: '#F3F7FA' },
-  { name: 'Pale Moss', primary: '#7A8450', secondary: '#F7F8F2' },
-  { name: 'Heather Blue', primary: '#6B7AA1', secondary: '#F4F6FA' },
-  { name: 'Ash Violet', primary: '#7D6F86', secondary: '#F7F4F9' },
-  { name: 'Muted Coral', primary: '#A67873', secondary: '#FAF5F4' },
-  { name: 'Pebble Gray', primary: '#7A7E85', secondary: '#F6F7F8' },
+  { name: 'Steel Blue', primary: '#577590', secondary: '#F1F6FA', accent: generateAccent('#577590', 0.2) },
+  { name: 'Slate Teal', primary: '#4C6A6D', secondary: '#E6F0EF', accent: generateAccent('#4C6A6D', 0.2) },
+  { name: 'Muted Indigo', primary: '#5A5D9C', secondary: '#F3F4FA', accent: generateAccent('#5A5D9C', 0.2) },
+  { name: 'Dusty Rose', primary: '#A26769', secondary: '#F8F3F2', accent: generateAccent('#A26769', 0.2) },
+  { name: 'Olive Green', primary: '#6B7A52', secondary: '#F4F7F2', accent: generateAccent('#6B7A52', 0.2) },
+  { name: 'Deep Sage', primary: '#6C8A7B', secondary: '#F1F7F5', accent: generateAccent('#6C8A7B', 0.2) },
+  { name: 'Soft Plum', primary: '#7C6A8A', secondary: '#F6F3F9', accent: generateAccent('#7C6A8A', 0.2) },
+  { name: 'Ocean Mist', primary: '#4E7C86', secondary: '#F0F7F9', accent: generateAccent('#4E7C86', 0.2) },
+  { name: 'Warm Taupe', primary: '#8B7E74', secondary: '#F8F6F4', accent: generateAccent('#8B7E74', 0.2) },
+  { name: 'Calm Navy', primary: '#3A506B', secondary: '#F2F6FA', accent: generateAccent('#3A506B', 0.2) },
+  { name: 'Forest Shadow', primary: '#4B6043', secondary: '#F3F7F1', accent: generateAccent('#4B6043', 0.2) },
+  { name: 'Blue Spruce', primary: '#5B7B7A', secondary: '#F1F7F7', accent: generateAccent('#5B7B7A', 0.2) },
+  { name: 'Lavender Gray', primary: '#8D99AE', secondary: '#F6F7FA', accent: generateAccent('#8D99AE', 0.2) },
+  { name: 'Muted Jade', primary: '#5C8374', secondary: '#F2F8F6', accent: generateAccent('#5C8374', 0.2) },
+  { name: 'Dusky Sky', primary: '#6D8EA0', secondary: '#F3F7FA', accent: generateAccent('#6D8EA0', 0.2) },
+  { name: 'Pale Moss', primary: '#7A8450', secondary: '#F7F8F2', accent: generateAccent('#7A8450', 0.2) },
+  { name: 'Heather Blue', primary: '#6B7AA1', secondary: '#F4F6FA', accent: generateAccent('#6B7AA1', 0.2) },
+  { name: 'Ash Violet', primary: '#7D6F86', secondary: '#F7F4F9', accent: generateAccent('#7D6F86', 0.2) },
+  { name: 'Muted Coral', primary: '#A67873', secondary: '#FAF5F4', accent: generateAccent('#A67873', 0.2) },
+  { name: 'Pebble Gray', primary: '#7A7E85', secondary: '#F6F7F8', accent: generateAccent('#7A7E85', 0.2) },
 ];
 
 function applyPalette(palette: TColorPalette) {
   const root = document.documentElement;
   root.style.setProperty('--color-primary', palette.primary);
   root.style.setProperty('--color-secondary', palette.secondary);
-  // root.style.setProperty('--color-accent', palette.accent);
+  root.style.setProperty('--color-accent', palette.accent);
 }
 
 export default function ColorPaletteSwitcher() {

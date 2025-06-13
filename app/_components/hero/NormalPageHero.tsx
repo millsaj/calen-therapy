@@ -10,7 +10,7 @@ export const NormalPageHero = ({
   subtitle,
 }: ISplitHeroArgs) => {
   return (
-    <section className={`relative py-16 bg-secondary mt-20`}>
+    <section className={`relative py-16 bg-secondary mt-[48px]`}>
       <div className="container mx-auto px-4 pt-4 pb-16">
         <div
           className={`max-w-4xl mx-auto text-center`}

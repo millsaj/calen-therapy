@@ -1,6 +1,6 @@
 'use client';
 
-import { Testimonials } from '@/_components/sections/Testimonials';
+import { Testimonials } from '@app/_components/sections/Testimonials';
 import { testimonials } from '@app/_config/testimonials';
 import { StripedSection } from '@app/_components/sections/StripedSection';
 import { CallToAction } from '@app/_components/sections/CallToAction';
@@ -33,7 +33,7 @@ const contactSections = [
 
 export default function ContactUsPage() {
   return (
-    <div className="mt-20">
+    <>
       <NormalPageHero
         title='Contact Us'
         subtitle='This page contains information on how to get in touch with us for any inquiries or support.' />
@@ -158,6 +158,6 @@ export default function ContactUsPage() {
       <StripedSection secondary={false} primary={true}>
         <CallToAction />
       </StripedSection>
-    </div>
+    </>
   );
 }

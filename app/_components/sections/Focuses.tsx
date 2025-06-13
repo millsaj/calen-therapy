@@ -19,8 +19,8 @@ export const Focuses: React.FC<IFocusesProps> = ({
 }) => {
   return (
     <>
-      <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-4xl font-bold mb-6 text-gray-800">{title}</h2>
+      <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-gray-800">{title}</h2>
         <p className="text-xl text-gray-600">{subtitle}</p>
       </div>
 
@@ -29,7 +29,7 @@ export const Focuses: React.FC<IFocusesProps> = ({
           return (
             <Link
               key={focus.title}
-              className={`${striped ? 'bg-white' : 'bg-secondary'} p-8 rounded-xl shadow text-center hover:shadow-md transition-shadow flex flex-col justify-center`}
+              className={`${striped ? 'bg-white' : 'bg-secondary'} p-4 md:p-8 rounded-xl shadow text-center hover:shadow-md transition-shadow flex flex-col justify-center`}
               href={routes.focuses.show(focus.slug)} >
 
               <h3 className="text-lg font-bold text-primary">{focus.title}</h3>
@@ -38,9 +38,9 @@ export const Focuses: React.FC<IFocusesProps> = ({
         })}
       </div>
 
-      <div className="text-center max-w-3xl mx-auto mt-12 text-gray-500">
+      <div className="text-center max-w-3xl mx-auto mt-12 text-gray-500 text-sm md:text-base">
         <p>
-          Don't see your specific concern listed? Please <Link href={routes.contact()} className='text-primary hover:underline'>reach out</Link> to us anyway.
+          Don't see your specific concern listed? Please <Link href={routes.contact()} className='text-primary hover:underline hover:text-accent'>reach out</Link> to us anyway.
         </p>
         <p>
           We may be able to help you or refer you to someone who can.

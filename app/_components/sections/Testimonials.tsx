@@ -17,7 +17,7 @@ export const Testimonials: React.FC<ITestimonialsProps> = ({
   return (
     <>
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-4">{title}</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mt-4">{title}</h2>
       </div>
 
       <Carousel

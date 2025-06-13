@@ -17,9 +17,9 @@ export const SplitPageHero = ({
   children,
 }: ISplitHeroArgs) => {
   return (
-    <section className="relative h-[100vh] flex items-center">
-      <div className="flex flex-col md:flex-row w-full h-full">
-        <div className="w-full md:w-1/2 h-full relative">
+    <section className="mt-[48px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full min-h-full">
+        <div className='w-full min-h-96 relative'>
           <Image
             src={imageSrc}
             alt={imageAlt}
@@ -29,16 +29,14 @@ export const SplitPageHero = ({
           />
         </div>
 
-        <div className="w-full md:w-1/2 h-full flex items-center bg-white/90 backdrop-blur-sm">
-          <div className="w-full px-6 py-8">
-            <div className="max-w-xl mx-auto">
-              <h1 className="text-4xl md:text-5xl font-light mb-12 text-gray-800 text-center md:text-left">
-                {title}
-              </h1>
+        <div className="px-6 py-8">
+          <div className="max-w-xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-light mb-12 text-gray-800 text-center md:text-left">
+              {title}
+            </h1>
 
-              <div className="space-y-10 mb-12 text-gray-600 leading-relaxed">
-                {children}
-              </div>
+            <div className="space-y-10 mb-12 text-gray-600 leading-relaxed">
+              {children}
             </div>
           </div>
         </div>

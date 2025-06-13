@@ -98,12 +98,12 @@ export default function DepressionPage() {
             <ul className="list-disc pl-6 mb-4">
               <li className="mb-2"><strong>With Helen:</strong> Helen draws from several evidence-based approaches including:
                 <ul className="list-disc pl-6 ">
-                  <li><strong><Link href={routes.styles.psychodynamic()} className="text-primary hover:underline">Psychodynamic therapy</Link></strong> to explore underlying patterns and past experiences that may contribute to depression</li>
-                  <li><strong><Link href={routes.styles.cbt()} className="text-primary hover:underline">Cognitive Behavioral Therapy (CBT)</Link></strong> to identify and change negative thought patterns and develop new coping strategies</li>
-                  <li><strong><Link href={routes.styles.personCentered()} className="text-primary hover:underline">Person-Centered therapy</Link></strong> to create a supportive environment for processing difficult emotions</li>
+                  <li><strong><Link href={routes.styles.psychodynamic()} className="text-primary hover:underline hover:text-accent">Psychodynamic therapy</Link></strong> to explore underlying patterns and past experiences that may contribute to depression</li>
+                  <li><strong><Link href={routes.styles.cbt()} className="text-primary hover:underline hover:text-accent">Cognitive Behavioral Therapy (CBT)</Link></strong> to identify and change negative thought patterns and develop new coping strategies</li>
+                  <li><strong><Link href={routes.styles.personCentered()} className="text-primary hover:underline hover:text-accent">Person-Centered therapy</Link></strong> to create a supportive environment for processing difficult emotions</li>
                 </ul>
               </li>
-              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.styles.hypnotherapy()} className="text-primary hover:underline">Solution Focused Hypnotherapy</Link> helps redirect your focus toward positive goals
+              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.styles.hypnotherapy()} className="text-primary hover:underline hover:text-accent">Solution Focused Hypnotherapy</Link> helps redirect your focus toward positive goals
               and solutions while using relaxation techniques to reduce stress and improve mood.</li>
             </ul>
             <p className="mb-4">

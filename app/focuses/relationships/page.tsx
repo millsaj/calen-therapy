@@ -99,10 +99,10 @@ export default function RelationshipsPage() {
             <ul className="list-disc pl-6 mb-4">
               <li className="mb-2"><strong>With Helen:</strong> Helen's qualifications in relationship therapy include:
                 <ul className="list-disc pl-6 ">
-                  <li><strong><Link href={routes.styles.systemic()} className="text-primary hover:underline">Systemic Therapy</Link></strong> - Examining how family systems, social contexts, and relationship patterns influence current challenges</li>
-                  <li><strong><Link href={routes.styles.psychodynamic()} className="text-primary hover:underline">Psychodynamic Approaches</Link></strong> - Understanding how past experiences shape current relationship patterns</li>
-                  <li><strong><Link href={routes.styles.personCentered()} className="text-primary hover:underline">Person-Centered Techniques</Link></strong> - Creating a supportive environment for exploring feelings and needs</li>
-                  <li><strong><Link href={routes.styles.show('lifecoaching')} className="text-primary hover:underline">Life Coaching</Link></strong> - Developing clear goals and practical strategies for relationship growth</li>
+                  <li><strong><Link href={routes.styles.systemic()} className="text-primary hover:underline hover:text-accent">Systemic Therapy</Link></strong> - Examining how family systems, social contexts, and relationship patterns influence current challenges</li>
+                  <li><strong><Link href={routes.styles.psychodynamic()} className="text-primary hover:underline hover:text-accent">Psychodynamic Approaches</Link></strong> - Understanding how past experiences shape current relationship patterns</li>
+                  <li><strong><Link href={routes.styles.personCentered()} className="text-primary hover:underline hover:text-accent">Person-Centered Techniques</Link></strong> - Creating a supportive environment for exploring feelings and needs</li>
+                  <li><strong><Link href={routes.styles.show('lifecoaching')} className="text-primary hover:underline hover:text-accent">Life Coaching</Link></strong> - Developing clear goals and practical strategies for relationship growth</li>
                 </ul>
               </li>
             </ul>

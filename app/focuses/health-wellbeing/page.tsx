@@ -108,13 +108,13 @@ export default function HealthWellbeingPage() {
             <ul className="list-disc pl-6 mb-4">
               <li className="mb-2"><strong>With Helen:</strong> Helen's approach includes:
                 <ul className="list-disc pl-6 ">
-                  <li><strong><Link href={routes.styles.personCentered()} className="text-primary hover:underline">Person-Centered therapy</Link></strong> to provide a supportive environment for exploring your health journey</li>
-                  <li><strong><Link href={routes.styles.cbt()} className="text-primary hover:underline">Cognitive Behavioral techniques</Link></strong> to address thoughts and behaviors that impact health</li>
-                  <li><strong><Link href={routes.styles.psychodynamic()} className="text-primary hover:underline">Psychodynamic approaches</Link></strong> to explore how past experiences may affect your relationship with health</li>
-                  <li><strong><Link href={routes.styles.show('lifecoaching')} className="text-primary hover:underline">Life Coaching</Link></strong> to develop concrete health goals and practical strategies for lifestyle changes</li>
+                  <li><strong><Link href={routes.styles.personCentered()} className="text-primary hover:underline hover:text-accent">Person-Centered therapy</Link></strong> to provide a supportive environment for exploring your health journey</li>
+                  <li><strong><Link href={routes.styles.cbt()} className="text-primary hover:underline hover:text-accent">Cognitive Behavioral techniques</Link></strong> to address thoughts and behaviors that impact health</li>
+                  <li><strong><Link href={routes.styles.psychodynamic()} className="text-primary hover:underline hover:text-accent">Psychodynamic approaches</Link></strong> to explore how past experiences may affect your relationship with health</li>
+                  <li><strong><Link href={routes.styles.show('lifecoaching')} className="text-primary hover:underline hover:text-accent">Life Coaching</Link></strong> to develop concrete health goals and practical strategies for lifestyle changes</li>
                 </ul>
               </li>
-              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.styles.hypnotherapy()} className="text-primary hover:underline">Solution Focused Hypnotherapy</Link> can be particularly beneficial for health and wellbeing by:
+              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.styles.hypnotherapy()} className="text-primary hover:underline hover:text-accent">Solution Focused Hypnotherapy</Link> can be particularly beneficial for health and wellbeing by:
                 <ul className="list-disc pl-6 ">
                   <li>Using relaxation to access your mind's natural healing potential</li>
                   <li>Creating positive changes in how you respond to health challenges</li>

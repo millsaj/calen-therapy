@@ -48,10 +48,10 @@ export default function HelenPage() {
 
       <StripedSection secondary={true} primary={false}>
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-6xl font-bold mb-6 text-gray-800">Qualifications & Experience</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-gray-800">Qualifications & Experience</h2>
           <p className="text-xl text-gray-600 mb-10">Over 30 years of professional training and experience.</p>
-          <div className="flex flex-col gap-8 items-center">
 
+          <div className="flex flex-col gap-8 items-center">
             {/* Qualifications Card */}
             <div className="w-full bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center gap-6 hover:scale-[1.02] transition-transform">
               <div className="bg-secondary w-14 h-14 flex items-center justify-center rounded-full shadow-lg mt-1">
@@ -93,7 +93,7 @@ export default function HelenPage() {
                 </p>
                 <ul className="text-gray-700 space-y-3 font-medium w-full">
                   <li className="p-2 rounded-lg hover:bg-secondary transition-colors">Calen Therapy (since 20XX)</li>
-                  <li className="p-2 rounded-lg hover:bg-secondary transition-colors"><Link className='text-primary hover:underline' href={routes.external.relate()}>Relate</Link> (20XX - 20XX)</li>
+                  <li className="p-2 rounded-lg hover:bg-secondary transition-colors"><Link className='text-primary hover:underline hover:text-accent' href={routes.external.relate()}>Relate</Link> (20XX - 20XX)</li>
                   <li className="p-2 rounded-lg hover:bg-secondary transition-colors">etc</li>
                 </ul>
               </div>

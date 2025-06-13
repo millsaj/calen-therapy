@@ -31,10 +31,10 @@ export default function CarlPage() {
 
       <StripedSection secondary={true} primary={false}>
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-6xl font-bold mb-6 text-gray-800">Qualifications & Experience</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-gray-800">Qualifications & Experience</h2>
           <p className="text-xl text-gray-600 mb-10">Specialized training in solution-focused hypnotherapy.</p>
-          <div className="flex flex-col gap-8 items-center">
 
+          <div className="flex flex-col gap-8 items-center">
             {/* Core Qualifications Card */}
             <div className="w-full bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center gap-6 hover:scale-[1.02] transition-transform">
               <div className="bg-secondary w-14 h-14 flex items-center justify-center rounded-full shadow-lg mt-1">
@@ -72,7 +72,7 @@ export default function CarlPage() {
                 </p>
                 <ul className="text-gray-700 space-y-3 font-medium w-full">
                   <li className="p-2 rounded-lg hover:bg-secondary transition-colors">
-                    <Link href="https://www.hypnotherapy-directory.org.uk/hypnotherapists/carl-porter" target="_blank" className="text-primary hover:underline">
+                    <Link href="https://www.hypnotherapy-directory.org.uk/hypnotherapists/carl-porter" target="_blank" className="text-primary hover:underline hover:text-accent">
                       <span>Hypnotherapy Directory</span>
                     </Link>
                   </li>
@@ -86,7 +86,7 @@ export default function CarlPage() {
       <StripedSection secondary={false} primary={false}>
         <div className="max-w-6xl mx-auto px-4 py-16">
           <div className="text-center mb-10">
-            <h2 className="text-4xl font-bold mb-4 text-gray-800">Solution Focused Hypnotherapy</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-800">Solution Focused Hypnotherapy</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">A modern approach to creating positive change</p>
           </div>
 

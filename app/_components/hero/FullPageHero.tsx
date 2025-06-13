@@ -4,6 +4,7 @@ import PageDownButton from '../home/PageDownButton';
 import Image from 'next/image';
 import Link from 'next/link';
 import { images } from '@app/_config/images';
+import { routes } from '@app/_config/routes';
 
 interface IFullPageHeroProps {
   title: string;
@@ -22,7 +23,7 @@ export const FullPageHero = ({
   };
 
   return (
-    <section className="relative h-screen flex items-center">
+    <section className="relative min-h-screen flex items-center">
       <Image
         src={images.general.homeHero.src}
         alt={images.general.homeHero.alt}
@@ -31,7 +32,7 @@ export const FullPageHero = ({
         priority
       />
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-full sm:max-w-3xl">
+      <div className="container mx-auto sm:px-6 relative z-10 max-w-full sm:max-w-3xl my-20 pt-10 px-4">
         <div className="max-w-full sm:max-w-3xl">
           <h1 className="text-xl sm:text-4xl md:text-6xl font-bold text-white leading-tight mb-4 sm:mb-6">
             {title}
@@ -41,14 +42,14 @@ export const FullPageHero = ({
           </p>
           <div className="flex flex-col space-y-3 sm:flex-row sm:space-y-0 sm:space-x-6">
             <Link
-              href="/contact"
+              href={routes.contact()}
               className="bg-white text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-accent transition-colors text-center w-full sm:w-auto"
             >
               Contact Us
             </Link>
             <button
               onClick={handleScroll}
-              className="invisible sm:visible border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-white hover:text-primary transition-colors text-center w-full sm:w-auto"
+              className="invisible sm:visible border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-white hover:text-accent transition-colors text-center w-full sm:w-auto"
             >
               Learn More
             </button>

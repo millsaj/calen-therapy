@@ -1,5 +1,3 @@
-import { Children } from "react";
-
 export interface IStripedSectionProps {
   primary: boolean;
   secondary: boolean;

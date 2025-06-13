@@ -108,10 +108,10 @@ export default function GriefLossPage() {
               <li className="mb-2"><strong>With Helen:</strong> Helen's approach to grief therapy is personalized,
               drawing from multiple therapeutic modalities:
                 <ul className="list-disc pl-6 ">
-                  <li><strong><Link href={routes.styles.personCentered()} className="text-primary hover:underline">Person-Centered Approach</Link></strong> - Creating a safe environment where your grief is acknowledged and validated</li>
-                  <li><strong><Link href={routes.styles.psychodynamic()} className="text-primary hover:underline">Psychodynamic Elements</Link></strong> - Exploring how your relationship with what was lost influences your grief</li>
-                  <li><strong><Link href={routes.styles.cbt()} className="text-primary hover:underline">Cognitive Behavioral Techniques</Link></strong> - Developing tools to manage intense emotions and navigate daily life</li>
-                  <li><strong><Link href={routes.styles.show('lifecoaching')} className="text-primary hover:underline">Life Coaching</Link></strong> - Setting goals for rebuilding and moving forward while honoring your loss</li>
+                  <li><strong><Link href={routes.styles.personCentered()} className="text-primary hover:underline hover:text-accent">Person-Centered Approach</Link></strong> - Creating a safe environment where your grief is acknowledged and validated</li>
+                  <li><strong><Link href={routes.styles.psychodynamic()} className="text-primary hover:underline hover:text-accent">Psychodynamic Elements</Link></strong> - Exploring how your relationship with what was lost influences your grief</li>
+                  <li><strong><Link href={routes.styles.cbt()} className="text-primary hover:underline hover:text-accent">Cognitive Behavioral Techniques</Link></strong> - Developing tools to manage intense emotions and navigate daily life</li>
+                  <li><strong><Link href={routes.styles.show('lifecoaching')} className="text-primary hover:underline hover:text-accent">Life Coaching</Link></strong> - Setting goals for rebuilding and moving forward while honoring your loss</li>
                 </ul>
               </li>
             </ul>

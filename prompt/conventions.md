@@ -269,7 +269,7 @@ All inline links (links surrounded by other text, e.g.: click <a>here</a> for ch
 
 ```tsx
 <Link
-  className='text-primary hover:underline' />
+  className='text-primary hover:underline hover:text-accent' />
 ```
 
 ### Config

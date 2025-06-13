@@ -1,11 +1,7 @@
 import Image from 'next/image';
 import { images } from '@app/_config/images';
-import Link from 'next/link';
 import { routes } from '@app/_config/routes';
 import { LearnMoreLink } from './LearnMoreLink';
-
-interface ITherapistProps {
-}
 
 interface ITherapist {
   name: string;
@@ -56,12 +52,12 @@ const therapists: ITherapist[] = [
   },
 ];
 
-export const Therapists: React.FC<ITherapistProps> = ({
+export const Therapists: React.FC = ({
 }) => {
   return (
     <>
       <div className="max-w-3xl mx-auto text-center mb-16">
-        <h2 className="text-4xl font-light mb-6">Who are we?</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">Who are we?</h2>
         <p className="text-gray-600">
           We are Helen and Carl: two therapists based in Billinge. The core of our practice is built
           around Helen's long career in psychotherapy and counseling. Hypnotherapy sessions are
@@ -73,7 +69,7 @@ export const Therapists: React.FC<ITherapistProps> = ({
         {therapists.map((therapist, index) => (
           <div key={index}>
             <div className="mb-8 relative">
-              <div className="w-72 h-72 mx-auto">
+              <div className="w-[288px] h-[288px] sm:w-[384px] sm:h-[384px] lg:w-[512px] lg:h-[512px] mx-auto"> 
                 <Image
                   src={therapist.imagePath}
                   alt={therapist.name}
@@ -85,7 +81,7 @@ export const Therapists: React.FC<ITherapistProps> = ({
             </div>
             <div className="space-y-4">
               <div>
-                <h3 className="text-2xl font-light">{therapist.name}</h3>
+                <h3 className="text-xl md:text-2xl font-bold">{therapist.name}</h3>
                 <p className="text-sm text-gray-500">{therapist.credentials}</p>
               </div>
 

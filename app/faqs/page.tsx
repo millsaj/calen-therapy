@@ -115,7 +115,7 @@ const locationQs = [
     a: [
       contactDetails.address.full,
       <>
-        You can find more information about where we are and the therapy space <Link href={routes.findUs()} className='text-primary hover:underline'>here</Link>.
+        You can find more information about where we are and the therapy space <Link href={routes.findUs()} className='text-primary hover:underline hover:text-accent'>here</Link>.
       </>,
     ]
   },
@@ -123,13 +123,13 @@ const locationQs = [
     q: "Do you offer online sessions?",
     a: [
       "Yes, we offer online therapy sessions (usually via Zoom).",
-      <>Read more <Link href={routes.sessionTypes.online()} className='text-primary hover:underline'>here</Link>.</>
+      <>Read more <Link href={routes.sessionTypes.online()} className='text-primary hover:underline hover:text-accent'>here</Link>.</>
     ]
   },
   {
     q: "Are there any accessibility options?",
     a: [
-      <>Please see our <Link href={routes.findUs()} className='text-primary hover:underline'>Find Us</Link> section for details on accessibility.</>,
+      <>Please see our <Link href={routes.findUs()} className='text-primary hover:underline hover:text-accent'>Find Us</Link> section for details on accessibility.</>,
     ]
   },
 ];
@@ -149,7 +149,7 @@ export default function FAQPage() {
       </StripedSection>
 
       <StripedSection secondary={true} primary={false}>
-        <Testimonials testimonials={testimonials} />
+        <Testimonials striped={true} testimonials={testimonials} />
       </StripedSection>
 
       <StripedSection secondary={false} primary={true}>

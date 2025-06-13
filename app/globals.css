@@ -3,6 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Uncomment for simulating accessibility settings */
+  /* font-size: 130% !important; */
+  /* font-size: 150% !important; */
+  /* font-size: 200% !important; */
 }
 
 @theme inline {
@@ -16,7 +21,7 @@
   --color-accent: var(--color-accent);
 
   /* Breakpoints */
-  --breakpoint-xs: 25rem; /* custom xs breakpoint. sm is 40rem by default */
+  --breakpoint-xs: 30rem; /* custom xs breakpoint. sm is 40rem by default */
 }
 
 body {

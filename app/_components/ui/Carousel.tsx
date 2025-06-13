@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect, useRef, ReactNode } from 'react';
+import { useState, useEffect, useRef, ReactNode, useCallback } from 'react';
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
 interface ICarouselProps<T> {
   items: T[];
@@ -50,7 +51,7 @@ export function Carousel<T>({
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [screenWidth, setScreenWidth] = useState(0);
-  const timeoutRef = useRef<NodeJS.Timeout>();
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     setScreenWidth(window.innerWidth);
@@ -68,24 +69,24 @@ export function Carousel<T>({
     }, 300);
   };
 
-  const nextSlide = () => {
+  const itemsToShow = useCallback(() => (screenWidth < 768 ? 1 : itemsPerView), [screenWidth, itemsPerView]);
+
+  const nextSlide = useCallback(() => {
     const newIndex = (currentIndex + itemsToShow()) % items.length;
     handleTransition(newIndex);
-  };
+  }, [currentIndex, items.length, itemsToShow]);
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     const newIndex = (currentIndex - itemsToShow() + items.length) % items.length;
     handleTransition(newIndex);
-  };
-
-  const itemsToShow = () => (screenWidth < 768 ? 1 : itemsPerView);
+  }, [currentIndex, items.length, itemsToShow]);
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (!isPaused) nextSlide();
     }, autoPlayInterval);
     return () => clearInterval(interval);
-  }, [isPaused, currentIndex, autoPlayInterval]);
+  }, [isPaused, nextSlide, autoPlayInterval]);
 
   useEffect(() => {
     return () => {
@@ -125,39 +126,13 @@ export function Carousel<T>({
             onClick={prevSlide}
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
+            <ChevronLeftIcon className="h-6 w-6" />
           </button>
           <button
             onClick={nextSlide}
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
+            <ChevronRightIcon className="h-6 w-6" />
           </button>
         </>
       )}

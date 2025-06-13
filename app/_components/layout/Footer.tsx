@@ -4,31 +4,20 @@ import { routes } from '@app/_config/routes';
 import { contactDetails } from '@app/_config/main';
 
 export default function Footer() {
-  const sections = [
-    {
-      title: "About",
-      links: [
-        { name: 'Helen', href: routes.helen() },
-        { name: 'Carl', href: routes.carl() },
-        { name: 'Find us', href: routes.findUs() },
-      ],
-    },
-  ];
-
   return (
     <footer className="bg-secondary text-gray-800 py-16">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           <div>
-            <h3 className="text-2xl font-bold mb-6">Calen Therapy</h3>
-            <p className="text-gray-400 mb-6">
+            <h3 className="text-xl md:text-2xl font-bold mb-6">Calen Therapy</h3>
+            <p className="text-gray-400 text-sm md:text-base">
               Professional therapy services for individuals, couples, and families in Wigan, St Helens, and online.
             </p>
           </div>
 
           {/* About Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-6">About</h3>
+            <h3 className="text-lg md:text-xl font-semibold mb-6">About</h3>
             <ul className="space-y-3">
               <li>
                 <Link
@@ -60,13 +49,13 @@ export default function Footer() {
 
           {/* Contact Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-6">Contact</h3>
+            <h3 className="text-lg md:text-xl font-semibold mb-6">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <EnvelopeIcon className="h-5 w-5 mr-3 mt-0.5" />
                 <Link
                   href={`mailto:${contactDetails.emails.helen}`}
-                  className="text-gray-600 hover:text-gray-800 transition-colors"
+                  className="text-gray-600 hover:text-gray-800 transition-colors break-all"
                 >
                   {contactDetails.emails.helen}
                 </Link>
@@ -75,7 +64,7 @@ export default function Footer() {
                 <EnvelopeIcon className="h-5 w-5 mr-3 mt-0.5" />
                 <Link
                  href={`mailto:${contactDetails.emails.carl}`}
-                  className="text-gray-600 hover:text-gray-800 transition-colors"
+                  className="text-gray-600 hover:text-gray-800 transition-colors break-all"
                 >
                   {contactDetails.emails.carl}
                 </Link>
@@ -84,7 +73,7 @@ export default function Footer() {
                 <PhoneIcon className="h-5 w-5 mr-3 mt-0.5" />
                 <Link
                   href={`tel:${contactDetails.phones.helen}`}
-                  className="text-gray-600 hover:text-gray-800 transition-colors"
+                  className="text-gray-600 hover:text-gray-800 transition-colors break-all"
                 >
                   Helen: {contactDetails.phones.helen}
                 </Link>
@@ -93,7 +82,7 @@ export default function Footer() {
                 <PhoneIcon className="h-5 w-5 mr-3 mt-0.5" />
                 <Link
                   href={`tel:${contactDetails.phones.carl}`}
-                  className="text-gray-600 hover:text-gray-800 transition-colors"
+                  className="text-gray-600 hover:text-gray-800 transition-colors break-all"
                 >
                   Carl: {contactDetails.phones.carl}
                 </Link>

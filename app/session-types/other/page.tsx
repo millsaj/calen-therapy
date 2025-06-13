@@ -26,9 +26,9 @@ export default function OtherSessionTypesPage() {
         {renderContentSection(
           'Beyond Standard Sessions',
           <>
-            <p className="mb-4">While our <Link href={routes.sessionTypes.inPerson()} className="text-primary hover:underline">in-person</Link> and <Link href={routes.sessionTypes.online()} className="text-primary hover:underline">online sessions</Link> work well for most clients, we understand that some situations call for different approaches. We're committed to finding solutions that make therapy accessible for everyone.</p>
+            <p className="mb-4">While our <Link href={routes.sessionTypes.inPerson()} className="text-primary hover:underline hover:text-accent">in-person</Link> and <Link href={routes.sessionTypes.online()} className="text-primary hover:underline hover:text-accent">online sessions</Link> work well for most clients, we understand that some situations call for different approaches. We're committed to finding solutions that make therapy accessible for everyone.</p>
 
-            <p className="mb-4">All alternative options are arranged on a case-by-case basis. Please <Link href={routes.contact()} className="text-primary hover:underline">contact us</Link> to discuss your specific needs.</p>
+            <p className="mb-4">All alternative options are arranged on a case-by-case basis. Please <Link href={routes.contact()} className="text-primary hover:underline hover:text-accent">contact us</Link> to discuss your specific needs.</p>
 
             <p className="mb-4">If you have a specific need or request, please let us know.</p>
           </>

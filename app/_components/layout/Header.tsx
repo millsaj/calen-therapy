@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 import { INavItem } from '@app/_config/navigation';
 import { routes } from '@app/_config/routes';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 interface IHeaderProps {
   items: INavItem[];
@@ -16,6 +16,7 @@ export default function Header({ items }: IHeaderProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hoveredDropdown, setHoveredDropdown] = useState<string | null>(null);
   const [pinnedDropdown, setPinnedDropdown] = useState<string | null>(null);
+  const [closeTimeout, setCloseTimeout] = useState<NodeJS.Timeout | null>(null);
 
   const pathname = usePathname();
   const isHomePage = pathname === '/';
@@ -42,129 +43,132 @@ export default function Header({ items }: IHeaderProps) {
     return () => document.removeEventListener('click', handleClickOutside);
   }, []);
 
-  const setNavItemHover = useCallback((itemLabel: string, hover: boolean) => {
-    setHoveredDropdown(hover ? itemLabel : null);
-  }, []);
+  const handleNavLinkHover = (itemLabel: string, hover: boolean) => {
+    if (hover) {        
+      if (closeTimeout) {
+        clearTimeout(closeTimeout);
+      }
 
-  const toggleNavItemPinned = useCallback((itemLabel: string) => {
+      setHoveredDropdown(itemLabel);
+      return;
+    }
+
+    setCloseTimeout(setTimeout(() => {
+      setHoveredDropdown(null);
+    }, 200)); 
+  };
+
+  const handleNavLinkPin = (itemLabel: string) => {
     setPinnedDropdown(prev => (prev === itemLabel ? null : itemLabel));
-  }, []);
+  };
+
+  const imageContrast = !isMobileMenuOpen && isHomePage && !isScrolled;
 
   return (
-    <>
-      <header
-        id="mainHeader"
-        className={`
-          fixed top-0 left-0 right-0 z-50
-          transition-all duration-300
-          ${isScrolled
-            ? 'bg-secondary shadow-lg'
-            : (isHomePage ? 'bg-transparent text-white' : 'bg-secondary')}`}
-        role="banner"
-      >
-        <div className="container mx-auto px-2 sm:px-4 py-2 sm:py-4">
-          <div className="flex items-center justify-between min-h-[48px]">
-            <div className={`text-lg sm:text-2xl font-bold truncate max-w-[70vw] ${isHomePage && !isScrolled ? 'text-white' : ''}`}>
-              <Link href={routes.home()}>Calen Therapy</Link>
-            </div>
-
-            <nav
-              className={`hidden md:flex items-center space-x-3 sm:space-x-6 ${isHomePage && !isScrolled ? 'text-white' : ''}`}
-              aria-label="Main navigation"
-            >
-              {items.map(item => (
-                <NavLink
-                  key={item.label}
-                  item={item}
-                  hoveredDropdown={hoveredDropdown}
-                  pinnedDropdown={pinnedDropdown}
-                  setNavItemHover={setNavItemHover}
-                  toggleNavItemPinned={toggleNavItemPinned}
-                />
-              ))}
-              <Link
-                href={routes.contact()}
-                className={`
-                  px-4 sm:px-5 py-1 sm:py-1.5 rounded-full
-                  bg-primary text-white
-                  font-semibold
-                  hover:bg-accent
-                  transition-colors
-                  text-sm sm:text-base`}
-              >
-                Contact Us
-              </Link>
-            </nav>
-
-            <button
-              className="md:hidden ml-2 flex-shrink-0"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-expanded={isMobileMenuOpen}
-              aria-controls="mobile-menu"
-              aria-label="Toggle navigation menu"
-            >
-              {isMobileMenuOpen ? (
-                <XMarkIcon className="h-7 w-7" aria-hidden="true" />
-              ) : (
-                <Bars3Icon className="h-7 w-7" aria-hidden="true" />
-              )}
-            </button>
+    <header
+      id="mainHeader"
+      className={`
+        fixed top-0 left-0 right-0 z-50
+        transition-all duration-300 bg-secondary text-gray-700
+        ${imageContrast && 'bg-transparent text-white'}
+        ${isScrolled && 'shadow-lg'}`}
+      role="banner"
+    >
+      <div className="container h-16 mx-auto px-4 py-4">
+        <div className="flex items-center justify-between">
+          <div className={`text-2xl font-bold truncate max-w-[70vw] ${imageContrast ? 'text-white' : ''}`}>
+            <Link href={routes.home()}>Calen Therapy</Link>
           </div>
-        </div>
 
-        {isMobileMenuOpen && (
-          <>
-            <div
-              className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
-              onClick={() => setIsMobileMenuOpen(false)}
-              aria-hidden="true"
-            />
-            <div
-              id="mobile-menu"
+          <nav
+            className={`hidden md:flex items-center space-x-3 sm:space-x-6 ${imageContrast ? 'text-white' : ''}`}
+            aria-label="Main navigation"
+          >
+            {items.map(item => (
+              <NavLink
+                key={item.label}
+                item={item}
+                imageContrast={imageContrast}
+                isActive={hoveredDropdown === item.label || pinnedDropdown === item.label}
+                onHover={handleNavLinkHover}
+                onPin={handleNavLinkPin}
+              />
+            ))}
+            <Link 
+              href={routes.contact()}
               className={`
-                md:hidden fixed top-[48px] left-0 right-0 bottom-0
-                bg-white z-50
-                overflow-y-auto
-                animate-slide-in
-                w-full
-                p-2
-                sm:top-[64px] sm:p-4`}
-              role="dialog"
-              aria-modal="true"
+                px-4 sm:px-5 py-1 sm:py-1.5 rounded-full
+                bg-primary text-white
+                font-semibold
+                hover:bg-accent
+                transition-colors
+                text-sm sm:text-base`}
             >
-              <nav
-                className="flex flex-col space-y-1 p-2 sm:space-y-1.5 sm:p-4"
-                aria-label="Mobile navigation"
-              >
-                {items.map(item => (
-                  <div key={item.label} className="border-b border-gray-100 py-1 last:border-0">
-                    <NavLink
-                      item={item}
-                      hoveredDropdown={hoveredDropdown}
-                      pinnedDropdown={pinnedDropdown}
-                      setNavItemHover={setNavItemHover}
-                      toggleNavItemPinned={toggleNavItemPinned}
-                    />
-                  </div>
-                ))}
-                <Link
-                  href={routes.contact()}
-                  className={`
-                    px-4 py-2 rounded-full
-                    bg-primary text-white
-                    font-semibold
-                    hover:bg-accent
-                    transition-colors
-                    text-center mt-2 text-sm`}
-                >
-                  Contact Us
-                </Link>
-              </nav>
-            </div>
-          </>
-        )}
-      </header>
-    </>
+              Contact Us
+            </Link>
+          </nav>
+
+          <button
+            className="md:hidden ml-2 flex-shrink-0 z-50"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-menu"
+            aria-label="Toggle navigation menu"
+          >
+            {isMobileMenuOpen ? (
+              <XMarkIcon className="h-7 w-7 text-gray-700" aria-hidden="true" />
+            ) : (
+              <Bars3Icon className="h-7 w-7" aria-hidden="true" />
+            )}
+          </button>
+        </div>
+      </div>
+
+      {isMobileMenuOpen && (
+        <div
+          id="mobile-menu"
+          className={`
+            md:hidden fixed mt-16 top-0 left-0 right-0 bottom-0
+            bg-white z-50
+            overflow-y-auto
+            animate-slide-in
+            w-full
+            p-2 sm:p-4`}
+          role="dialog"
+          aria-modal="true"
+        >
+          <nav
+            className="flex flex-col space-y-1 p-2 sm:space-y-1.5 sm:p-4"
+            aria-label="Mobile navigation"
+          >
+            {items.map(item => (
+              <div key={item.label} className="border-b border-gray-100 py-1 last:border-0">
+                <NavLink
+                  item={item}
+                  imageContrast={false}
+                  isActive={hoveredDropdown === item.label || pinnedDropdown === item.label}
+                  onHover={handleNavLinkHover}
+                  onPin={handleNavLinkPin}
+                />
+              </div>
+            ))}
+            <Link
+              href={routes.contact()}
+              className={`
+                px-4 py-4 rounded-full
+                bg-primary
+                font-semibold
+                text-white  
+                hover:bg-accent
+                transition-colors
+                text-center mt-2`}
+            >
+              Contact Us
+            </Link>
+          </nav>
+        </div>
+      )}
+    </header>
   );
 }
 
@@ -172,73 +176,62 @@ export default function Header({ items }: IHeaderProps) {
 
 interface NavLinkProps {
   item: INavItem;
-  hoveredDropdown: string | null;
-  pinnedDropdown: string | null;
-  setNavItemHover: (itemLabel: string, hover: boolean) => void;
-  toggleNavItemPinned: (itemLabel: string) => void;
+  isActive: boolean;
+  imageContrast: boolean;
+  onHover: (itemLabel: string, hover: boolean) => void;
+  onPin: (itemLabel: string) => void;
 }
 
 const NavLink = ({
   item,
-  hoveredDropdown,
-  pinnedDropdown,
-  setNavItemHover,
-  toggleNavItemPinned,
+  isActive,
+  imageContrast,
+  onHover,
+  onPin,
 }: NavLinkProps) => {
-  const isActive = hoveredDropdown === item.label || pinnedDropdown === item.label;
-  let closeTimeout: NodeJS.Timeout;
+  const router = useRouter();
 
-  const handleMouseLeave = () => {
-    closeTimeout = setTimeout(() => {
-      setNavItemHover(item.label, false);
-    }, 150);
-  };
-
-  const handleMouseEnter = () => {
-    if (closeTimeout) {
-      clearTimeout(closeTimeout);
+  const handleClick = () => {
+    if (item.children) {
+      onPin(item.label);
+    } else if (item.href) {
+      router.push(item.href);
     }
-    setNavItemHover(item.label, true);
   };
 
   return (
     <div
       className="relative group nav-item"
-      onMouseEnter={item.children ? handleMouseEnter : undefined}
-      onMouseLeave={item.children ? handleMouseLeave : undefined}
+      onMouseEnter={() => onHover(item.label, true)}
+      onMouseLeave={() => onHover(item.label, false)}
     >
-      {item.children ? (
-        <button
-          onClick={() => toggleNavItemPinned(item.label)}
-          className={`
-            flex items-center w-full md:w-auto justify-between md:justify-start
-            px-3 py-2 rounded-md
-            transition-all duration-200
-            ${isActive ? 'text-accent bg-gray-50' : 'text-gray-700 hover:text-accent hover:bg-gray-50'}`}
-          aria-expanded={isActive}
-          aria-controls={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
-        >
-          {item.label}
+      <button
+        onClick={handleClick}
+        className={`
+          flex items-center w-full md:w-auto justify-between md:justify-start
+          px-3 py-2 rounded-md
+          transition-all duration-200
+          hover:cursor-pointer
+          ${!isActive && !imageContrast ? 'text-gray-700' : ''}
+          ${!isActive && imageContrast ? 'text-white' : ''}
+          ${isActive ? 'text-accent bg-gray-50' : ''}`}
+        aria-expanded={isActive}
+        aria-controls={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
+      >
+        {item.label}
+
+        {item.children && (
           <ChevronDownIcon
             className={`
               ml-1 h-3.5 w-3.5
               transition-transform duration-200
-              ${isActive ? 'rotate-180 text-accent' : ''}`}
+              ${!isActive && !imageContrast ? 'text-gray-700' : ''}
+              ${!isActive && imageContrast ? 'text-white' : ''}
+              ${isActive ? 'text-accent rotate-180' : ''}`}
             aria-hidden="true"
           />
-        </button>
-      ) : (
-        <Link
-          href={item.href || '#'}
-          className={`
-            block w-full md:w-auto
-            px-3 py-1.5 rounded-md
-            hover:text-accent text-gray-700 hover:bg-gray-50
-            transition-all duration-200`}
-        >
-          {item.label}
-        </Link>
-      )}
+        )}
+      </button>
 
       {item.children && isActive && (
         <div

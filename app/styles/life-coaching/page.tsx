@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import { routes } from '@app/_config/routes';
 import { StylePage } from '../StylePage';
 
 export default function LifeCoachingPage() {
