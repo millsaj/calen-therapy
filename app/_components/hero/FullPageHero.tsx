@@ -23,7 +23,7 @@ export const FullPageHero = ({
   };
 
   return (
-    <>
+    <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src={images.general.homeHero.src}
@@ -34,12 +34,12 @@ export const FullPageHero = ({
         />
       </div>
 
-      <section className="container mx-auto relative h-screen flex items-center justify-center text-white overflow-hidden">
-        <div className="container mx-auto mx-0 sm:ml-0 sm:px-6 relative z-10 max-w-full sm:max-w-3xl my-20 pt-10 px-4 text-left">
-          <h1 className="text-xl sm:text-4xl md:text-6xl font-bold text-white leading-tight mb-4 sm:mb-6">
+      <div className="container mx-auto">
+        <div className="container mx-auto mx-0 sm:ml-0 sm:px-6 relative z-10 max-w-full sm:max-w-3xl my-20 pt-10 sm:pt-30 px-4 text-left">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 sm:mb-6">
             {title}
           </h1>
-          <p className="text-base sm:text-xl text-white opacity-90 mb-6 sm:mb-10">
+          <p className="text-xl sm:text-2xl text-white opacity-90 mb-6 sm:mb-10">
             {subtitle}
           </p>
           <div className="flex flex-col space-y-3 sm:flex-row sm:space-y-0 sm:space-x-6">
@@ -57,10 +57,10 @@ export const FullPageHero = ({
             </button>
           </div>
         </div>
+      </div>
 
-        <PageDownButton />
-      </section>
-    </>
+      <PageDownButton />
+    </section>
   );
 };
 
