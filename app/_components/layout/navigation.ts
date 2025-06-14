@@ -5,6 +5,7 @@ import { focuses } from '@app/_config/focuses';
 export interface INavItem {
   label: string;
   href?: string;
+  extraClasses?: string;
   children?: INavItem[];
 }
 
@@ -18,6 +19,7 @@ export const mainNav: INavItem[] = [
   },
   {
     label: 'Styles',
+    extraClasses: 'hidden lg:block',
     children: styles.nav().map((style) => ({
       label: style.title,
       href: routes.styles.show(style.slug),
@@ -25,6 +27,7 @@ export const mainNav: INavItem[] = [
   },
   {
     label: 'Focuses',
+    extraClasses: 'hidden lg:block',
     children: focuses.nav().map((focus) => ({
       label: focus.title,
       href: routes.focuses.show(focus.slug),

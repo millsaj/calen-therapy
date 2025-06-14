@@ -3,7 +3,6 @@ import Header from '@app/_components/layout/Header';
 import Footer from '@app/_components/layout/Footer';
 import ColorPaletteSwitcher from '@app/_components/ui/ColorPaletteSwitcher';
 import './globals.css';
-import { mainNav } from '@app/_config/navigation';
 
 export const metadata: Metadata = {
   title: 'Calen Therapy',
@@ -24,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
 
       <body className="font-sans antialiased text-gray-800 bg-secondary">
-        <Header items={mainNav} />
+        <Header />
 
         <main className="min-h-screen bg-white">{children}</main>
 

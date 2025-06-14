@@ -3,15 +3,12 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
-import { INavItem } from '@app/_config/navigation';
+import { INavItem } from './navigation';
 import { routes } from '@app/_config/routes';
 import { usePathname, useRouter } from 'next/navigation';
+import { mainNav } from '@app/_components/layout/navigation';
 
-interface IHeaderProps {
-  items: INavItem[];
-}
-
-export default function Header({ items }: IHeaderProps) {
+export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hoveredDropdown, setHoveredDropdown] = useState<string | null>(null);
@@ -20,6 +17,8 @@ export default function Header({ items }: IHeaderProps) {
 
   const pathname = usePathname();
   const isHomePage = pathname === '/';
+
+  const items: INavItem[] = mainNav;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -201,7 +200,7 @@ const NavLink = ({
 
   return (
     <div
-      className="relative group nav-item"
+      className={`relative group nav-item ${item.extraClasses}`}
       onMouseEnter={() => onHover(item.label, true)}
       onMouseLeave={() => onHover(item.label, false)}
     >
