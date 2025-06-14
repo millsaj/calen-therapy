@@ -74,7 +74,7 @@ export default function Header({ items }: IHeaderProps) {
         ${isScrolled && 'shadow-lg'}`}
       role="banner"
     >
-      <div className="container h-16 mx-auto px-4 py-4">
+      <div className="container h-18 mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className={`text-2xl font-bold truncate max-w-[70vw] ${imageContrast ? 'text-white' : ''}`}>
             <Link href={routes.home()}>Calen Therapy</Link>
@@ -128,7 +128,7 @@ export default function Header({ items }: IHeaderProps) {
         <div
           id="mobile-menu"
           className={`
-            md:hidden fixed mt-16 top-0 left-0 right-0 bottom-0
+            md:hidden fixed mt-18 top-0 left-0 right-0 bottom-0
             bg-white z-50
             overflow-y-auto
             animate-slide-in
