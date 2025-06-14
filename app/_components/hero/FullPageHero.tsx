@@ -23,17 +23,19 @@ export const FullPageHero = ({
   };
 
   return (
-    <section className="relative min-h-screen flex items-center">
-      <Image
-        src={images.general.homeHero.src}
-        alt={images.general.homeHero.alt}
-        fill
-        className="object-cover opacity-70"
-        priority
-      />
+    <>
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={images.general.homeHero.src}
+          alt={images.general.homeHero.alt}
+          fill
+          className="object-cover opacity-70"
+          priority
+        />
+      </div>
 
-      <div className="container mx-auto sm:px-6 relative z-10 max-w-full sm:max-w-3xl my-20 pt-10 px-4">
-        <div className="max-w-full sm:max-w-3xl">
+      <section className="container mx-auto relative h-screen flex items-center justify-center text-white overflow-hidden">
+        <div className="container mx-auto mx-0 sm:ml-0 sm:px-6 relative z-10 max-w-full sm:max-w-3xl my-20 pt-10 px-4 text-left">
           <h1 className="text-xl sm:text-4xl md:text-6xl font-bold text-white leading-tight mb-4 sm:mb-6">
             {title}
           </h1>
@@ -55,10 +57,10 @@ export const FullPageHero = ({
             </button>
           </div>
         </div>
-      </div>
 
-      <PageDownButton />
-    </section>
+        <PageDownButton />
+      </section>
+    </>
   );
 };
 
