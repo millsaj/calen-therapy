@@ -17,8 +17,8 @@ export const SplitPageHero = ({
   children,
 }: ISplitHeroArgs) => {
   return (
-    <section className="mt-[48px]">
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full min-h-full">
+    <section className="pt-18 lg:h-screen relative overflow-hidden">
+      <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
         <div className='w-full min-h-96 relative'>
           <Image
             src={imageSrc}
@@ -29,7 +29,7 @@ export const SplitPageHero = ({
           />
         </div>
 
-        <div className="px-6 py-8">
+        <div className="px-6 py-8 flex items-center">
           <div className="max-w-xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-light mb-12 text-gray-800 text-center md:text-left">
               {title}
