@@ -43,7 +43,7 @@ export default function CarlPage() {
         </p>
       </SplitPageHero>
 
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection secondary={true} primary={false}>
         <div className="max-w-6xl mx-auto px-4 py-16">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-800">Solution Focused Hypnotherapy</h2>
@@ -57,14 +57,14 @@ export default function CarlPage() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
-              <div className="bg-gray-50 p-5 rounded-lg">
+              <div className="bg-white p-5 rounded-lg">
                 <h3 className="text-xl font-semibold text-primary mb-3">How It Works</h3>
                 <p className="text-gray-700">
                   Solution Focused Hypnotherapy accesses your subconscious mind while you're in a deeply relaxed state, allowing us to focus on your goals and desired outcomes rather than problems from your past.
                 </p>
               </div>
 
-              <div className="bg-gray-50 p-5 rounded-lg">
+              <div className="bg-white p-5 rounded-lg">
                 <h3 className="text-xl font-semibold text-primary mb-3">What to Expect</h3>
                 <p className="text-gray-700">
                   Sessions include a discussion about your goals, guided relaxation, and positive suggestions tailored to your needs. You'll remain aware and in control throughout the process.
@@ -84,17 +84,17 @@ export default function CarlPage() {
         </div>
       </StripedSection>
 
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection secondary={false} primary={false}>
         <Focuses
           subtitle="Everyone's concerns are unique, but we have some common areas of focus that I can help with."
           focuses={focuses.carl()}
-          striped={true} />
+          striped={false} />
       </StripedSection>
 
       <StripedSection secondary={true} primary={false}>
         <TheSpace
-          title="Our Therapy Space"
-          subtitle="Sessions take place in our comfortable, private therapy room with its own entrance, ensuring your privacy and comfort during our work together."
+          title="My Therapy Space"
+          subtitle="Sessions take place in my comfortable, private therapy room with its own entrance, ensuring your privacy and comfort during our work together."
         />
       </StripedSection>
 
