@@ -12,7 +12,7 @@ import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
   title: 'Helen',
-  image: images.helen.main,
+  image: images.helen.hero,
   url: routes.helen(),
   ogType: 'profile'
 });
@@ -22,8 +22,8 @@ export default function HelenPage() {
     <div>
       {/* Hero Section */}
       <SplitPageHero
-        imageSrc={images.helen.main.url}
-        imageAlt={images.helen.main.alt}
+        imageSrc={images.helen.hero.url}
+        imageAlt={images.helen.hero.alt}
         title='Helen Mills Porter'>
 
         <p>

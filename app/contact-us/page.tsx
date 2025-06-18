@@ -95,7 +95,7 @@ export default function ContactUsPage() {
         <div className="max-w-4xl mx-auto">
 
           {/* Form */}
-          <form name="contact-us" className='card mt-16 p-8 bg-white shadow-md rounded-lg'>
+          <form name="contact-us" className='card p-8 bg-white shadow-md rounded-lg'>
             <h2 className="text-2xl font-bold mb-4">Contact Form</h2>
 
             <div className="mb-4 mt-8">

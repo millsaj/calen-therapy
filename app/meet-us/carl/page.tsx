@@ -15,7 +15,7 @@ import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
   title: 'Carl',
-  image: images.carl.main,
+  image: images.carl.hero,
   url: routes.carl(),
   ogType: 'profile'
 });
@@ -26,8 +26,8 @@ export default function CarlPage() {
     <div>
       {/* Hero Section */}
       <SplitPageHero
-        imageSrc={images.carl.main.url}
-        imageAlt={images.carl.main.alt}
+        imageSrc={images.carl.hero.url}
+        imageAlt={images.carl.hero.alt}
         title='Carl Porter' >
 
         <p>
