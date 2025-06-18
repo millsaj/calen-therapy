@@ -4,7 +4,6 @@ const baseUrl = "https://calen-therapy.co.uk";
 export const createRoutes = () => ({
   baseUrl: () => baseUrl,
   url: (path: string = "") => baseUrl + path,
-  
   approaches: {
     systemic: () => '/approaches/systemic' as const,
     psychodynamic: () => '/approaches/psychodynamic' as const,
@@ -45,6 +44,7 @@ export const createRoutes = () => ({
   home: () => '/' as const,
   sitemap: () => '/sitemap.xml' as const,
   robots: () => '/robots.txt' as const,
+  formSubmission: () => '/form-submission.html' as const,
   external: {
     helenBacp: () => 'https://www.bacp.co.uk/therapists/52368' as const,
     helenCounsellingDirectory: () => 'https://www.counselling-directory.org.uk/counsellors/helen-porter' as const,

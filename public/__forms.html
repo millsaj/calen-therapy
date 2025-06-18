@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Contact Us Form Submission</title>
+
+    <!-- 
+      This file is used by Netlify to define form structure for server-side processing.
+      In Next.js, this hidden page allows Netlify Forms to work even with client-side routing.
+      This is a workaround since Netlify needs HTML form definitions at build time.
+      The redirect ensures users don't stay on this technical page if accidentally accessed.
+
+      See docs at: https://opennext.js.org/netlify/forms
+    -->
+    <script>
+      (function() {
+        // Redirect after 1 second to give user time to see the message
+        setTimeout(function() {
+          window.location.href = '/';
+        }, 1000);
+      })();
+    </script>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        text-align: center;
+        padding: 2rem;
+        max-width: 500px;
+        margin: 0 auto;
+        line-height: 1.5;
+      }
+      a {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hidden form definitions for Netlify -->
+    <form name="contact-us" data-netlify="true" hidden>
+      <input type="hidden" name="form-name" value="contact-us" />
+
+      <input name="Name" type="text" />
+      <input name="Contact Details" type="text" />
+      <input name="Message" type="text" />
+    </form>
+
+    <!-- Visible content for users who accidentally land on this page -->
+    <h2>Redirecting to home page...</h2>
+    <p>If you are not redirected automatically, <a href="/">click here</a>.</p>
+  </body>
+</html>

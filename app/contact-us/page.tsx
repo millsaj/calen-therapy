@@ -10,6 +10,7 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
 import { buildMetadata } from '@app/_config/metadata';
+import { ContactForm } from '@app/contact-us/ContactForm';
 
 export const metadata = buildMetadata({
   pageTitle: 'Contact Our Therapists',
@@ -94,67 +95,7 @@ export default function ContactUsPage() {
       </StripedSection>
 
       <StripedSection secondary={true} primary={false}>
-        <div className="max-w-4xl mx-auto">
-
-          {/* Form */}
-          <form name="contact-us" className='card p-8 bg-white shadow-md rounded-lg'>
-            <h2 className="text-2xl font-bold mb-4">Contact Form</h2>
-
-            <div className="mb-4 mt-8">
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500"
-                placeholder="Your Name"
-              />
-            </div>
-            <div className="mb-4">
-              <label htmlFor="contact" className="block text-sm font-medium text-gray-700">
-                Contact Details
-              </label>
-              <input
-                type="text"
-                id="contact"
-                name="contact"
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500"
-                placeholder="Your Email or Phone No."
-              />
-            </div>
-            <div className="mb-4">
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 min-h-24 focus:ring-indigo-500 focus:border-indigo-500"
-                placeholder="Your Message"
-              ></textarea>
-            </div>
-            <div className="text-right">
-              <button
-                type="submit"
-                className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
-
-          <div className="text-center max-w-3xl mx-auto mt-12 text-gray-500">
-            <p>
-              This form uses <Link href={routes.external.formUserLink()}>Netlify Forms</Link> to send an email to helen.
-            </p>
-            <p>
-              You can also contact either of us directly via email or phone.
-            </p>
-          </div>
-        </div>
+        <ContactForm />
       </StripedSection>
 
       <StripedSection secondary={false} primary={false}>
