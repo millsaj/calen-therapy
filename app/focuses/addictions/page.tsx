@@ -20,7 +20,7 @@ export default function AddictionsPage() {
         body: (
           <>
             <p className="mb-4">
-              Addictions and problematic habits are patterns of behavior that can feel extremely difficult to control
+              Addictions and problematic habits are patterns of behaviour that can feel extremely difficult to control
               despite negative consequences. They can involve substances like alcohol or drugs, or behaviors such as
               gambling, gaming, or other compulsive activities. What often begins as a way to cope, feel pleasure,
               or escape discomfort can develop into a cycle that significantly impacts your wellbeing.
@@ -40,7 +40,7 @@ export default function AddictionsPage() {
           <>
             <p className="mb-4">
               Addiction and problematic habits affect millions of people worldwide, yet many suffer in silence due to
-              shame, stigma, or fear of judgment. These patterns can develop for various reasons:
+              shame, stigma, or fear of judgement. These patterns can develop for various reasons:
             </p>
             <ul className="list-disc pl-6 mb-4">
               <li>Attempts to manage stress, anxiety, or emotional pain</li>
@@ -84,15 +84,15 @@ export default function AddictionsPage() {
           },
           {
             title: "Preoccupation",
-            description: "Spending significant time thinking about, engaging in, or recovering from the behavior or substance use."
+            description: "Spending significant time thinking about, engaging in, or recovering from the behaviour or substance use."
           },
           {
             title: "Tolerance",
-            description: "Needing more of the substance or behavior to achieve the same effect."
+            description: "Needing more of the substance or behaviour to achieve the same effect."
           },
           {
             title: "Withdrawal Symptoms",
-            description: "Experiencing physical or psychological discomfort when unable to engage in the behavior or use the substance."
+            description: "Experiencing physical or psychological discomfort when unable to engage in the behaviour or use the substance."
           },
           {
             title: "Failed Attempts to Stop",

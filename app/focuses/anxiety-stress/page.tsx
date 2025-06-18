@@ -140,7 +140,7 @@ export default function AnxietyStressPage() {
           "Reduction in avoidance behaviors",
           "Greater overall sense of wellbeing and life satisfaction"
         ],
-        conclusion: "With professional support and your commitment to practice new skills, you can transform your relationship with anxiety and stress. Rather than eliminating these natural human experiences, you'll develop the capacity to navigate them with greater ease and confidence."
+        conclusion: "With professional support and your commitment to practise new skills, you can transform your relationship with anxiety and stress. Rather than eliminating these natural human experiences, you'll develop the capacity to navigate them with greater ease and confidence."
       }}
       cta={{
         title: "Ready to Find Your Calm?",

@@ -13,7 +13,7 @@ export const testimonials: ITestimonial[] = [
   },
   {
     content:
-      "Working with Helen has been life-changing. Her psychodynamic approach helped me uncover and address issues I didn't even realize were holding me back.",
+      "Working with Helen has been life-changing. Her psychodynamic approach helped me uncover and address issues I didn't even realise were holding me back.",
     author: 'Michael B.',
     therapists: ['helen'],
   },

@@ -13,14 +13,14 @@ export default function SexAddictionPage() {
     <FocusPage
       hero={{
         title: "Sex Addiction",
-        subtitle: "Understanding compulsive sexual behavior and finding a path to recovery"
+        subtitle: "Understanding compulsive sexual behaviour and finding a path to recovery"
       }}
       intro={{
         title: "Understanding Sex Addiction",
         body: (
           <>
             <p className="mb-4">
-              Sex addiction, also known as compulsive sexual behavior disorder, is characterized by persistent,
+              Sex addiction, also known as compulsive sexual behaviour disorder, is characterized by persistent,
               uncontrollable sexual urges and behaviors that negatively impact one's life. It can manifest in various
               forms, including excessive pornography use, masturbation, multiple affairs, paying for sexual services,
               or other sexual behaviors that feel out of control.
@@ -47,7 +47,7 @@ export default function SexAddictionPage() {
               <li>Childhood trauma or adverse experiences affecting healthy sexual development</li>
               <li>Co-occurring mental health issues like depression, anxiety, or ADHD</li>
               <li>Societal pressures and expectations around sexuality</li>
-              <li>Biological factors and genetic predispositions to addictive behavior</li>
+              <li>Biological factors and genetic predispositions to addictive behaviour</li>
             </ul>
             <p>
               Many people struggling with sexual compulsions feel isolated, but these challenges are far more
@@ -58,7 +58,7 @@ export default function SexAddictionPage() {
       }}
       signs={{
         title: "Signs You Might Benefit from Therapy",
-        subtitle: "Consider seeking professional support if you recognize these patterns in your life:",
+        subtitle: "Consider seeking professional support if you recognise these patterns in your life:",
         items: [
           {
             title: "Feeling Out of Control",

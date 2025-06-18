@@ -59,8 +59,8 @@ export const Therapists: React.FC = ({
       <div className="max-w-3xl mx-auto text-center mb-16">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">Who are we?</h2>
         <p className="text-gray-600">
-          We are Helen and Carl: two therapists based in Billinge. The core of our practice is built
-          around Helen's long career in psychotherapy and counseling. Hypnotherapy sessions are
+          We are Helen and Carl: two therapists based in Billinge. The core of our practise is built
+          around Helen's long career in psychotherapy and counselling. Hypnotherapy sessions are
           usually provided by Carl, who is a qualified Solution Focused Hypnotherapist and NLP Practitioner.
         </p>
       </div>

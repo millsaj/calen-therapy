@@ -9,7 +9,7 @@ const allApproaches: ITherapyApproach[] = [
   {
     slug: 'psychodynamic',
     title: 'Psychodynamic',
-    content: 'Explores how your past experiences and unconscious mind influence current behavior, helping resolve deep-seated patterns and conflicts.',
+    content: 'Explores how your past experiences and unconscious mind influence current behaviour, helping resolve deep-seated patterns and conflicts.',
     talkTo: ['helen'],
   },
   {

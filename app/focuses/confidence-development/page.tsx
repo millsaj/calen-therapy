@@ -20,7 +20,7 @@ export default function ConfidenceDevelopmentPage() {
         body: (
           <>
             <p className="mb-4">
-              Confidence is that powerful inner sense of trust in your own abilities, qualities, and judgment.
+              Confidence is that powerful inner sense of trust in your own abilities, qualities, and judgement.
               It influences how you approach challenges, pursue goals, and relate to others. When confidence is
               lacking, you might hold yourself back from opportunities, struggle with self-doubt, or find it
               difficult to express yourself authentically.
@@ -74,7 +74,7 @@ export default function ConfidenceDevelopmentPage() {
             description: "Struggling to express your needs, opinions, or boundaries in relationships or professional settings."
           },
           {
-            title: "Fear of Judgment",
+            title: "Fear of Judgement",
             description: "Holding yourself back due to concerns about what others might think of you."
           },
           {

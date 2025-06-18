@@ -32,7 +32,7 @@ export default function HelenPage() {
           I've worked with individuals, couples, and families across a wide range of concerns.
         </p>
         <p>
-          I specialize in <Link href={routes.approaches.psychodynamic()} className='text-primary hover:underline hover:text-accent'>Psychodynamic Psychotherapy</Link>, <Link href={routes.approaches.systemic()} className='text-primary hover:underline hover:text-accent'>Systemic Therapy</Link>, and <Link href={routes.approaches.cbt()} className='text-primary hover:underline hover:text-accent'>Cognitive Behavioral Therapy (CBT)</Link>.
+          I specialise in <Link href={routes.approaches.psychodynamic()} className='text-primary hover:underline hover:text-accent'>Psychodynamic Psychotherapy</Link>, <Link href={routes.approaches.systemic()} className='text-primary hover:underline hover:text-accent'>Systemic Therapy</Link>, and <Link href={routes.approaches.cbt()} className='text-primary hover:underline hover:text-accent'>Cognitive Behavioral Therapy (CBT)</Link>.
           
           I also have some specialist training in working with <Link href={routes.focuses.sexAddiction()} className='text-primary hover:underline hover:text-accent'>sex addiction</Link>, <Link href={routes.focuses.trauma()} className='text-primary hover:underline hover:text-accent'>trauma</Link>, and autism. See my full of qualifications and experience below.
         </p>

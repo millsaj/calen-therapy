@@ -52,7 +52,7 @@ export default function SystemicPage() {
       }}
       signs={{
         title: "Signs Systemic Therapy Might Help You",
-        subtitle: "Consider this approach if you recognize these patterns in your life",
+        subtitle: "Consider this approach if you recognise these patterns in your life",
         items: [
           {
             title: "Recurring Relationship Conflicts",
@@ -102,7 +102,7 @@ export default function SystemicPage() {
               <li>Consideration of cultural, social, and historical contexts</li>
             </ul>
             <p>
-              Sometimes sessions might involve multiple family members or significant others, though this isn't always necessary. Helen will work collaboratively with you to determine the most helpful approach. Throughout the process, you'll be supported to recognize patterns, experiment with new ways of relating, and develop more fulfilling relationships.
+              Sometimes sessions might involve multiple family members or significant others, though this isn't always necessary. Helen will work collaboratively with you to determine the most helpful approach. Throughout the process, you'll be supported to recognise patterns, experiment with new ways of relating, and develop more fulfilling relationships.
             </p>
           </>
         )

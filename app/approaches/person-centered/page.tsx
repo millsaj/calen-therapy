@@ -22,7 +22,7 @@ export default function PersonCenteredPage() {
               Person-Centered Therapy (also known as Client-Centered Therapy) is an approach developed by psychologist Carl Rogers that places you, the client, at the center of the therapeutic process. This humanistic approach is based on the belief that every person has the capacity for growth and self-understanding when provided with the right supportive conditions.
             </p>
             <p>
-              Unlike approaches that position the therapist as an expert who diagnoses and directs treatment, Person-Centered Therapy emphasises a non-directive, empathetic relationship where you lead the way in your healing journey. The therapist creates a safe, accepting environment where you can explore your experiences and feelings without judgment, allowing your natural tendency toward growth and self-actualization to emerge.
+              Unlike approaches that position the therapist as an expert who diagnoses and directs treatment, Person-Centered Therapy emphasises a non-directive, empathetic relationship where you lead the way in your healing journey. The therapist creates a safe, accepting environment where you can explore your experiences and feelings without judgement, allowing your natural tendency toward growth and self-actualization to emerge.
             </p>
           </>
         )
@@ -35,7 +35,7 @@ export default function PersonCenteredPage() {
               Person-Centered Therapy is particularly valuable because it honors your unique experience and inner wisdom. Rather than imposing external interpretations or solutions, this approach empowers you to find your own path forward while feeling genuinely seen, heard, and accepted.
             </p>
             <p className='mb-4'>
-              Helen completed her Person-Centered Therapy diploma in 2000 and has incorporated this humanistic approach into her practice for over two decades. Her extensive experience allows her to create the core conditions that Rogers identified as essential for therapeutic growth:
+              Helen completed her Person-Centered Therapy diploma in 2000 and has incorporated this humanistic approach into her practise for over two decades. Her extensive experience allows her to create the core conditions that Rogers identified as essential for therapeutic growth:
             </p>
             <ul className="list-disc pl-6 mb-4">
               <li>Unconditional positive regard—accepting you exactly as you are</li>
@@ -49,7 +49,7 @@ export default function PersonCenteredPage() {
       }}
       signs={{
         title: "Signs Person-Centered Therapy Might Help You",
-        subtitle: "Consider this approach if you recognize these patterns in your life",
+        subtitle: "Consider this approach if you recognise these patterns in your life",
         items: [
           {
             title: "Seeking Self-Understanding",
@@ -65,7 +65,7 @@ export default function PersonCenteredPage() {
           },
           {
             title: "Difficulty Making Decisions",
-            description: "You find it hard to trust your own judgment or identify what you truly want amidst external pressures and opinions."
+            description: "You find it hard to trust your own judgement or identify what you truly want amidst external pressures and opinions."
           },
           {
             title: "Personal Growth Focus",
@@ -94,7 +94,7 @@ export default function PersonCenteredPage() {
             <ul className="list-disc pl-6 mb-4">
               <li>The freedom to discuss whatever feels most important to you</li>
               <li>An attentive, empathetic presence that seeks to understand your unique perspective</li>
-              <li>Genuinely accepting responses without judgment or conditions</li>
+              <li>Genuinely accepting responses without judgement or conditions</li>
               <li>Reflective listening that helps clarify your feelings and experiences</li>
               <li>Respect for your pace and process without pressure to focus on specific topics</li>
             </ul>

@@ -49,7 +49,7 @@ export default function LifeCoachingPage() {
       }}
       signs={{
         title: "Signs Life Coaching Might Help You",
-        subtitle: "Consider this approach if you recognize these patterns in your life",
+        subtitle: "Consider this approach if you recognise these patterns in your life",
         items: [
           {
             title: "Goal Clarity Challenges",
@@ -115,7 +115,7 @@ export default function LifeCoachingPage() {
           "Greater clarity about your values, priorities, and goals",
           "Increased motivation and accountability",
           "Concrete action plans for moving forward",
-          "Enhanced ability to recognize and address obstacles",
+          "Enhanced ability to recognise and address obstacles",
           "Improved decision-making skills in alignment with your values"
         ],
         longTerm: [

@@ -61,7 +61,7 @@ export default function InPersonPage() {
               <li className="mb-2"><strong>Dedicated Therapeutic Space:</strong> Complete separation from your home environment can help you focus solely on therapy and create a clear boundary between therapy and everyday life.</li>
               <li className="mb-2"><strong>No Technology Barriers:</strong> Avoid potential internet connection issues or technical difficulties that might interrupt an online session.</li>
               <li className="mb-2"><strong>Heightened Presence:</strong> Many people find it easier to be fully present and engaged when physically in the room with their therapist.</li>
-              <li className="mb-2"><strong>Ritual of Attending:</strong> The act of traveling to therapy can provide valuable transition time to prepare mentally before sessions and process afterwards.</li>
+              <li className="mb-2"><strong>Ritual of Attending:</strong> The act of travelling to therapy can provide valuable transition time to prepare mentally before sessions and process afterwards.</li>
             </ul>
 
             <p className="mb-4">We understand that different preferences and circumstances might make either in-person or <Link href={routes.sessionTypes.online()} className="text-primary hover:underline hover:text-accent">online sessions</Link> more suitable for you. We're happy to discuss which option might work best for your specific situation.</p>

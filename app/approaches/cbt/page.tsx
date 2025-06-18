@@ -19,7 +19,7 @@ export default function CbtPage() {
         body: (
           <>
             <p className='mb-4'>
-              Cognitive Behavioral Therapy (CBT) is a practical, evidence-based approach that focuses on how your thoughts, beliefs, and attitudes affect your feelings and behavior. This therapeutic method is based on the concept that our thoughts, feelings, physical sensations, and actions are interconnected, and that negative patterns in these areas can trap us in a cycle of unhelpful behaviors and emotional distress.
+              Cognitive Behavioral Therapy (CBT) is a practical, evidence-based approach that focuses on how your thoughts, beliefs, and attitudes affect your feelings and behaviour. This therapeutic method is based on the concept that our thoughts, feelings, physical sensations, and actions are interconnected, and that negative patterns in these areas can trap us in a cycle of unhelpful behaviors and emotional distress.
             </p>
             <p>
               CBT provides practical tools to help you identify and challenge negative thinking patterns and beliefs, develop more balanced perspectives, and learn new behaviors that improve your mood and effectiveness in daily life. Unlike some therapeutic approaches that focus extensively on the past, CBT primarily addresses current problems and is goal-oriented, focusing on specific challenges you're facing right now.
@@ -49,7 +49,7 @@ export default function CbtPage() {
       }}
       signs={{
         title: "Signs Cognitive Behavioral Therapy Might Help You",
-        subtitle: "Consider this approach if you recognize these patterns in your life",
+        subtitle: "Consider this approach if you recognise these patterns in your life",
         items: [
           {
             title: "Persistent Negative Thinking",
@@ -126,7 +126,7 @@ export default function CbtPage() {
           "Better relationships through improved communication and understanding",
           "Increased confidence in your ability to manage future challenges"
         ],
-        conclusion: "The skills learned in CBT become part of your psychological toolkit, enabling you to serve as your own therapist after formal sessions end. By developing the ability to recognize and modify unhelpful thinking patterns, you gain greater control over your emotional responses and behaviors. This creates a foundation for continued growth and resilience throughout your life."
+        conclusion: "The skills learned in CBT become part of your psychological toolkit, enabling you to serve as your own therapist after formal sessions end. By developing the ability to recognise and modify unhelpful thinking patterns, you gain greater control over your emotional responses and behaviors. This creates a foundation for continued growth and resilience throughout your life."
       }}
       cta={{
         title: "Ready to Transform Your Thinking Patterns?",

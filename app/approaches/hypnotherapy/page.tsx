@@ -49,7 +49,7 @@ export default function HypnotherapyPage() {
       }}
       signs={{
         title: "Signs Solution Focused Hypnotherapy Might Help You",
-        subtitle: "Consider this approach if you recognize these patterns in your life",
+        subtitle: "Consider this approach if you recognise these patterns in your life",
         items: [
           {
             title: "Anxiety & Stress",

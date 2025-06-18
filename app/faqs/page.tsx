@@ -44,7 +44,7 @@ const therapyQs = [
     q: "What is therapy?",
     a: [
       "The therapy is a process where you work with a trained professional to address emotional, psychological, or behavioral challenges.",
-      "We offer psychotherapy, counseling, and hypnotherapy to help you navigate life's challenges and improve your mental well-being."
+      "We offer psychotherapy, counselling, and hypnotherapy to help you navigate life's challenges and improve your mental well-being."
     ]
   },
   {

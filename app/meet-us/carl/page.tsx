@@ -1,5 +1,3 @@
-import { Testimonials } from '@app/_components/sections/Testimonials';
-import { testimonials } from '@app/_config/testimonials';
 import { focuses } from '@app/_config/focuses';
 import { images } from '@app/_config/images';
 import { routes } from '@app/_config/routes';

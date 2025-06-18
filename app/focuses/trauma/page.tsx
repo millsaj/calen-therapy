@@ -36,7 +36,7 @@ export default function TraumaPage() {
         )
       }}
       common={{
-        title: "Trauma Is More Common Than Many Realize",
+        title: "Trauma Is More Common Than Many Realise",
         body: (
           <>
             <p className="mb-4">

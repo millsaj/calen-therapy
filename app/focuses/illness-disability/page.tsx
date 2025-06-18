@@ -50,7 +50,7 @@ export default function IllnessDisabilityPage() {
       }}
       signs={{
         title: "Signs You Might Benefit from Therapy",
-        subtitle: "Consider seeking support if you recognize these experiences:",
+        subtitle: "Consider seeking support if you recognise these experiences:",
         items: [
           {
             title: "Feelings of Loss or Grief",

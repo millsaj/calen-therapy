@@ -40,7 +40,7 @@ export default function GriefLossPage() {
           <>
             <p className="mb-4">
               Loss is an inevitable part of human experience, and grief is the natural response that helps us
-              process and integrate these experiences into our lives. What many people don't realize is that
+              process and integrate these experiences into our lives. What many people don't realise is that
               grief can manifest in numerous ways beyond sadness:
             </p>
             <ul className="list-disc pl-6 mb-4">

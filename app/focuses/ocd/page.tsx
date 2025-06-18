@@ -36,7 +36,7 @@ export default function OCDPage() {
         )
       }}
       common={{
-        title: "More Common Than Many Realize",
+        title: "More Common Than Many Realise",
         body: (
           <>
             <p className="mb-4">
@@ -159,7 +159,7 @@ export default function OCDPage() {
           "Better understanding of your OCD patterns and maintenance cycles",
           "Development of specific techniques to resist compulsions",
           "Initial success with managing anxiety without performing rituals",
-          "Improved ability to recognize and label OCD thoughts"
+          "Improved ability to recognise and label OCD thoughts"
         ],
         longTerm: [
           "Significant reduction in time spent on obsessions and compulsions",
@@ -167,7 +167,7 @@ export default function OCDPage() {
           "Greater ability to tolerate uncertainty and discomfort",
           "Freedom to engage in activities previously limited by OCD"
         ],
-        conclusion: "Recovery from OCD isn't about eliminating intrusive thoughts entirely—it's about changing your relationship with these thoughts so they no longer control your behavior. With professional guidance and your commitment to the therapy process, you can learn to respond differently to OCD and reclaim your life. Many people with OCD experience substantial improvement and go on to live fulfilling lives with much greater freedom."
+        conclusion: "Recovery from OCD isn't about eliminating intrusive thoughts entirely—it's about changing your relationship with these thoughts so they no longer control your behaviour. With professional guidance and your commitment to the therapy process, you can learn to respond differently to OCD and reclaim your life. Many people with OCD experience substantial improvement and go on to live fulfilling lives with much greater freedom."
       }}
       cta={{
         title: "Ready to Take Control Back from OCD?",

@@ -49,7 +49,7 @@ export default function SmokingPage() {
       }}
       signs={{
         title: "Signs You Might Benefit from Support",
-        subtitle: "Consider seeking help if you recognize these patterns:",
+        subtitle: "Consider seeking help if you recognise these patterns:",
         items: [
           {
             title: "Repeated Failed Attempts",

@@ -34,7 +34,7 @@ export default function PhobiasPage() {
         )
       }}
       common={{
-        title: "More Common Than Many Realize",
+        title: "More Common Than Many Realise",
         body: (
           <>
             <p className="mb-4">
@@ -53,7 +53,7 @@ export default function PhobiasPage() {
                   <li>Situational (flying, elevators, enclosed spaces)</li>
                 </ul>
               </li>
-              <li><strong>Social phobia/anxiety</strong> - fear of social situations where embarrassment or judgment might occur</li>
+              <li><strong>Social phobia/anxiety</strong> - fear of social situations where embarrassment or judgement might occur</li>
               <li><strong>Agoraphobia</strong> - fear of places or situations where escape might be difficult or help unavailable</li>
             </ul>
             <p className="mb-4">

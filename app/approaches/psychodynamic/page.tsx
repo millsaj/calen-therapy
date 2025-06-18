@@ -35,7 +35,7 @@ export default function PsychodynamicPage() {
               Psychodynamic therapy is particularly valuable because it addresses the root causes of problems rather than just managing symptoms. By exploring the deeper meaning behind your thoughts, feelings, and behaviors, this approach helps create lasting change that extends beyond specific symptoms.
             </p>
             <p className='mb-4'>
-              Helen brings over 30 years of experience to her psychodynamic practice, with post-graduate qualifications in Psychodynamic Psychotherapy, allowing her to help clients uncover the underlying causes of their challenges.
+              Helen brings over 30 years of experience to her psychodynamic practise, with post-graduate qualifications in Psychodynamic Psychotherapy, allowing her to help clients uncover the underlying causes of their challenges.
             </p>
             <ul className="list-disc pl-6 mb-4">
               <li>Helps reveal unconscious patterns that contribute to current difficulties</li>
@@ -49,7 +49,7 @@ export default function PsychodynamicPage() {
       }}
       signs={{
         title: "Signs Psychodynamic Therapy Might Help You",
-        subtitle: "Consider this approach if you recognize these patterns in your life",
+        subtitle: "Consider this approach if you recognise these patterns in your life",
         items: [
           {
             title: "Recurring Patterns",
@@ -99,7 +99,7 @@ export default function PsychodynamicPage() {
               <li>Gradual development of insight into unconscious motivations and conflicts</li>
             </ul>
             <p>
-              The therapeutic relationship itself often becomes an important focus, as patterns from your other relationships may emerge in how you relate to your therapist. This provides valuable opportunities to recognize and work through longstanding patterns. Helen will work collaboratively with you, providing support as you gain insights and begin to make meaningful changes in your life.
+              The therapeutic relationship itself often becomes an important focus, as patterns from your other relationships may emerge in how you relate to your therapist. This provides valuable opportunities to recognise and work through longstanding patterns. Helen will work collaboratively with you, providing support as you gain insights and begin to make meaningful changes in your life.
             </p>
           </>
         )
@@ -118,7 +118,7 @@ export default function PsychodynamicPage() {
           "Lasting personality changes that go beyond symptom relief",
           "Greater freedom from longstanding patterns and conflicts",
           "Enhanced capacity for meaningful relationships",
-          "Improved ability to recognize and regulate emotions",
+          "Improved ability to recognise and regulate emotions",
           "More authentic sense of self and personal identity",
           "Increased resilience in facing life challenges"
         ],
