@@ -6,63 +6,34 @@ export interface ITestimonial {
 
 export const testimonials: ITestimonial[] = [
   {
-    content:
-      "Helen's compassionate and insightful guidance helped me navigate a very challenging time in my life. Her expertise is unmatched.",
-    author: 'Laura T.',
+    content: "Helen helped me see things clearly. Highly recommended!",
+    author: 'Client A',
     therapists: ['helen'],
   },
   {
-    content:
-      "Working with Helen has been life-changing. Her psychodynamic approach helped me uncover and address issues I didn't even realise were holding me back.",
-    author: 'Michael B.',
+    content: "My sessions with Helen were transformative and insightful.",
+    author: 'Client B',
     therapists: ['helen'],
   },
   {
-    content:
-      "Helen's therapy sessions provided me with the tools to better understand myself and improve my relationships. I can't thank her enough.",
-    author: 'Rachel P.',
-    therapists: ['helen'],
-  },
-  {
-    content:
-      "Carl's hypnotherapy sessions were incredibly effective. I was able to overcome my fear of public speaking in just a few sessions.",
-    author: 'Tom H.',
+    content: "Carl's hypnotherapy worked wonders for my anxiety.",
+    author: 'Client C',
     therapists: ['carl'],
   },
   {
-    content:
-      "Carl's calm and professional demeanor made me feel at ease right away. His techniques helped me manage my stress and improve my focus.",
-    author: 'Anna L.',
+    content: "Carl's techniques helped me break bad habits quickly.",
+    author: 'Client D',
     therapists: ['carl'],
   },
   {
-    content:
-      'The team at Calen Therapy is amazing. Their holistic approach to mental health has made a huge difference in my life.',
-    author: 'Chris W.',
+    content: "Both therapists at Calen provided excellent support.",
+    author: 'Client E',
     therapists: ['helen', 'carl'],
   },
   {
-    content:
-      'I highly recommend Calen Therapy to anyone seeking professional and compassionate care. Their tailored approach really works.',
-    author: 'Jessica F.',
-    therapists: ['helen', 'carl'],
-  },
-  {
-    content:
-      'Calen Therapy has been a beacon of hope for me. Their therapists are knowledgeable, empathetic, and truly care about their clients.',
-    author: 'Mark D.',
-    therapists: ['helen', 'carl'],
-  },
-  {
-    content:
-      'The therapists at Calen Therapy are exceptional. They helped me develop coping strategies that have improved my daily life significantly.',
-    author: 'Sophia G.',
-    therapists: ['helen', 'carl'],
-  },
-  {
-    content:
-      'Choosing Calen Therapy was the best decision I ever made. Their support and expertise have been invaluable to my mental health journey.',
-    author: 'Ethan R.',
+    content: "Great experience with the Calen Therapy team!",
+    author: 'Client F',
     therapists: ['helen', 'carl'],
   },
 ];
+

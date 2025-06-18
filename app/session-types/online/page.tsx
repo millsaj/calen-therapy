@@ -45,7 +45,7 @@ export default function OnlinePage() {
             <p className="mb-4">After booking, you'll receive details for your session - either a secure link to join your video call or confirmation of the phone number we'll use to reach you. For video calls, we recommend testing your equipment beforehand to ensure everything is working properly.</p>
 
             <h3 className="text-xl font-semibold mt-6 mb-3">During Your Session</h3>
-            <p className="mb-4">Remote sessions follow the same format as in-person therapy. We'll connect at your scheduled time, and your therapist will guide the conversation based on your needs. Sessions typically last 1-2 hours depending on what you've arranged.</p>
+            <p className="mb-4">Remote sessions follow the same format as in-person therapy. We'll connect at your scheduled time, and we will guide the conversation based on your needs. Sessions typically last 1-2 hours depending on what you've arranged.</p>
 
             <h3 className="text-xl font-semibold mt-6 mb-3">Privacy</h3>
             <p className="mb-4">For video calls, we use secure, encrypted platforms that comply with privacy regulations. For all remote sessions, we recommend finding a quiet, private space where you won't be interrupted, and where you feel comfortable speaking openly.</p>
@@ -84,7 +84,7 @@ export default function OnlinePage() {
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold mb-3">Video Sessions</h3>
                 <ul className="list-disc pl-6">
-                  <li className="mb-2">Visual connection with your therapist</li>
+                  <li className="mb-2">Visual connection with us</li>
                   <li className="mb-2">Can pick up on non-verbal cues and facial expressions</li>
                   <li className="mb-2">May feel more similar to in-person therapy</li>
                   <li className="mb-2">Ability to share visuals when relevant</li>

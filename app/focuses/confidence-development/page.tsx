@@ -133,7 +133,7 @@ export default function ConfidenceDevelopmentPage() {
               <li>Practicing new behaviors and perspectives in a supportive environment</li>
             </ul>
             <p>
-              The focus will be on practical, positive change rather than dwelling on past difficulties. Both therapists provide a safe,
+              The focus will be on practical, positive change rather than dwelling on past difficulties. We provide a safe,
               non-judgmental space where you can explore your potential and develop greater confidence and self-belief.
             </p>
           </>

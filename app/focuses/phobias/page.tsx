@@ -145,7 +145,7 @@ export default function PhobiasPage() {
             </ul>
             <p>
               The goal of therapy isn't just to reduce symptoms but to help you build confidence in your ability to
-              face fears and live without unnecessary restrictions. Both therapists provide a supportive, understanding
+              face fears and live without unnecessary restrictions. We provide a supportive, understanding
               environment where you can work at your own pace toward greater freedom.
             </p>
           </>

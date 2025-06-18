@@ -146,7 +146,7 @@ export default function OCDPage() {
             </ul>
             <p>
               The goal of therapy isn't just symptom reduction but helping you develop a new relationship with
-              uncertainty and intrusive thoughts. Both therapists provide a supportive, understanding environment
+              uncertainty and intrusive thoughts. We provide a supportive, understanding environment
               where you can work at your own pace toward greater freedom from OCD.
             </p>
           </>

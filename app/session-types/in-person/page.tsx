@@ -57,7 +57,7 @@ export default function InPersonPage() {
             <p className="mb-4">Face-to-face therapy offers several unique advantages that can enhance your therapeutic experience:</p>
 
             <ul className="list-disc pl-6 mb-4">
-              <li className="mb-2"><strong>Enhanced Non-Verbal Communication:</strong> In-person sessions allow your therapist to pick up on subtle facial expressions, body language, and emotional cues that might be missed online.</li>
+              <li className="mb-2"><strong>Enhanced Non-Verbal Communication:</strong> In-person sessions allow us to pick up on subtle facial expressions, body language, and emotional cues that might be missed online.</li>
               <li className="mb-2"><strong>Dedicated Therapeutic Space:</strong> Complete separation from your home environment can help you focus solely on therapy and create a clear boundary between therapy and everyday life.</li>
               <li className="mb-2"><strong>No Technology Barriers:</strong> Avoid potential internet connection issues or technical difficulties that might interrupt an online session.</li>
               <li className="mb-2"><strong>Heightened Presence:</strong> Many people find it easier to be fully present and engaged when physically in the room with their therapist.</li>

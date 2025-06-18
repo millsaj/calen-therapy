@@ -143,7 +143,7 @@ export default function LifeChangesPage() {
             </ul>
             <p>
               The goal isn't to eliminate the challenges of transition but to help you move through them with greater
-              awareness, self-compassion, and clarity about what matters most to you. Both therapists provide a
+              awareness, self-compassion, and clarity about what matters most to you. We provide a
               supportive space to process change and intentionally shape your next chapter.
             </p>
           </>

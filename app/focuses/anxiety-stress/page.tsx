@@ -120,7 +120,7 @@ export default function AnxietyStressPage() {
             <p>
               The goal isn't to eliminate all stress (which is unrealistic and not necessarily desirable), but
               to develop a healthier relationship with stress and anxiety so they no longer control your life.
-              Both therapists provide a safe, non-judgmental space where you can work at your own pace.
+              We provide a safe, non-judgmental space where you can work at your own pace.
             </p>
           </>
         )

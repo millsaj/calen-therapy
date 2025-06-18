@@ -125,7 +125,7 @@ export default function DepressionPage() {
             </ul>
             <p>
               Therapy provides a safe, non-judgmental space to work through your feelings and develop practical
-              skills for managing depression. Your therapist will partner with you throughout this process,
+              skills for managing depression. We will partner with you throughout this process,
               adjusting approaches as needed to support your recovery.
             </p>
           </>
@@ -150,7 +150,7 @@ export default function DepressionPage() {
       }}
       cta={{
         title: "Ready to Take the First Step?",
-        description: "You don't have to face depression alone. Our therapists provide compassionate, evidence-based support to help you move toward recovery and renewed well-being."
+        description: "You don't have to face depression alone. We provide compassionate, evidence-based support to help you move toward recovery and renewed well-being."
       }}
     />
   );
