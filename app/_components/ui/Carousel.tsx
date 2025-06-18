@@ -1,50 +1,44 @@
 'use client';
 
 import { useState, useEffect, useRef, ReactNode, useCallback } from 'react';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
+import { ArrowsRightLeftIcon } from '@heroicons/react/24/outline';
 
 interface ICarouselProps<T> {
   items: T[];
   renderItem: (item: T, index: number) => ReactNode;
-  itemsPerView?: number;
-  autoPlayInterval?: number;
   className?: string;
 }
 
 /**
- * A generic, responsive carousel component that supports automatic rotation and manual navigation.
+ * A responsive, accessible carousel component for displaying content in a rotating slider.
  *
- * Features:
- * - Generic typing allows for any content type
- * - Responsive design (3 items on desktop, 1 on mobile)
- * - Auto-rotation with configurable interval
- * - Pause on hover
- * - Manual navigation with prev/next buttons
- * - Smooth transition animations
- * - Custom item rendering via render props
+ * @features
+ * - SEO-friendly: All items are rendered in the DOM for search engines
+ * - Responsive design with adaptive number of visible items
+ * - Auto-rotation with 5-second interval (pauses on hover/interaction)
+ * - Touch and mouse drag navigation
+ * - Keyboard accessible navigation
+ * - Visual indicators for current position
+ * - Smooth transitions between slides
  *
  * @example
  * ```tsx
  * <Carousel
- *   items={images}
- *   renderItem={(img, index) => <Image src={img.url} alt={img.alt} />}
- *   itemsPerView={3}
- *   autoPlayInterval={5000}
+ *   items={testimonials}
+ *   renderItem={(testimonial) => (
+ *     <TestimonialCard 
+ *       author={testimonial.author}
+ *       content={testimonial.content}
+ *     />
+ *   )}
  * />
  * ```
  *
- * @template T - The type of items to be displayed in the carousel
- * @param props.items - Array of items to display in the carousel
- * @param props.renderItem - Function to render each item
- * @param props.itemsPerView - Number of items to show at once (default: 3)
- * @param props.autoPlayInterval - Milliseconds between auto-rotations (default: 5000)
- * @param props.className - Additional CSS classes to apply to the container
+ * @template T - The type of items to display in the carousel
  */
 export function Carousel<T>({
   items,
   renderItem,
-  itemsPerView = 3,
-  autoPlayInterval = 5000,
   className = '',
 }: ICarouselProps<T>) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -52,6 +46,16 @@ export function Carousel<T>({
   const [isPaused, setIsPaused] = useState(false);
   const [screenWidth, setScreenWidth] = useState(0);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  
+  // Drag/swipe related state
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [currentX, setCurrentX] = useState(0);
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const dragThreshold = 50; // Minimum drag distance to trigger a slide change
+
+  // Fixed values that were previously configurable
+  const autoPlayInterval = 5000;
 
   useEffect(() => {
     setScreenWidth(window.innerWidth);
@@ -69,7 +73,12 @@ export function Carousel<T>({
     }, 300);
   };
 
-  const itemsToShow = useCallback(() => (screenWidth < 768 ? 1 : itemsPerView), [screenWidth, itemsPerView]);
+  const itemsToShow = useCallback(() => {
+    // Fixed breakpoints
+    if (screenWidth >= 1280) return 3; // xl
+    if (screenWidth >= 640) return 2; // sm
+    return 1; // xs
+  }, [screenWidth]);
 
   const nextSlide = useCallback(() => {
     const newIndex = (currentIndex + itemsToShow()) % items.length;
@@ -83,10 +92,10 @@ export function Carousel<T>({
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (!isPaused) nextSlide();
+      if (!isPaused && !isDragging) nextSlide();
     }, autoPlayInterval);
     return () => clearInterval(interval);
-  }, [isPaused, nextSlide, autoPlayInterval]);
+  }, [isPaused, isDragging, nextSlide]);
 
   useEffect(() => {
     return () => {
@@ -94,47 +103,177 @@ export function Carousel<T>({
     };
   }, []);
 
-  const getVisibleItems = () => {
-    const visibleIndexes = Array.from(
+  const getVisibleIndices = () => {
+    return Array.from(
       { length: itemsToShow() },
       (_, i) => (currentIndex + i) % items.length
     );
-    return visibleIndexes.map(index => items[index]);
   };
 
+  // Drag/swipe handlers
+  const handleDragStart = (clientX: number) => {
+    setIsPaused(true);
+    setIsDragging(true);
+    setStartX(clientX);
+    setCurrentX(clientX);
+  };
+
+  const handleDragMove = (clientX: number) => {
+    if (isDragging) {
+      setCurrentX(clientX);
+    }
+  };
+
+  const handleDragEnd = () => {
+    if (isDragging) {
+      const diff = currentX - startX;
+      
+      // If the drag distance exceeds the threshold, change slide
+      if (Math.abs(diff) > dragThreshold) {
+        if (diff > 0) {
+          prevSlide();
+        } else {
+          nextSlide();
+        }
+      }
+      
+      setIsDragging(false);
+      // Reset pause state after a short delay to prevent immediate autoplay
+      setTimeout(() => setIsPaused(false), 1000);
+    }
+  };
+
+  // Mouse event handlers
+  const handleMouseDown = (e: React.MouseEvent) => {
+    e.preventDefault();
+    handleDragStart(e.clientX);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    e.preventDefault();
+    handleDragMove(e.clientX);
+  };
+
+  const handleMouseUp = () => {
+    handleDragEnd();
+  };
+
+  const handleMouseLeave = () => {
+    if (isDragging) {
+      handleDragEnd();
+    } else {
+      setIsPaused(false);
+    }
+  };
+
+  // Touch event handlers
+  const handleTouchStart = (e: React.TouchEvent) => {
+    handleDragStart(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    handleDragMove(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    handleDragEnd();
+  };
+
+  // Calculate swipe progress for indicator
+  const dragDiff = currentX - startX;
+  const swipeProgress = Math.min(Math.abs(dragDiff) / dragThreshold, 1);
+  
+  // Determine opacity based on swipe progress
+  const indicatorOpacity = isDragging ? Math.min(0.8, swipeProgress * 0.8) : 0;
+
+  // Calculate total number of possible positions - fixed calculation
+  const totalPages = Math.max(1, Math.ceil(items.length / itemsToShow()));
+
+  // Calculate current page for dots navigation
+  const currentPage = Math.floor(currentIndex / itemsToShow());
+
+  // Function to navigate to a specific page
+  const goToPage = (page: number) => {
+    const newIndex = page * itemsToShow();
+    handleTransition(newIndex);
+  };
+  
+  // Get the currently visible indices
+  const visibleIndices = getVisibleIndices();
+
   return (
-    <div
+    <div 
       className={`relative ${className}`}
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
+      role="region"
+      aria-label="Content carousel"
+      aria-roledescription="carousel"
     >
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {getVisibleItems().map((item, index) => (
-          <div
-            key={`${currentIndex}-${index}`}
-            className={`transition-opacity duration-300 ${
-              isTransitioning ? 'opacity-0' : 'opacity-100'
-            }`}
-          >
-            {renderItem(item, index)}
+      {/* Unified swipe indicator overlay */}
+      {isDragging && (
+        <div 
+          className="absolute -inset-4 md:-inset-6 lg:-inset-8 z-30 flex items-center justify-center pointer-events-none bg-black/10 rounded-xl"
+          style={{ opacity: indicatorOpacity }}
+          aria-hidden="true"
+        >
+          <div className="rounded-full p-4 bg-black/40 backdrop-blur-sm">
+            <ArrowsRightLeftIcon className="h-10 w-10 text-white" />
           </div>
-        ))}
+        </div>
+      )}
+
+      <div
+        ref={carouselRef}
+        className="relative"
+        onMouseEnter={() => !isDragging && setIsPaused(true)}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseLeave}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
+        <div 
+          className={`grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 lg:gap-8 ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
+        >
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className={`transition-all duration-300 ${
+                visibleIndices.includes(index) 
+                  ? isTransitioning ? 'opacity-0' : 'opacity-100 relative z-10'
+                  : 'opacity-0 absolute -z-10 pointer-events-none'
+              } select-none`}
+              aria-hidden={!visibleIndices.includes(index)}
+            >
+              {renderItem(item, index)}
+            </div>
+          ))}
+        </div>
       </div>
-      {items.length > itemsPerView && (
-        <>
-          <button
-            onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
-          >
-            <ChevronLeftIcon className="h-6 w-6" />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
-          >
-            <ChevronRightIcon className="h-6 w-6" />
-          </button>
-        </>
+
+      {/* Navigation dots */}
+      {totalPages > 1 && (
+        <div 
+          className="flex justify-center items-center space-x-2 mt-4"
+          role="tablist"
+          aria-label="Carousel navigation"
+        >
+          {Array.from({ length: totalPages }).map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToPage(index)}
+              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
+                currentPage === index 
+                  ? 'bg-gray-800 w-4' 
+                  : 'bg-gray-300 hover:bg-gray-400'
+              }`}
+              aria-label={`Go to page ${index + 1}`}
+              aria-selected={currentPage === index}
+              role="tab"
+            />
+          ))}
+        </div>
       )}
     </div>
   );

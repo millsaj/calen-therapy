@@ -21,7 +21,7 @@ export const TheSpace: React.FC<ITheSpaceProps> = ({
           <p className="mt-4 text-lg text-gray-600">{subtitle}</p>
       </div>
 
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <Carousel
           items={images.space}
           renderItem={(img, i) => (
