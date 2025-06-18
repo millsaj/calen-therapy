@@ -118,13 +118,13 @@ export function ContactForm() {
         </div>
         
         {isSuccess && (
-          <div className="mb-4 p-3 bg-secondary text-accent rounded-md text-center">
+          <div className="mb-4 p-3 border-2 border-primary text-accent rounded-md text-center">
             Your message has been sent successfully. We'll get back to you soon.
           </div>
         )}
         
         {isError && (
-          <div className="mb-4 p-3 bg-red-100 text-red-800 rounded-md text-center">
+          <div className="mb-4 p-3 border-2 border-red-500 text-red-800 rounded-md text-center">
             There was an error sending your message. Please try again or contact us directly.
           </div>
         )}

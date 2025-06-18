@@ -17,11 +17,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     // Home page - highest priority
-    createEntry(routes.home(), 1.0, 'weekly'),
+    createEntry(routes.home(), 1.0, 'monthly'),
     
     // Key landing pages - very high priority
-    createEntry(routes.contact(), 0.9, 'monthly'),
-    createEntry(routes.findUs(), 0.9, 'monthly'),
+    createEntry(routes.contact(), 0.9, 'yearly'),
+    createEntry(routes.findUs(), 0.9, 'yearly'),
     
     // Therapist profiles - high priority
     createEntry(routes.helen(), 0.9, 'monthly'),
@@ -31,17 +31,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     createEntry(routes.faqs(), 0.8, 'monthly'),
     
     // Main session types - high priority with moderate change frequency
-    createEntry(routes.sessionTypes.inPerson(), 0.8, 'monthly'),
-    createEntry(routes.sessionTypes.online(), 0.8, 'monthly'),
+    createEntry(routes.sessionTypes.inPerson(), 0.8, 'yearly'),
+    createEntry(routes.sessionTypes.online(), 0.8, 'yearly'),
 
     // All therapy focuses/issues - medium priority but important for SEO
     ...focuses.all().map((focus) => 
-      createEntry(routes.focuses.show(focus.slug), 0.7, 'monthly')
+      createEntry(routes.focuses.show(focus.slug), 0.7, 'yearly')
     ),
 
     // All therapy approaches - medium priority
     ...approaches.all().map((style) => 
-      createEntry(routes.approaches.show(style.slug), 0.7, 'monthly')
+      createEntry(routes.approaches.show(style.slug), 0.7, 'yearly')
     ),
 
     // Other service options - lower priority
