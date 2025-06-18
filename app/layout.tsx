@@ -19,7 +19,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="min-h-screen bg-white">{children}</main>
 
         <Footer />
-        <ColorPaletteSwitcher />
+        
+        {/* Uncomment the line below to enable color palette switcher */}
+        {/* <ColorPaletteSwitcher /> */}
       </body>
     </html>
   );

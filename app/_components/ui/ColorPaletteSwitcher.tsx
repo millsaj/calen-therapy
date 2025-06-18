@@ -34,7 +34,7 @@ const colorPalettes: TColorPalette[] = [
   { name: 'Dusty Rose', primary: '#A26769', secondary: '#F8F3F2', accent: generateAccent('#A26769', 0.2) },
   { name: 'Olive Green', primary: '#6B7A52', secondary: '#F4F7F2', accent: generateAccent('#6B7A52', 0.2) },
   { name: 'Deep Sage', primary: '#6C8A7B', secondary: '#F1F7F5', accent: generateAccent('#6C8A7B', 0.2) },
-  { name: 'Soft Plum', primary: '#7C6A8A', secondary: '#F6F3F9', accent: generateAccent('#7C6A8A', 0.2) },
+  { name: 'Soft Plum', primary: '#7C6A8A', secondary: '#F6F3F9', accent: generateAccent('#7C6A8A', 0.3) },
   { name: 'Ocean Mist', primary: '#4E7C86', secondary: '#F0F7F9', accent: generateAccent('#4E7C86', 0.2) },
   { name: 'Warm Taupe', primary: '#8B7E74', secondary: '#F8F6F4', accent: generateAccent('#8B7E74', 0.2) },
   { name: 'Calm Navy', primary: '#3A506B', secondary: '#F2F6FA', accent: generateAccent('#3A506B', 0.2) },
@@ -52,6 +52,11 @@ const colorPalettes: TColorPalette[] = [
 
 function applyPalette(palette: TColorPalette) {
   const root = document.documentElement;
+  console.log('Applying palette:', palette.name);
+  console.log('Primary color:', palette.primary);
+  console.log('Secondary color:', palette.secondary);
+  console.log('Accent color:', palette.accent);
+
   root.style.setProperty('--color-primary', palette.primary);
   root.style.setProperty('--color-secondary', palette.secondary);
   root.style.setProperty('--color-accent', palette.accent);

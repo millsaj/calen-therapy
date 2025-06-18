@@ -49,7 +49,7 @@ export function ContactForm() {
     <div className="max-w-4xl mx-auto">
       <form 
         name="contact-us" 
-        className='card p-8 bg-white shadow-md rounded-lg relative'
+        className='card p-8 bg-secondary shadow-md rounded-lg relative'
         onSubmit={handleFormSubmit}
       >
         <input type="hidden" name="form-name" value="contact-us" />
@@ -62,7 +62,7 @@ export function ContactForm() {
           </div>
         )}
         
-        <h2 className="text-2xl font-bold mb-4">Contact Form</h2>
+        <h2 className="text-2xl font-bold mb-4">Send Helen an email</h2>
 
         <div className="hidden">
           <label htmlFor="email" className="block text-sm font-medium text-gray-700">
@@ -72,7 +72,7 @@ export function ContactForm() {
             type="text"
             id="email"
             name="email"
-            className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-accent focus:border-accent"
             placeholder="Your Name"
           />
         </div>
@@ -85,7 +85,7 @@ export function ContactForm() {
             type="text"
             id="name"
             name="name"
-            className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 block w-full border bg-white border-gray-300 rounded-md shadow-sm p-2 focus:ring-accent focus:border-accent"
             placeholder="Your Name"
             required
           />
@@ -98,7 +98,7 @@ export function ContactForm() {
             type="text"
             id="contact"
             name="contact"
-            className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 block w-full border bg-white border-gray-300 rounded-md shadow-sm p-2 focus:ring-accent focus:border-accent"
             placeholder="Your Email or Phone No."
             required
           />
@@ -111,8 +111,8 @@ export function ContactForm() {
             id="message"
             name="message"
             rows={4}
-            className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 min-h-24 focus:ring-indigo-500 focus:border-indigo-500"
-            placeholder="Your Message"
+            className="mt-1 block w-full border bg-white border-gray-300 rounded-md shadow-sm p-2 min-h-24 focus:ring-accent focus:border-accent"
+            placeholder="Hi Helen, I would like to book an appointment for..."
             required
           ></textarea>
         </div>

@@ -22,17 +22,19 @@ export const metadata = buildMetadata({
 const contactSections = [
   {
     name: 'Helen',
+    credentials: 'B.A., PGDip., MBACP., GQHP',
     email: contactDetails.emails.helen,
     phone: contactDetails.phones.helen,
-    image: images.helen.main.url,
+    image: images.helen.main,
     description: ['Psychotherapy, CBT, Counselling', 'For individuals, couples, and families.'],
     link: routes.helen(),
   },
   {
     name: 'Carl',
+    credentials: 'Solution Focused Hypnotherapist & NLP Practitioner',
     email: contactDetails.emails.carl,
     phone: contactDetails.phones.carl,
-    image: images.carl.main.url,
+    image: images.carl.main,
     description: ['Solution-focused Hypnotherapy', 'Make positive change.'],
     link: routes.carl(),
   }
@@ -46,30 +48,32 @@ export default function ContactUsPage() {
         subtitle='This page contains information on how to get in touch with us for any inquiries or support.' />
 
       <StripedSection secondary={false} primary={false}>
+        <ContactForm />
+      </StripedSection>
+
+      <StripedSection secondary={true} primary={false}>
         <div className="max-w-4xl mx-auto">
           {/* Contact Details */}
           <div className="grid md:grid-cols-2 gap-16 max-w-6xl mx-auto text-center items-center">
             {contactSections.map((contact, index) => {
               return <div key={index}>
-                <div className="mb-8 relative flex justify-center">
-                  <div className="w-40 h-40">
-                  <Image
-                    src={contact.image}
-                    alt={contact.name}
-                    width={160}
-                    height={160}
-                    className="w-full h-full object-cover rounded-full shadow-lg ring-4 ring-white"
-                  />
+                <div className="mb-8 relative">
+                  <div className="w-[288px] h-[288px] mx-auto"> 
+                    <Image
+                      src={contact.image.url}
+                      alt={contact.image.alt}
+                      width={288}
+                      height={288}
+                      className="w-full h-full object-cover rounded-full shadow-lg ring-4 ring-white"
+                    />
                   </div>
                 </div>
-                <div className="space-y-4">
-                  <h3 className="text-lg font-semibold mb-2">{contact.name}</h3>
 
-                  <p className="text-gray-700 text-sm">
-                    {contact.description.map((desc) => {
-                      return <span key={desc}>{desc}<br/></span>
-                    })}
-                  </p>
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="text-xl md:text-2xl font-bold">{contact.name}</h3>
+                    <p className="text-sm text-gray-500">{contact.credentials}</p>
+                  </div>
 
                   <ul className='mb-6'>
                     <li className="flex justify-center">
@@ -82,20 +86,15 @@ export default function ContactUsPage() {
                     </li>
                   </ul>
                   <p>
-                  <Link href={contact.link} className="hover:underline text-gray-500">
-                    See profile
-                  </Link>
+                    <Link href={contact.link} className="hover:underline text-gray-500">
+                      See profile
+                    </Link>
                   </p>
-
                 </div>
               </div>
             })}
           </div>
         </div>
-      </StripedSection>
-
-      <StripedSection secondary={true} primary={false}>
-        <ContactForm />
       </StripedSection>
 
       <StripedSection secondary={false} primary={false}>
