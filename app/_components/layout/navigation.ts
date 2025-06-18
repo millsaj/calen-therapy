@@ -19,7 +19,7 @@ export const mainNav: INavItem[] = [
   },
   {
     label: 'Approaches',
-    extraClasses: 'hidden lg:block',
+    extraClasses: 'block sm:hidden lg:block',
     children: approaches.nav().map((approach) => ({
       label: approach.title,
       href: routes.approaches.show(approach.slug),
@@ -27,7 +27,7 @@ export const mainNav: INavItem[] = [
   },
   {
     label: 'Focuses',
-    extraClasses: 'hidden lg:block',
+    extraClasses: 'block sm:hidden lg:block',
     children: focuses.nav().map((focus) => ({
       label: focus.title,
       href: routes.focuses.show(focus.slug),

@@ -20,6 +20,11 @@ export default function Header() {
 
   const items: INavItem[] = mainNav;
 
+  const closeAllMenus = () => {
+    setIsMobileMenuOpen(false);
+    setPinnedDropdown(null);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -91,6 +96,7 @@ export default function Header() {
                 isActive={hoveredDropdown === item.label || pinnedDropdown === item.label}
                 onHover={handleNavLinkHover}
                 onPin={handleNavLinkPin}
+                closeAllMenus={closeAllMenus}
               />
             ))}
             <Link 
@@ -102,6 +108,7 @@ export default function Header() {
                 hover:bg-accent
                 transition-colors
                 text-sm sm:text-base`}
+              onClick={closeAllMenus}
             >
               Contact Us
             </Link>
@@ -148,6 +155,7 @@ export default function Header() {
                   isActive={hoveredDropdown === item.label || pinnedDropdown === item.label}
                   onHover={handleNavLinkHover}
                   onPin={handleNavLinkPin}
+                  closeAllMenus={closeAllMenus}
                 />
               </div>
             ))}
@@ -161,6 +169,7 @@ export default function Header() {
                 hover:bg-accent
                 transition-colors
                 text-center mt-2`}
+              onClick={closeAllMenus}
             >
               Contact Us
             </Link>
@@ -179,6 +188,7 @@ interface NavLinkProps {
   imageContrast: boolean;
   onHover: (itemLabel: string, hover: boolean) => void;
   onPin: (itemLabel: string) => void;
+  closeAllMenus: () => void;
 }
 
 const NavLink = ({
@@ -187,6 +197,7 @@ const NavLink = ({
   imageContrast,
   onHover,
   onPin,
+  closeAllMenus,
 }: NavLinkProps) => {
   const router = useRouter();
 
@@ -194,6 +205,7 @@ const NavLink = ({
     if (item.children) {
       onPin(item.label);
     } else if (item.href) {
+      closeAllMenus();
       router.push(item.href);
     }
   };
@@ -247,6 +259,7 @@ const NavLink = ({
             <Link
               key={i}
               href={child.href || '#'}
+              onClick={closeAllMenus}
               className={`
                 block px-4 py-1.5
                 text-gray-700 whitespace-nowrap
