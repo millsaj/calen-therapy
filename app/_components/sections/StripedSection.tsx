@@ -11,7 +11,7 @@ export const StripedSection: React.FC<IStripedSectionProps> = ({
 }) => {
   let extraClasses = 'bg-white';
   extraClasses = secondary ? 'bg-secondary border-b border-gray-200' : extraClasses;
-  extraClasses = primary ? 'bg-primary border-b border-gray-200' : extraClasses;
+  extraClasses = primary ? 'bg-primary text-white border-b border-gray-200' : extraClasses;
 
   return (
     <section className={`py-16 md:py-24 ${extraClasses}`}>
