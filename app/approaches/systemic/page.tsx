@@ -3,8 +3,10 @@ import { routes } from '@app/_config/routes';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Systemic',
-  url: routes.approaches.systemic(),
+  pageTitle: 'Systemic Therapy for Families & Relationships',
+  description: 'Expert systemic family therapy to address relationship patterns, improve communication, and resolve conflicts within your family or relationship system.',
+  additionalKeywords: ["family therapy", "relationship therapy", "family systems", "systemic approach", "relationship patterns", "family dynamics", "circular questioning"],
+  path: routes.approaches.systemic(),
 });
 
 export default function SystemicPage() {

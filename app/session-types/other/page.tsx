@@ -6,8 +6,10 @@ import Link from 'next/link';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Other Session Types',
-  url: routes.sessionTypes.other(),
+  pageTitle: 'Alternative Therapy Options',
+  description: 'Flexible therapy solutions including walk & talk sessions, intensive therapy days, and group workshops. Customized approaches to meet your unique therapeutic needs.',
+  additionalKeywords: ["walk and talk therapy", "outdoor therapy sessions", "intensive therapy days", "therapy workshops", "group therapy", "alternative counselling", "flexible therapy options"],
+  path: routes.sessionTypes.other(),
 });
 
 export default function OtherSessionTypesPage() {

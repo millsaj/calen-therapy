@@ -4,8 +4,10 @@ import Link from 'next/link';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Phobias',
-  url: routes.focuses.phobias(),
+  pageTitle: 'Phobia Treatment & Therapy',
+  description: 'Effective phobia treatment using evidence-based approaches. Expert therapy for specific phobias, social anxiety, and agoraphobia to overcome fear and avoidance behaviors.',
+  additionalKeywords: ["fear therapy", "specific phobias", "agoraphobia", "fear of flying", "exposure therapy", "fear of heights", "systematic desensitization"],
+  path: routes.focuses.phobias(),
 });
 
 export default function PhobiasPage() {

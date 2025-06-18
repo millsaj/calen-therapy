@@ -8,8 +8,10 @@ import Link from 'next/link';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'In Person',
-  url: routes.sessionTypes.inPerson(),
+  pageTitle: 'Face-to-Face Therapy Sessions',
+  description: 'Experience effective in-person therapy sessions in our comfortable, private space in Billinge. Professional counselling with qualified therapists in a calm environment.',
+  additionalKeywords: ["face-to-face therapy", "in-person counselling", "therapy room", "private therapy space", "comfortable counselling environment", "local therapist"],
+  path: routes.sessionTypes.inPerson(),
 });
 
 export default function InPersonPage() {

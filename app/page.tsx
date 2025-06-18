@@ -13,7 +13,10 @@ import { buildMetadata } from '@app/_config/metadata';
 import { routes } from './_config/routes';
 
 export const metadata = buildMetadata({
-  url: routes.home(),
+  pageTitle: "Professional Therapy Services for Anxiety, Depression, Sex Addiction & Relationships",
+  additionalKeywords: ["relationship counselling", "BACP therapist", "online therapy", "solution-focused hypnotherapy", "porn addiction", "CBT therapy", "family therapy"],
+  path: routes.home(),
+  includeLocalBusinessSchema: true,
 });
 
 export default function Home() {

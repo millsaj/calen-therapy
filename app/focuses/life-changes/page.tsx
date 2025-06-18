@@ -4,8 +4,10 @@ import { FocusPage } from '../FocusPage';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Life Changes',
-  url: routes.focuses.lifeChanges(),
+  pageTitle: 'Life Transitions Therapy',
+  description: 'Professional support for navigating major life changes and transitions. Therapy for career changes, relationship transitions, parenthood, retirement, and identity shifts.',
+  additionalKeywords: ["life transition counselling", "career change support", "retirement adjustment", "identity crisis", "empty nest syndrome", "major life decisions", "life stage changes"],
+  path: routes.focuses.lifeChanges(),
 });
 
 export default function LifeChangesPage() {

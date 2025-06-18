@@ -4,8 +4,10 @@ import { FocusPage } from '../FocusPage';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Depression',
-  url: routes.focuses.depression(),
+  pageTitle: 'Depression Treatment & Therapy',
+  description: 'Compassionate and effective depression therapy. Professional support for all types of depression, including major depressive disorder, persistent depression, and seasonal affective disorder.',
+  additionalKeywords: ["major depressive disorder", "persistent depressive disorder", "seasonal affective disorder", "low mood", "clinical depression", "talk therapy for depression", "mood disorder"],
+  path: routes.focuses.depression(),
 });
 
 export default function DepressionPage() {

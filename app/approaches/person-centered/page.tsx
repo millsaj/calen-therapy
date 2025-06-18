@@ -3,8 +3,10 @@ import { routes } from '@app/_config/routes';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Person-Centered',
-  url: routes.approaches.personCentered(),
+  pageTitle: 'Person-Centered Therapy',
+  description: 'Supportive person-centered therapy with experienced BACP therapists. Non-judgmental counselling focused on your growth, self-discovery and personal development.',
+  additionalKeywords: ["client-centered therapy", "humanistic approach", "Carl Rogers", "self-discovery", "non-judgmental therapy", "unconditional positive regard", "empathic understanding"],
+  path: routes.approaches.personCentered(),
 });
 
 export default function PersonCenteredPage() {

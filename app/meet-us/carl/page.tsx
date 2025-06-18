@@ -14,9 +14,11 @@ import { buildMetadata } from '@app/_config/metadata';
 // It can help amplify your ability to manage your own internal state and how you regulate.
 
 export const metadata = buildMetadata({
-  title: 'Carl',
+  pageTitle: 'Carl Porter - Solution Focused Hypnotherapist',
+  description: 'Meet Carl Porter, qualified solution focused hypnotherapist in Wigan. Specializing in hypnotherapy for anxiety, phobias, smoking cessation, and weight loss with proven results.',
+  additionalKeywords: ["hypnotherapist Wigan", "NLP practitioner", "solution focused hypnotherapy", "registered hypnotherapist", "AFSFH member", "male hypnotherapist"],
   image: images.carl.hero,
-  url: routes.carl(),
+  path: routes.carl(),
   ogType: 'profile'
 });
 

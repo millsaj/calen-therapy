@@ -4,8 +4,10 @@ import { FocusPage } from '../FocusPage';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Anxiety & Stress',
-  url: routes.focuses.anxietyStress(),
+  pageTitle: 'Anxiety & Stress Therapy',
+  description: 'Expert anxiety & stress therapy with professional support for panic attacks, generalized anxiety disorder, social anxiety & work-related stress.',
+  additionalKeywords: ["panic attack treatment", "generalized anxiety disorder", "social phobia", "workplace stress", "chronic stress", "anxiety symptoms", "stress reduction"],
+  path: routes.focuses.anxietyStress(),
 });
 
 export default function AnxietyStressPage() {

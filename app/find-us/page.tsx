@@ -7,8 +7,11 @@ import { buildMetadata } from '@app/_config/metadata';
 import { routes } from '@app/_config/routes';
 
 export const metadata = buildMetadata({
-  title: 'Find Us',
-  url: routes.findUs(),
+  pageTitle: 'Find Our Therapy Practice in Billinge',
+  description: 'Directions to our comfortable therapy space in Billinge. Easily accessible location with private parking, serving clients from surrounding areas.',
+  additionalKeywords: ["therapy location", "Billinge address", "therapy directions", "private parking", "therapy space", "comfortable therapy room", "accessibility"],
+  path: routes.findUs(),
+  includeLocalBusinessSchema: true,
 });
 
 export default function FindUsPage() {

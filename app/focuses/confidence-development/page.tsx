@@ -4,8 +4,10 @@ import { FocusPage } from '../FocusPage';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Confidence & Personal Development',
-  url: routes.focuses.confidenceDevelopment(),
+  pageTitle: 'Confidence & Personal Development Therapy',
+  description: 'Boost your confidence and self-esteem with specialized therapy. Professional support for overcoming self-doubt, building assertiveness, and achieving personal growth.',
+  additionalKeywords: ["self-esteem therapy", "confidence building", "assertiveness training", "personal development coaching", "imposter syndrome", "self-belief", "self-acceptance"],
+  path: routes.focuses.confidenceDevelopment(),
 });
 
 export default function ConfidenceDevelopmentPage() {

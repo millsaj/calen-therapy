@@ -9,8 +9,10 @@ import { buildMetadata } from '@app/_config/metadata';
 import { FindUs } from '@app/_components/sections/FindUs';
 
 export const metadata = buildMetadata({
-  title: 'FAQs & Pricing',
-  url: routes.faqs(),
+  pageTitle: 'Therapy FAQs & Pricing Information',
+  description: 'Find answers to frequently asked questions about our therapy services. Learn about session costs, appointment booking, what to expect in therapy, and more.',
+  additionalKeywords: ["therapy pricing", "session costs", "appointment booking", "what to expect", "therapy process", "payment methods", "first session"],
+  path: routes.faqs(),
 });
 
 // Any react node can be used in the answers, so we can use links and other components.

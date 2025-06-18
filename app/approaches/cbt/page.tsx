@@ -3,8 +3,10 @@ import { routes } from '@app/_config/routes';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'CBT',
-  url: routes.approaches.cbt(),
+  pageTitle: 'Cognitive Behavioral Therapy (CBT) for Anxiety & Depression',
+  description: 'Professional CBT therapy using evidence-based approaches to transform negative thinking patterns, reduce anxiety & improve emotional wellbeing.',
+  additionalKeywords: ["CBT techniques", "negative thinking patterns", "evidence-based therapy", "behavioral therapy", "cognitive therapy", "thought restructuring"],
+  path: routes.approaches.cbt(),
 });
 
 export default function CbtPage() {

@@ -4,8 +4,10 @@ import Link from 'next/link';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Relationships & Family',
-  url: routes.focuses.relationships(),
+  pageTitle: 'Relationship & Family Therapy Services',
+  description: 'Specialized relationship counselling for couples, families and individuals. Professional support for communication issues, trust rebuilding, and conflict resolution.',
+  additionalKeywords: ["couples counselling", "marriage therapy", "conflict resolution", "communication skills", "infidelity counselling", "attachment patterns", "relationship dynamics"],
+  path: routes.focuses.relationships(),
 });
 
 export default function RelationshipsPage() {

@@ -4,8 +4,10 @@ import Link from 'next/link';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'OCD',
-  url: routes.focuses.ocd(),
+  pageTitle: 'OCD Treatment & Therapy',
+  description: 'Specialized OCD therapy with expert treatment for obsessive-compulsive disorder using evidence-based approaches including CBT and ERP therapy.',
+  additionalKeywords: ["obsessive compulsive disorder", "intrusive thoughts", "compulsive behaviors", "ERP therapy", "pure O", "contamination OCD", "checking behaviors", "OCD cycles"],
+  path: routes.focuses.ocd(),
 });
 
 export default function OCDPage() {

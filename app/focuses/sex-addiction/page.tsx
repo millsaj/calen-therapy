@@ -4,8 +4,10 @@ import { FocusPage } from '../FocusPage';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Sex Addiction',
-  url: routes.focuses.sexAddiction(),
+  pageTitle: 'Sex & Porn Addiction Treatment',
+  description: 'Professional sex addiction therapy with confidential support for compulsive sexual behavior, pornography addiction, and relationship issues related to sexual compulsions.',
+  additionalKeywords: ["porn addiction therapy", "compulsive sexual behavior", "sex addiction recovery", "pornography addiction", "compulsive masturbation", "sexual compulsions", "intimacy disorders"],
+  path: routes.focuses.sexAddiction(),
 });
 
 export default function SexAddictionPage() {

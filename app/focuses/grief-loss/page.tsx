@@ -4,8 +4,10 @@ import { FocusPage } from '../FocusPage';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Grief & Loss',
-  url: routes.focuses.griefLoss(),
+  pageTitle: 'Grief & Loss Therapy',
+  description: 'Compassionate grief counselling with professional support for those experiencing bereavement, loss of a relationship, or other significant life changes and transitions.',
+  additionalKeywords: ["bereavement counselling", "loss therapy", "complicated grief", "coping with death", "mourning support", "bereavement support", "grief process"],
+  path: routes.focuses.griefLoss(),
 });
 
 export default function GriefLossPage() {

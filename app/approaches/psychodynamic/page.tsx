@@ -3,8 +3,10 @@ import { routes } from '@app/_config/routes';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Psychodynamic',
-  url: routes.approaches.psychodynamic(),
+  pageTitle: 'Psychodynamic Therapy',
+  description: 'Professional psychodynamic therapy with 30+ years of experience. Explore past experiences to understand current behaviors and resolve deep-rooted emotional issues.',
+  additionalKeywords: ["psychodynamic approach", "unconscious mind", "past experiences", "emotional insight", "deep-rooted issues", "long-term therapy", "Freudian therapy"],
+  path: routes.approaches.psychodynamic(),
 });
 
 export default function PsychodynamicPage() {

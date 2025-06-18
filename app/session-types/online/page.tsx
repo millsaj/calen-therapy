@@ -6,8 +6,11 @@ import Link from 'next/link';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Online',
-  url: routes.sessionTypes.online(),
+  pageTitle: 'Online & Telephone Therapy Sessions',
+  siteTitle: 'Calen Therapy - Remote Therapy',
+  description: 'Professional online therapy from the comfort of your home. Secure video sessions and telephone counselling with qualified therapists for effective remote support.',
+  additionalKeywords: ["online counselling", "virtual therapy", "video therapy", "remote counselling", "telephone therapy", "zoom therapy sessions", "digital therapy"],
+  path: routes.sessionTypes.online(),
 });
 
 export default function OnlinePage() {

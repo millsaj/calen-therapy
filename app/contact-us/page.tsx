@@ -12,8 +12,10 @@ import Link from 'next/link';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Contact Us',
-  url: routes.contact(),
+  pageTitle: 'Contact Our Therapists',
+  description: 'Contact our therapy team for appointments and inquiries. Reach out to Helen for psychotherapy and CBT or Carl for hypnotherapy via phone, email or our online form.',
+  additionalKeywords: ["book therapy session", "therapy appointment", "contact therapist", "therapy inquiry", "therapy consultation", "phone consultation"],
+  path: routes.contact(),
 });
 
 const contactSections = [

@@ -4,8 +4,10 @@ import Link from 'next/link';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Trauma',
-  url: routes.focuses.trauma(),
+  pageTitle: 'Trauma & PTSD Treatment',
+  description: 'Expert trauma therapy with specialized PTSD treatment. Professional support for processing traumatic experiences, recovery, and post-traumatic growth.',
+  additionalKeywords: ["PTSD therapy", "trauma recovery", "childhood trauma", "complex PTSD", "trauma-informed therapy", "flashbacks", "trauma healing", "emotional safety"],
+  path: routes.focuses.trauma(),
 });
 
 export default function TraumaPage() {

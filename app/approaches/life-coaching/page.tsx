@@ -3,8 +3,10 @@ import { routes } from '@app/_config/routes';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Life Coaching',
-  url: routes.approaches.lifeCoaching(),
+  pageTitle: 'Professional Life Coaching Services',
+  description: 'Transform your life with expert life coaching. Set meaningful goals, overcome obstacles, and create the future you want with our experienced coach.',
+  additionalKeywords: ["personal coaching", "goal setting", "career coaching", "professional development", "life transformation", "personal growth", "action planning"],
+  path: routes.approaches.lifeCoaching(),
 });
 
 export default function LifeCoachingPage() {

@@ -3,8 +3,10 @@ import { FocusPage } from '../FocusPage';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Smoking',
-  url: routes.focuses.show('smoking'),
+  pageTitle: 'Stop Smoking Hypnotherapy',
+  description: 'Effective stop smoking hypnotherapy using proven techniques to help you quit smoking permanently without cravings. Professional smoking cessation therapy.',
+  additionalKeywords: ["quit smoking therapy", "smoking cessation", "hypnotherapy for smoking", "stop smoking treatment", "tobacco addiction", "nicotine dependency", "smoking habit"],
+  path: routes.focuses.smoking(),
 });
 
 export default function SmokingPage() {

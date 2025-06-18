@@ -3,33 +3,45 @@ import { routes } from '@app/_config/routes'
 import { approaches } from '@app/_config/approaches'
 import { focuses } from '@app/_config/focuses'
 
-// TODO: Update
 export default function sitemap(): MetadataRoute.Sitemap {
   // Helper function to create sitemap entries
   const createEntry = (path: string, priority: number, changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency']) => ({
-    url: `${routes.baseUrl}${path}`,
+    url: `${routes.baseUrl()}${path}`,
     lastModified: new Date(),
     changeFrequency,
     priority,
   })
 
   return [
-    // Main pages - high priority
-    createEntry(routes.home(), 1, 'yearly'),
-    createEntry(routes.helen(), 0.9, 'yearly'),
-    createEntry(routes.carl(), 0.9, 'yearly'),
-    createEntry(routes.faqs(), 0.8, 'yearly'),
-    createEntry(routes.contact(), 0.8, 'yearly'),
-
-    // Service pages
-    ...approaches.all().map((style) => createEntry(routes.approaches.show(style.slug), 0.6, 'yearly')),
-    ...focuses.all().map((focus) => createEntry(routes.focuses.show(focus.slug), 0.5, 'yearly')),
-
-    createEntry(routes.sessionTypes.inPerson(), 0.6, 'yearly'),
-    createEntry(routes.sessionTypes.online(), 0.6, 'yearly'),
-    createEntry(routes.sessionTypes.other(), 0.4, 'yearly'),
-
-    // Footer/Legal pages - lower priority
-    // createEntry(routes.resources(), 0.3, 'yearly'),
+    // Home page - highest priority
+    createEntry(routes.home(), 1.0, 'weekly'),
+    
+    // Key landing pages - very high priority
+    createEntry(routes.contact(), 0.9, 'monthly'),
+    createEntry(routes.findUs(), 0.9, 'monthly'),
+    
+    // Therapist profiles - high priority
+    createEntry(routes.helen(), 0.9, 'monthly'),
+    createEntry(routes.carl(), 0.9, 'monthly'),
+    
+    // Core service pages - high priority
+    createEntry(routes.faqs(), 0.8, 'monthly'),
+    
+    // Main session types - high priority with moderate change frequency
+    createEntry(routes.sessionTypes.inPerson(), 0.8, 'monthly'),
+    createEntry(routes.sessionTypes.online(), 0.8, 'monthly'),
+    
+    // All therapy approaches - medium-high priority
+    ...approaches.all().map((style) => 
+      createEntry(routes.approaches.show(style.slug), 0.7, 'monthly')
+    ),
+    
+    // All therapy focuses/issues - medium priority but important for SEO
+    ...focuses.all().map((focus) => 
+      createEntry(routes.focuses.show(focus.slug), 0.7, 'monthly')
+    ),
+    
+    // Other service options - lower priority
+    createEntry(routes.sessionTypes.other(), 0.5, 'yearly'),
   ]
 }

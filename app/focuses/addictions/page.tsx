@@ -4,8 +4,10 @@ import { FocusPage } from '../FocusPage';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  title: 'Addictions',
-  url: routes.focuses.addictions(),
+  pageTitle: 'Addiction Therapy & Treatment',
+  description: 'Professional addiction counselling with expert therapy for alcohol, drug, gambling & behavioral addictions. Compassionate, confidential support for lasting recovery.',
+  additionalKeywords: ["substance abuse treatment", "alcohol dependency", "gambling addiction", "addiction recovery", "drug addiction help", "behavioral addictions", "recovery support"],
+  path: routes.focuses.addictions(),
 });
 
 export default function AddictionsPage() {
