@@ -7,6 +7,7 @@ import { Focuses } from '@app/_components/sections/Focuses';
 import { SplitPageHero } from '@app/_components/hero/SplitPageHero';
 import { StripedSection } from '@app/_components/sections/StripedSection';
 import { CallToAction } from '@app/_components/sections/CallToAction';
+import { TheSpace } from '@app/_components/sections/TheSpace';
 import Link from 'next/link';
 import Image from 'next/image';
 import { buildMetadata } from '@app/_config/metadata';
@@ -109,7 +110,10 @@ export default function HelenPage() {
       </StripedSection>
 
       <StripedSection secondary={true} primary={false}>
-        <Testimonials striped={true} testimonials={testimonials.filter((t) => t.therapists.includes('helen'))} />
+        <TheSpace
+          title="Our Therapy Space"
+          subtitle="Sessions take place in our comfortable, private therapy room with its own entrance, ensuring your privacy and comfort during our work together."
+        />
       </StripedSection>
 
       <StripedSection secondary={false} primary={true}>

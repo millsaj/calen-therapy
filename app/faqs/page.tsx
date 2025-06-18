@@ -1,5 +1,3 @@
-import { Testimonials } from '@app/_components/sections/Testimonials';
-import { testimonials } from '@app/_config/testimonials';
 import { StripedSection } from '@app/_components/sections/StripedSection';
 import { CallToAction } from '@app/_components/sections/CallToAction';
 import NormalPageHero from '@app/_components/hero/NormalPageHero';
@@ -8,6 +6,7 @@ import { routes } from '@app/_config/routes';
 import { contactDetails, pricing } from '@app/_config/main';
 import Link from 'next/link';
 import { buildMetadata } from '@app/_config/metadata';
+import { FindUs } from '@app/_components/sections/FindUs';
 
 export const metadata = buildMetadata({
   title: 'FAQs & Pricing',
@@ -153,9 +152,9 @@ export default function FAQPage() {
       </StripedSection>
 
       <StripedSection secondary={true} primary={false}>
-        <Testimonials striped={true} testimonials={testimonials} />
+        <FindUs />
       </StripedSection>
-
+      
       <StripedSection secondary={false} primary={true}>
         <CallToAction />
       </StripedSection>

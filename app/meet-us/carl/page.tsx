@@ -2,13 +2,14 @@ import { Testimonials } from '@app/_components/sections/Testimonials';
 import { testimonials } from '@app/_config/testimonials';
 import { focuses } from '@app/_config/focuses';
 import { images } from '@app/_config/images';
+import { routes } from '@app/_config/routes';
 import { Focuses } from '@app/_components/sections/Focuses';
 import { SplitPageHero } from '@app/_components/hero/SplitPageHero';
 import { StripedSection } from '@app/_components/sections/StripedSection';
 import { CallToAction } from '@app/_components/sections/CallToAction';
+import { TheSpace } from '@app/_components/sections/TheSpace';
 import Link from 'next/link';
 import { buildMetadata } from '@app/_config/metadata';
-import { routes } from '@app/_config/routes';
 
 // Have you heard of NLP but not sure how it works?
 // Neuro-Linguistic Programming is all about how you process information and experience the world.
@@ -90,8 +91,11 @@ export default function CarlPage() {
           striped={true} />
       </StripedSection>
 
-      <StripedSection secondary={false} primary={false}>
-        <Testimonials testimonials={testimonials.filter((t) => t.therapists.includes('carl'))} />
+      <StripedSection secondary={true} primary={false}>
+        <TheSpace
+          title="Our Therapy Space"
+          subtitle="Sessions take place in our comfortable, private therapy room with its own entrance, ensuring your privacy and comfort during our work together."
+        />
       </StripedSection>
 
       <StripedSection secondary={false} primary={true}>

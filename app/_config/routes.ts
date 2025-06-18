@@ -39,7 +39,7 @@ export const createRoutes = () => ({
   helen: () => '/meet-us/helen' as const,
   carl: () => '/meet-us/carl' as const,
   faqs: () => '/faqs' as const,
-  findUs: () => '/session-types/in-person/#find-us' as const, // TODO: Add a real find us page as well. Probably better for SEO
+  findUs: () => '/find-us' as const, // Updated to point to the dedicated page
   contact: () => '/contact-us' as const,
   notFound: () => '/not-found' as const,
   home: () => '/' as const,
