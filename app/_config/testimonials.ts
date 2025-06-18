@@ -4,6 +4,9 @@ export interface ITestimonial {
   therapists: ('helen' | 'carl')[];
 }
 
+// TODO: When real testimonials are available, set this to true
+export const showTestimonials = false;
+
 export const testimonials: ITestimonial[] = [
   {
     content: "Helen helped me see things clearly. Highly recommended!",

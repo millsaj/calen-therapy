@@ -1,5 +1,5 @@
 import { Testimonials } from '@app/_components/sections/Testimonials';
-import { testimonials } from '@app/_config/testimonials';
+import { showTestimonials, testimonials } from '@app/_config/testimonials';
 import { StripedSection } from '@app/_components/sections/StripedSection';
 import { CallToAction } from '@app/_components/sections/CallToAction';
 import NormalPageHero from '@app/_components/hero/NormalPageHero';
@@ -97,9 +97,11 @@ export default function ContactUsPage() {
         </div>
       </StripedSection>
 
-      <StripedSection secondary={false} primary={false}>
-        <Testimonials testimonials={testimonials} />
-      </StripedSection>
+      {showTestimonials && (
+        <StripedSection secondary={false} primary={false}>
+          <Testimonials testimonials={testimonials} />
+        </StripedSection>
+      )}
 
       <StripedSection secondary={false} primary={true}>
         <CallToAction />
