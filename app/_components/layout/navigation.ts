@@ -1,5 +1,5 @@
 import { routes } from '@app/_config/routes';
-import { styles } from '@app/_config/styles';
+import { approaches } from '@app/_config/approaches';
 import { focuses } from '@app/_config/focuses';
 
 export interface INavItem {
@@ -18,11 +18,11 @@ export const mainNav: INavItem[] = [
     ],
   },
   {
-    label: 'Styles',
+    label: 'Approaches',
     extraClasses: 'hidden lg:block',
-    children: styles.nav().map((style) => ({
-      label: style.title,
-      href: routes.styles.show(style.slug),
+    children: approaches.nav().map((approach) => ({
+      label: approach.title,
+      href: routes.approaches.show(approach.slug),
     })),
   },
   {

@@ -3,7 +3,7 @@ import NormalPageHero from '@app/_components/hero/NormalPageHero';
 import { CallToAction } from '@app/_components/sections/CallToAction';
 import { StripedSection } from '@app/_components/sections/StripedSection';
 
-interface IStylePageProps {
+interface IApproachPageProps {
   /**
    * Hero section with title and subtitle
    * Purpose: Introduces the focus area to visitors clearly and concisely
@@ -92,7 +92,7 @@ interface IStylePageProps {
   },
 }
 
-export const StylePage: React.FC<IStylePageProps> = ({
+export const ApproachPage: React.FC<IApproachPageProps> = ({
   hero,
   intro,
   why,

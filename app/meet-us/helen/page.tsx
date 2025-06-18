@@ -1,11 +1,11 @@
 import { Testimonials } from '@app/_components/sections/Testimonials';
 import { testimonials } from '@app/_config/testimonials';
 import { focuses } from '@app/_config/focuses';
-import { styles } from '@app/_config/styles';
+import { approaches } from '@app/_config/approaches';
 import { images } from '@app/_config/images';
 import { routes } from '@app/_config/routes';
 import { Focuses } from '@app/_components/sections/Focuses';
-import { TherapyStyles } from '@app/_components/sections/TherapyStyles';
+import { TherapyApproaches } from '@app/_components/sections/Approaches';
 import { SplitPageHero } from '@app/_components/hero/SplitPageHero';
 import { StripedSection } from '@app/_components/sections/StripedSection';
 import { CallToAction } from '@app/_components/sections/CallToAction';
@@ -132,10 +132,10 @@ export default function HelenPage() {
       </StripedSection>
 
       <StripedSection secondary={false} primary={false}>
-        <TherapyStyles
+        <TherapyApproaches
           title = 'Our Therapy Approaches'
           subtitle = 'We offer a variety of therapeutic approaches, each tailored to address specific needs and goals.'
-          styles={styles.helen()}
+          approaches={approaches.helen()}
           striped={false} />
       </StripedSection>
 

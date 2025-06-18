@@ -1,9 +1,9 @@
-import { TherapyStyles } from '@app/_components/sections/TherapyStyles';
+import { TherapyApproaches } from '@app/_components/sections/Approaches';
 import { Focuses } from '@app/_components/sections/Focuses';
 import { Testimonials } from '@app/_components/sections/Testimonials';
 import { CallToAction } from '@app/_components/sections/CallToAction';
 import { StripedSection } from '@app/_components/sections/StripedSection';
-import { styles } from '@app/_config/styles';
+import { approaches } from '@app/_config/approaches';
 import { focuses } from '@app/_config/focuses';
 import { testimonials } from '@app/_config/testimonials';
 import Therapists from '@app/_components/home/Therapists';
@@ -26,8 +26,8 @@ export default function Home() {
         <Therapists />
       </StripedSection>
       <StripedSection secondary={true} primary={false}>
-        <TherapyStyles
-          styles={styles.home()}
+        <TherapyApproaches
+          approaches={approaches.home()}
           striped={true} />
       </StripedSection>
       <StripedSection secondary={false} primary={false}>

@@ -119,12 +119,12 @@ export default function PhobiasPage() {
             <ul className="list-disc pl-6 mb-4">
               <li className="mb-2"><strong>With Helen:</strong> Helen's approach includes:
                 <ul className="list-disc pl-6 ">
-                  <li><strong><Link href={routes.styles.cbt()} className="text-primary hover:underline hover:text-accent">Cognitive Behavioral Therapy (CBT)</Link></strong> - Evidence-based approach specifically developed for phobias</li>
+                  <li><strong><Link href={routes.approaches.cbt()} className="text-primary hover:underline hover:text-accent">Cognitive Behavioral Therapy (CBT)</Link></strong> - Evidence-based approach specifically developed for phobias</li>
                   <li><strong>Exposure Therapy</strong> - Gradual, controlled exposure to feared stimuli to reduce anxiety responses</li>
-                  <li><strong><Link href={routes.styles.psychodynamic()} className="text-primary hover:underline hover:text-accent">Psychodynamic elements</Link></strong> - Exploring underlying patterns that may contribute to phobic responses</li>
+                  <li><strong><Link href={routes.approaches.psychodynamic()} className="text-primary hover:underline hover:text-accent">Psychodynamic elements</Link></strong> - Exploring underlying patterns that may contribute to phobic responses</li>
                 </ul>
               </li>
-              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.styles.hypnotherapy()} className="text-primary hover:underline hover:text-accent">Solution Focused Hypnotherapy</Link> can be particularly effective for phobias by:
+              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.approaches.hypnotherapy()} className="text-primary hover:underline hover:text-accent">Solution Focused Hypnotherapy</Link> can be particularly effective for phobias by:
                 <ul className="list-disc pl-6 ">
                   <li>Helping you access a relaxed state where the mind is more receptive to change</li>
                   <li>Creating new associations with feared stimuli through visualization and suggestion</li>

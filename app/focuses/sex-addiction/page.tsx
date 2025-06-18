@@ -102,10 +102,10 @@ export default function SexAddictionPage() {
               <li className="mb-2"><strong>With Helen:</strong> Helen holds a specialized diploma in sex addiction (2017)
               and draws from multiple therapeutic approaches:
                 <ul className="list-disc pl-6 ">
-                  <li><strong><Link href={routes.styles.psychodynamic()} className="text-primary hover:underline hover:text-accent">Psychodynamic therapy</Link></strong> to uncover underlying patterns and past experiences that may contribute to compulsive sexual behaviors</li>
-                  <li><strong><Link href={routes.styles.cbt()} className="text-primary hover:underline hover:text-accent">Cognitive Behavioral Therapy (CBT)</Link></strong> to address unhelpful thought patterns and develop new coping skills</li>
-                  <li><strong><Link href={routes.styles.systemic()} className="text-primary hover:underline hover:text-accent">Systemic therapy</Link></strong> to examine how relationships and social contexts influence behaviors and recovery</li>
-                  <li><strong><Link href={routes.styles.show('trauma-informed')} className="text-primary hover:underline hover:text-accent">Trauma-informed approaches</Link></strong> to address any past experiences that may be connected to current patterns</li>
+                  <li><strong><Link href={routes.approaches.psychodynamic()} className="text-primary hover:underline hover:text-accent">Psychodynamic therapy</Link></strong> to uncover underlying patterns and past experiences that may contribute to compulsive sexual behaviors</li>
+                  <li><strong><Link href={routes.approaches.cbt()} className="text-primary hover:underline hover:text-accent">Cognitive Behavioral Therapy (CBT)</Link></strong> to address unhelpful thought patterns and develop new coping skills</li>
+                  <li><strong><Link href={routes.approaches.systemic()} className="text-primary hover:underline hover:text-accent">Systemic therapy</Link></strong> to examine how relationships and social contexts influence behaviors and recovery</li>
+                  <li><strong><Link href={routes.approaches.show('trauma-informed')} className="text-primary hover:underline hover:text-accent">Trauma-informed approaches</Link></strong> to address any past experiences that may be connected to current patterns</li>
                 </ul>
               </li>
             </ul>

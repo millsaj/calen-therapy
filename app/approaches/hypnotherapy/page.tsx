@@ -1,15 +1,15 @@
-import { StylePage } from '../StylePage';
+import { ApproachPage } from '../ApproachPage';
 import { routes } from '@app/_config/routes';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
   title: 'Hypnotherapy',
-  url: routes.styles.hypnotherapy(),
+  url: routes.approaches.hypnotherapy(),
 });
 
 export default function HypnotherapyPage() {
   return (
-    <StylePage
+    <ApproachPage
       hero={{
         title: "Solution Focused Hypnotherapy",
         subtitle: "Harnessing your subconscious mind to create positive change"

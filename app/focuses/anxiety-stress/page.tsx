@@ -101,9 +101,9 @@ export default function AnxietyStressPage() {
             </p>
             <ul className="list-disc pl-6 mb-4">
               <li className="mb-2"><strong>With Helen:</strong> Helen's extensive training allows her to draw from multiple approaches
-              including <Link href={routes.styles.cbt()} className="text-primary hover:underline hover:text-accent">Cognitive Behavioral Therapy (CBT)</Link>, which helps identify and challenge anxious thought patterns, <Link href={routes.styles.personCentered()} className="text-primary hover:underline hover:text-accent">Person-Centered
-              therapy</Link> which provides a supportive environment to explore your concerns at your own pace, and <Link href={routes.styles.show('lifecoaching')} className="text-primary hover:underline hover:text-accent">Life Coaching</Link> which focuses on setting goals and developing practical strategies to manage stress.</li>
-              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.styles.hypnotherapy()} className="text-primary hover:underline hover:text-accent">Solution Focused Hypnotherapy</Link> combines relaxation techniques with a focus on positive
+              including <Link href={routes.approaches.cbt()} className="text-primary hover:underline hover:text-accent">Cognitive Behavioral Therapy (CBT)</Link>, which helps identify and challenge anxious thought patterns, <Link href={routes.approaches.personCentered()} className="text-primary hover:underline hover:text-accent">Person-Centered
+              therapy</Link> which provides a supportive environment to explore your concerns at your own pace, and <Link href={routes.approaches.show('lifecoaching')} className="text-primary hover:underline hover:text-accent">Life Coaching</Link> which focuses on setting goals and developing practical strategies to manage stress.</li>
+              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.approaches.hypnotherapy()} className="text-primary hover:underline hover:text-accent">Solution Focused Hypnotherapy</Link> combines relaxation techniques with a focus on positive
               goals rather than problems, helping calm your nervous system and develop new ways of responding to stressors.</li>
             </ul>
             <p className="mb-4">

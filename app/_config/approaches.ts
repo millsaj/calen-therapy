@@ -1,11 +1,11 @@
-export interface ITherapyStyle {
+export interface ITherapyApproach {
   slug: string;
   title: string;
   content: string;
   talkTo: ('helen' | 'carl')[];
 }
 
-const allStyles: ITherapyStyle[] = [
+const allApproaches: ITherapyApproach[] = [
   {
     slug: 'psychodynamic',
     title: 'Psychodynamic',
@@ -44,11 +44,11 @@ const allStyles: ITherapyStyle[] = [
   },
 ];
 
-export const styles = {
-  all: () => allStyles,
-  home: () => allStyles,
-  nav: () => allStyles,
-  carl: () => allStyles.filter((s) => s.talkTo.includes('carl')),
-  helen: () => allStyles.filter((s) => s.talkTo.includes('helen')),
-  getBySlug: (slug: string) => allStyles.find((s) => s.slug === slug),
+export const approaches = {
+  all: () => allApproaches,
+  home: () => allApproaches,
+  nav: () => allApproaches,
+  carl: () => allApproaches.filter((s) => s.talkTo.includes('carl')),
+  helen: () => allApproaches.filter((s) => s.talkTo.includes('helen')),
+  getBySlug: (slug: string) => allApproaches.find((s) => s.slug === slug),
 };

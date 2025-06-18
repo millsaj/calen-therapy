@@ -1,15 +1,15 @@
-import { StylePage } from '../StylePage';
+import { ApproachPage } from '../ApproachPage';
 import { routes } from '@app/_config/routes';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
   title: 'Person-Centered',
-  url: routes.styles.personCentered(),
+  url: routes.approaches.personCentered(),
 });
 
 export default function PersonCenteredPage() {
   return (
-    <StylePage
+    <ApproachPage
       hero={{
         title: "Person-Centered Therapy",
         subtitle: "Creating a supportive environment for authentic growth and self-discovery"

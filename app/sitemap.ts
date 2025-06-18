@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { routes } from '@app/_config/routes'
-import { styles } from '@app/_config/styles'
+import { approaches } from '@app/_config/approaches'
 import { focuses } from '@app/_config/focuses'
 
 // TODO: Update
@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     createEntry(routes.contact(), 0.8, 'yearly'),
 
     // Service pages
-    ...styles.all().map((style) => createEntry(routes.styles.show(style.slug), 0.6, 'yearly')),
+    ...approaches.all().map((style) => createEntry(routes.approaches.show(style.slug), 0.6, 'yearly')),
     ...focuses.all().map((focus) => createEntry(routes.focuses.show(focus.slug), 0.5, 'yearly')),
 
     createEntry(routes.sessionTypes.inPerson(), 0.6, 'yearly'),

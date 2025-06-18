@@ -1,15 +1,15 @@
-import { StylePage } from '../StylePage';
+import { ApproachPage } from '../ApproachPage';
 import { routes } from '@app/_config/routes';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
   title: 'Psychodynamic',
-  url: routes.styles.psychodynamic(),
+  url: routes.approaches.psychodynamic(),
 });
 
 export default function PsychodynamicPage() {
   return (
-    <StylePage
+    <ApproachPage
       hero={{
         title: "Psychodynamic Therapy",
         subtitle: "Exploring the unconscious mind to understand current behaviors and feelings"

@@ -37,5 +37,5 @@ export const buildMetadata = ({
             locale: "en_GB",
             countryName: "United Kingdom"
         }
-    }; 
+    };
 };

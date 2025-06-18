@@ -5,14 +5,14 @@ export const createRoutes = () => ({
   baseUrl: () => baseUrl,
   url: (path: string = "") => baseUrl + path,
   
-  styles: {
-    systemic: () => '/styles/systemic' as const,
-    psychodynamic: () => '/styles/psychodynamic' as const,
-    hypnotherapy: () => '/styles/hypnotherapy' as const,
-    cbt: () => '/styles/cbt' as const,
-    personCentered: () => '/styles/person-centered' as const,
-    lifeCoaching: () => '/styles/life-coaching' as const,
-    show: (style: string) => `/styles/${style}` as const,
+  approaches: {
+    systemic: () => '/approaches/systemic' as const,
+    psychodynamic: () => '/approaches/psychodynamic' as const,
+    hypnotherapy: () => '/approaches/hypnotherapy' as const,
+    cbt: () => '/approaches/cbt' as const,
+    personCentered: () => '/approaches/person-centered' as const,
+    lifeCoaching: () => '/approaches/life-coaching' as const,
+    show: (approach: string) => `/approaches/${approach}` as const,
   },
   focuses: {
     anxietyStress: () => '/focuses/anxiety-stress' as const,

@@ -1,15 +1,15 @@
-import { StylePage } from '../StylePage';
+import { ApproachPage } from '../ApproachPage';
 import { routes } from '@app/_config/routes';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
   title: 'CBT',
-  url: routes.styles.cbt(),
+  url: routes.approaches.cbt(),
 });
 
 export default function CbtPage() {
   return (
-    <StylePage
+    <ApproachPage
       hero={{
         title: "Cognitive Behavioral Therapy (CBT)",
         subtitle: "Transforming negative thinking patterns to improve your emotional wellbeing"

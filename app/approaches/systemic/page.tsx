@@ -1,15 +1,15 @@
-import { StylePage } from '../StylePage';
+import { ApproachPage } from '../ApproachPage';
 import { routes } from '@app/_config/routes';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
   title: 'Systemic',
-  url: routes.styles.systemic(),
+  url: routes.approaches.systemic(),
 });
 
 export default function SystemicPage() {
   return (
-    <StylePage
+    <ApproachPage
       hero={{
         title: "Systemic Therapy",
         subtitle: "Understanding relationships and patterns in your life systems"

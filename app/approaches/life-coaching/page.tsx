@@ -1,15 +1,15 @@
-import { StylePage } from '../StylePage';
+import { ApproachPage } from '../ApproachPage';
 import { routes } from '@app/_config/routes';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
   title: 'Life Coaching',
-  url: routes.styles.lifeCoaching(),
+  url: routes.approaches.lifeCoaching(),
 });
 
 export default function LifeCoachingPage() {
   return (
-    <StylePage
+    <ApproachPage
       hero={{
         title: "Life Coaching",
         subtitle: "Actionable strategies to achieve your personal and professional goals"
