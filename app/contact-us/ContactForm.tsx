@@ -50,6 +50,7 @@ export function ContactForm() {
       <form 
         name="contact-us" 
         data-netlify="true" 
+        netlify-honeypot="Email"
         className='card p-8 bg-white shadow-md rounded-lg relative'
         onSubmit={handleFormSubmit}
       >
@@ -64,6 +65,19 @@ export function ContactForm() {
         )}
         
         <h2 className="text-2xl font-bold mb-4">Contact Form</h2>
+
+        <div className="hidden">
+          <label htmlFor="Email" className="block text-sm font-medium text-gray-700">
+            Email (do not fill this in)
+          </label>
+          <input
+            type="text"
+            id="Email"
+            name="Email"
+            className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500"
+            placeholder="Your Name"
+          />
+        </div>
 
         <div className="mb-4 mt-8">
           <label htmlFor="name" className="block text-sm font-medium text-gray-700">

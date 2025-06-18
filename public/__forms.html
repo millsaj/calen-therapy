@@ -2,6 +2,8 @@
   <head>
     <title>Contact Us Form Submission</title>
 
+    <meta name="robots" content="noindex, nofollow">
+
     <!-- 
       This file is used by Netlify to define form structure for server-side processing.
       In Next.js, this hidden page allows Netlify Forms to work even with client-side routing.
@@ -10,6 +12,7 @@
 
       See docs at: https://opennext.js.org/netlify/forms
     -->
+
     <script>
       (function() {
         // Redirect after 1 second to give user time to see the message
@@ -18,6 +21,7 @@
         }, 1000);
       })();
     </script>
+
     <style>
       body {
         font-family: system-ui, sans-serif;
@@ -34,12 +38,20 @@
   </head>
   <body>
     <!-- Hidden form definitions for Netlify -->
-    <form name="contact-us" data-netlify="true" hidden>
+    <form
+        name="contact-us"
+        data-netlify="true" 
+        netlify-honeypot="Email" 
+        hidden>
+
       <input type="hidden" name="form-name" value="contact-us" />
 
-      <input name="Name" type="text" />
-      <input name="Contact Details" type="text" />
-      <input name="Message" type="text" />
+      <!-- Honeypot field to prevent spam -->
+      <input id="Email" name="Email" />
+
+      <input id="Name" name="Name" type="text" />
+      <input id="Contact Details" name="Contact Details" type="text" />
+      <input id="Message" name="Message" type="text" />
     </form>
 
     <!-- Visible content for users who accidentally land on this page -->
