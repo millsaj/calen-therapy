@@ -45,7 +45,7 @@ export const FullPageHero = ({
           <div className="flex flex-col space-y-3 sm:flex-row sm:space-y-0 sm:space-x-6">
             <Link
               href={routes.contact()}
-              className="bg-white text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-accent transition-colors text-center w-full sm:w-auto"
+              className="bg-white text-primary hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-accent transition-colors text-center w-full sm:w-auto"
             >
               Contact Us
             </Link>

@@ -13,6 +13,9 @@ export const metadata = buildMetadata({
   url: routes.faqs(),
 });
 
+// Any react node can be used in the answers, so we can use links and other components.
+// However we need to always use a key prop for any react node that is part of an array.
+
 const pricingQs = [
   {
     q: "How much does a session cost?",
@@ -117,22 +120,26 @@ const locationQs = [
     q: "Where are you located?",
     a: [
       contactDetails.address.full,
-      <>
+      <div key="map-link">
         You can find more information about where we are and the therapy space <Link href={routes.findUs()} className='text-primary hover:underline hover:text-accent'>here</Link>.
-      </>,
+      </div>,
     ]
   },
   {
     q: "Do you offer online sessions?",
     a: [
       "Yes, we offer online therapy sessions (usually via Zoom).",
-      <>Read more <Link href={routes.sessionTypes.online()} className='text-primary hover:underline hover:text-accent'>here</Link>.</>
+      <div key="online-link">
+        Read more <Link href={routes.sessionTypes.online()} className='text-primary hover:underline hover:text-accent'>here</Link>.
+      </div>
     ]
   },
   {
     q: "Are there any accessibility options?",
     a: [
-      <>Please see our <Link href={routes.findUs()} className='text-primary hover:underline hover:text-accent'>Find Us</Link> section for details on accessibility.</>,
+      <div key="accessibility-link">
+        Please see our <Link href={routes.findUs()} className='text-primary hover:underline hover:text-accent'>Find Us</Link> section for details on accessibility.
+      </div>
     ]
   },
 ];

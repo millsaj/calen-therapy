@@ -14,7 +14,7 @@ export const StripedSection: React.FC<IStripedSectionProps> = ({
   extraClasses = primary ? 'bg-primary border-b border-gray-200' : extraClasses;
 
   return (
-    <section className={`py-24 ${extraClasses}`}>
+    <section className={`py-16 md:py-24 ${extraClasses}`}>
       <div className="container mx-auto px-6">
         {children}
       </div>
