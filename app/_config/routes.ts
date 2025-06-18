@@ -51,7 +51,7 @@ export const createRoutes = () => ({
     helenPsychologyToday: () => 'https://www.psychologytoday.com/gb/counselling/helen-mills-porter-wigan/1362603' as const,
     carlHypnotherapyDirectory: () => 'https://www.hypnotherapy-directory.org.uk/hypnotherapists/carl-porter' as const,
     formUserLink: () => 'https://www.netlify.com/' as const,
-    relate: () => 'https://relate.co.uk' as const, // TODO: Check this URL works bc I guessed
+    relate: () => 'https://www.relate.org.uk/' as const,
   },
 });
 

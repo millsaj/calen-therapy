@@ -2,14 +2,6 @@
 
 A professional website for Calen Therapy, offering various therapy services provided by Helen Mills Porter and Carl Porter.
 
-## Go live checklist
-
-- Grep for TODO
-- Meta tags
-- sitemap
-- robots.txt
-- form?
-
 ## Getting Started
 
 First, install the dependencies:

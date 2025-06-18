@@ -8,9 +8,9 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: ['*'],
-      allow: [], // TODO: Replace with prod config
-      disallow: ['*'],
+      allow: ['/'],
     },
     sitemap: routes.baseUrl + routes.sitemap(),
+    host: routes.baseUrl(),
   }
 }

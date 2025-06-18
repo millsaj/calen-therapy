@@ -33,17 +33,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Main session types - high priority with moderate change frequency
     createEntry(routes.sessionTypes.inPerson(), 0.8, 'monthly'),
     createEntry(routes.sessionTypes.online(), 0.8, 'monthly'),
-    
-    // All therapy approaches - medium-high priority
-    ...approaches.all().map((style) => 
-      createEntry(routes.approaches.show(style.slug), 0.7, 'monthly')
-    ),
-    
+
     // All therapy focuses/issues - medium priority but important for SEO
     ...focuses.all().map((focus) => 
       createEntry(routes.focuses.show(focus.slug), 0.7, 'monthly')
     ),
-    
+
+    // All therapy approaches - medium priority
+    ...approaches.all().map((style) => 
+      createEntry(routes.approaches.show(style.slug), 0.7, 'monthly')
+    ),
+
     // Other service options - lower priority
     createEntry(routes.sessionTypes.other(), 0.5, 'yearly'),
   ]
