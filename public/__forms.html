@@ -10,6 +10,8 @@
       This is a workaround since Netlify needs HTML form definitions at build time.
       The redirect ensures users don't stay on this technical page if accidentally accessed.
 
+      Use single word lowercase names for form fields to avoid issues with Netlify Forms.
+
       See docs at: https://opennext.js.org/netlify/forms
     -->
 
@@ -41,17 +43,17 @@
     <form
         name="contact-us"
         data-netlify="true" 
-        netlify-honeypot="Email" 
+        netlify-honeypot="email" 
         hidden>
 
       <input type="hidden" name="form-name" value="contact-us" />
 
       <!-- Honeypot field to prevent spam -->
-      <input id="Email" name="Email" />
+      <input id="email" name="email" />
 
-      <input id="Name" name="Name" type="text" />
-      <input id="Contact Details" name="Contact Details" type="text" />
-      <input id="Message" name="Message" type="text" />
+      <input id="name" name="name" type="text" />
+      <input id="contact" name="contact" type="text" />
+      <input id="message" name="message" type="text" />
     </form>
 
     <!-- Visible content for users who accidentally land on this page -->

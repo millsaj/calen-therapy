@@ -3,6 +3,9 @@ import { routes } from '@app/_config/routes'
 import { approaches } from '@app/_config/approaches'
 import { focuses } from '@app/_config/focuses'
 
+// Force static generation for the sitemap
+export const dynamic = "force-static"
+
 export default function sitemap(): MetadataRoute.Sitemap {
   // Helper function to create sitemap entries
   const createEntry = (path: string, priority: number, changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency']) => ({

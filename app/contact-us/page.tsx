@@ -10,7 +10,7 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
 import { buildMetadata } from '@app/_config/metadata';
-import { ContactForm } from '@app/contact-us/ContactForm';
+import { ContactForm } from './ContactForm';
 
 export const metadata = buildMetadata({
   pageTitle: 'Contact Our Therapists',

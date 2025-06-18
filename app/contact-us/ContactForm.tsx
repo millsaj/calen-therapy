@@ -49,16 +49,14 @@ export function ContactForm() {
     <div className="max-w-4xl mx-auto">
       <form 
         name="contact-us" 
-        data-netlify="true" 
-        netlify-honeypot="Email"
         className='card p-8 bg-white shadow-md rounded-lg relative'
         onSubmit={handleFormSubmit}
       >
-        <input type="hidden" name="contact-us" value="contact-us" />
+        <input type="hidden" name="form-name" value="contact-us" />
         
         {/* Overlay that appears during form submission */}
         {isSubmitting && (
-          <div className="absolute inset-0 bg-white/70 backdrop-blur-sm flex flex-col items-center justify-center z-10 rounded-lg">
+          <div className="absolute z-30 inset-0 bg-white/70 backdrop-blur-sm flex flex-col items-center justify-center z-10 rounded-lg">
             <div className="w-12 h-12 border-4 border-accent border-t-transparent rounded-full animate-spin"></div>
             <p className="mt-4 text-accent font-medium">Sending your message...</p>
           </div>
@@ -67,13 +65,13 @@ export function ContactForm() {
         <h2 className="text-2xl font-bold mb-4">Contact Form</h2>
 
         <div className="hidden">
-          <label htmlFor="Email" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
             Email (do not fill this in)
           </label>
           <input
             type="text"
-            id="Email"
-            name="Email"
+            id="email"
+            name="email"
             className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500"
             placeholder="Your Name"
           />
@@ -86,7 +84,7 @@ export function ContactForm() {
           <input
             type="text"
             id="name"
-            name="Name"
+            name="name"
             className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500"
             placeholder="Your Name"
             required
@@ -99,7 +97,7 @@ export function ContactForm() {
           <input
             type="text"
             id="contact"
-            name="Contact Details"
+            name="contact"
             className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500"
             placeholder="Your Email or Phone No."
             required
@@ -111,7 +109,7 @@ export function ContactForm() {
           </label>
           <textarea
             id="message"
-            name="Message"
+            name="message"
             rows={4}
             className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 min-h-24 focus:ring-indigo-500 focus:border-indigo-500"
             placeholder="Your Message"
