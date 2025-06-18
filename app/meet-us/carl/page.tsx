@@ -32,63 +32,15 @@ export default function CarlPage() {
         title='Carl Porter' >
 
         <p>
-          Hi, I'm Carl. I provide a confidential and professional hypnotherapy service alongside my wife Helen, who is a psychotherapist and relationship therapist. Qualified in hypnotherapy and as an NLP practitioner, I will enable you to make significant changes to your life and wellbeing.
+          Hi, I'm Carl. I provide a confidential and professional hypnotherapy service alongside my wife <Link href={routes.helen()} className='text-primary hover:underline hover:text-accent'>Helen</Link>, who is a psychotherapist and relationship therapist.
+        </p>
+        <p>
+          Qualified in hypnotherapy and as an NLP practitioner, I will enable you to make significant changes to your life and wellbeing. I completed my Solution Focused Hypnotherapy Diploma in 2020 and have since been helping clients overcome a wide range of issues, including <Link href={routes.focuses.anxietyStress()} className='text-primary hover:underline hover:text-accent'>anxiety</Link>, <Link href={routes.focuses.phobias()} className='text-primary hover:underline hover:text-accent'>phobias</Link>, <Link href={routes.focuses.weightLoss()} className='text-primary hover:underline hover:text-accent'>weight loss</Link>, <Link href={routes.focuses.smoking()} className='text-primary hover:underline hover:text-accent'>smoking</Link>, and more.
+        </p>
+        <p>
+          I am a <Link href={routes.external.carlHypnotherapyDirectory()} className="text-primary hover:underline hover:text-accent">registered practitioner</Link> with the Hypnotherapy Directory and a member of AFSFH (Association for Solution Focused Hypnotherapy).
         </p>
       </SplitPageHero>
-
-      <StripedSection secondary={true} primary={false}>
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-gray-800">Qualifications & Experience</h2>
-          <p className="text-xl text-gray-600 mb-10">Specialized training in solution-focused hypnotherapy.</p>
-
-          <div className="flex flex-col gap-8 items-center">
-            {/* Core Qualifications Card */}
-            <div className="w-full bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center gap-6 hover:scale-[1.02] transition-transform">
-              <div className="bg-secondary w-14 h-14 flex items-center justify-center rounded-full shadow-lg mt-1">
-                <span className="text-white text-2xl">🎓</span>
-              </div>
-              <div className="text-center max-w-[85%]">
-                <h3 className="text-xl font-semibold text-primary mb-4">Core Qualifications</h3>
-                <p className="text-gray-700 text-sm mb-6">
-                  I specialize in solution-focused hypnotherapy to help clients make positive changes in their lives.<br />
-                  I'm qualified to help you manage daily stresses and find alternatives to unwanted negative feelings.
-                </p>
-                <ul className="text-gray-700 space-y-3 font-medium w-full">
-                  <li className="p-2 rounded-lg hover:bg-secondary transition-colors">
-                    <span>Solution Focused Hypnotherapy Diploma (2020)</span>
-                  </li>
-                  <li className="p-2 rounded-lg hover:bg-secondary transition-colors">
-                    <span>NLP Practitioner Certification</span>
-                  </li>
-                  <li className="p-2 rounded-lg hover:bg-secondary transition-colors">
-                    <span>IPS Degree (2002)</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Memberships Section */}
-            <div className="w-full bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center gap-6 hover:scale-[1.02] transition-transform">
-              <div className="bg-secondary w-14 h-14 flex items-center justify-center rounded-full shadow-lg mt-1">
-                <span className="text-white text-2xl">🏅</span>
-              </div>
-              <div className="text-center max-w-[85%]">
-                <h3 className="text-xl font-semibold text-primary mb-4">Professional Memberships</h3>
-                <p className="text-gray-700 text-sm mb-6">
-                  I'm a registered practitioner with the following professional directories:
-                </p>
-                <ul className="text-gray-700 space-y-3 font-medium w-full">
-                  <li className="p-2 rounded-lg hover:bg-secondary transition-colors">
-                    <Link href="https://www.hypnotherapy-directory.org.uk/hypnotherapists/carl-porter" target="_blank" className="text-primary hover:underline hover:text-accent">
-                      <span>Hypnotherapy Directory</span>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </StripedSection>
 
       <StripedSection secondary={false} primary={false}>
         <div className="max-w-6xl mx-auto px-4 py-16">
@@ -133,6 +85,7 @@ export default function CarlPage() {
 
       <StripedSection secondary={true} primary={false}>
         <Focuses
+          subtitle="Everyone's concerns are unique, but we have some common areas of focus that I can help with."
           focuses={focuses.carl()}
           striped={true} />
       </StripedSection>

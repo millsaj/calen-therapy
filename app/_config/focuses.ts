@@ -1,87 +1,87 @@
 export interface IFocus {
   slug: string;
   title: string;
-  talkTo: ('helen' | 'carl')[];
+  displayOn: ('home' | 'helen' | 'carl')[];
 }
 
 const allFocuses: IFocus[] = [
   {
     slug: 'anxiety-stress',
     title: 'Anxiety & Stress',
-    talkTo: ['carl']
+    displayOn: ['home', 'carl']
   },
   {
     slug: 'depression',
     title: 'Depression',
-    talkTo: ['helen', 'carl']
+    displayOn: ['home', 'helen', 'carl']
   },
   {
     slug: 'relationships',
     title: 'Relationships & Family',
-    talkTo: ['helen']
+    displayOn: ['home', 'helen']
   },
   {
     slug: 'grief-loss',
     title: 'Grief & Loss',
-    talkTo: ['helen']
+    displayOn: ['home', 'helen']
   },
   {
     slug: 'trauma',
     title: 'Trauma & PTSD',
-    talkTo: ['helen']
+    displayOn: ['home', 'helen']
   },
   {
     slug: 'addictions',
     title: 'Addictions & Habits',
-    talkTo: ['carl']
+    displayOn: ['home', 'carl']
   },
   {
     slug: 'sex-addiction',
     title: 'Sex & Porn Addiction',
-    talkTo: ['helen']
+    displayOn: ['home', 'helen']
   },
   {
     slug: 'smoking',
     title: 'Stop Smoking',
-    talkTo: ['carl', 'helen']
+    displayOn: ['carl']
   },
   {
     slug: 'weight-loss',
     title: 'Weight Loss',
-    talkTo: ['carl', 'helen']
+    displayOn: ['carl']
   },
   {
     slug: 'confidence-development',
-    title: 'Confidence & Personal Development',
-    talkTo: ['carl']
+    title: 'Confidence',
+    displayOn: ['home', 'carl']
   },
   {
     slug: 'phobias',
     title: 'Phobias',
-    talkTo: ['helen', 'carl']
+    displayOn: ['home', 'helen', 'carl']
   },
   {
     slug: 'ocd',
     title: 'OCD',
-    talkTo: ['helen', 'carl']
+    displayOn: ['home', 'helen', 'carl']
   },
   {
     slug: 'life-changes',
     title: 'Life Changes & Transitions',
-    talkTo: []
+    displayOn: ['home']
   },
   {
     slug: 'illness-disability',
     title: 'Illness & Disability',
-    talkTo: ['helen', 'carl']
+    displayOn: ['home', 'helen']
   },
 ];
 
 export const focuses = {
   all: () => allFocuses,
-  home: () => allFocuses,
+  home: () => allFocuses.filter((focus) => focus.displayOn.includes('home')),
   nav: () => allFocuses,
-  carl: () => allFocuses.filter((focus) => focus.talkTo.includes('carl')),
-  helen: () => allFocuses.filter((focus) => focus.talkTo.includes('helen')),
+  carl: () => allFocuses.filter((focus) => focus.displayOn.includes('carl')),
+  helen: () => allFocuses.filter((focus) => focus.displayOn.includes('helen')),
   getBySlug: (slug: string) => allFocuses.find((focus) => focus.slug === slug),
 };

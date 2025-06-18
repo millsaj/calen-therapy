@@ -11,7 +11,7 @@ interface IFocusesProps {
 
 export const Focuses: React.FC<IFocusesProps> = ({
   title = 'Areas we could focus on',
-  subtitle = "We provide support for a wide range of concerns and challenges.",
+  subtitle = "Everyone's concerns are unique, but we have some common areas of focus that we can help with.",
   focuses,
   striped,
 }) => {
@@ -19,19 +19,23 @@ export const Focuses: React.FC<IFocusesProps> = ({
     <>
       <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-gray-800">{title}</h2>
-        <p className="text-xl text-gray-600">{subtitle}</p>
+        <p className="text-lg md:text-xl text-gray-600">{subtitle}</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div
+        className={`grid grid-cols-1 sm:grid-cols-2 ${
+          focuses.length % 3 === 0 ? 'lg:grid-cols-3' : ''
+        } xl:grid-cols-4 gap-6`}
+      >
         {focuses.map(focus => {
           return (
-            <Link
-              key={focus.title}
-              className={`${striped ? 'bg-white' : 'bg-secondary'} p-4 md:p-8 rounded-xl shadow text-center hover:shadow-md transition-shadow flex flex-col justify-center`}
-              href={routes.focuses.show(focus.slug)} >
+        <Link
+          key={focus.title}
+          className={`${striped ? 'bg-white' : 'bg-secondary'} p-4 md:p-8 rounded-xl shadow text-center hover:shadow-md transition-shadow flex flex-col justify-center`}
+          href={routes.focuses.show(focus.slug)} >
 
-              <h3 className="text-lg font-bold text-primary">{focus.title}</h3>
-            </Link>
+          <h3 className="text-lg font-bold text-primary">{focus.title}</h3>
+        </Link>
           );
         })}
       </div>

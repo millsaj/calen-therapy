@@ -27,8 +27,8 @@ export const CallToAction: React.FC<ICallToActionProps> = ({
 }) => {
   return (
     <div className="text-center">
-      <h2 className="text-2xl md:text-4xl font-bold mb-8 mx-auto">{title}</h2>
-      <div className='text-xl mb-10 max-w-3xl mx-auto opacity-90'>
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 mx-auto">{title}</h2>
+      <div className='text-lg md:text-xl mb-10 max-w-3xl mx-auto opacity-90'>
         {description.map((desc, index) => (
           <p key={index}>{desc}</p>
         ))}
