@@ -26,7 +26,9 @@ export const createRoutes = () => ({
     ocd: () => '/focuses/ocd' as const,
     phobias: () => '/focuses/phobias' as const,
     lifeChanges: () => '/focuses/life-changes' as const,
-    healthWellbeing: () => '/focuses/health-wellbeing' as const,
+    illnessDisability: () => '/focuses/illness-disability' as const,
+    smoking: () => '/focuses/smoking' as const,
+    weightLoss: () => '/focuses/weight-loss' as const,
     show: (focus: string) => `/focuses/${focus}` as const,
   },
   sessionTypes: {

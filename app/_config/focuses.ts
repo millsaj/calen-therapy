@@ -41,6 +41,16 @@ const allFocuses: IFocus[] = [
     talkTo: ['helen']
   },
   {
+    slug: 'smoking',
+    title: 'Stop Smoking',
+    talkTo: ['carl', 'helen']
+  },
+  {
+    slug: 'weight-loss',
+    title: 'Weight Loss',
+    talkTo: ['carl', 'helen']
+  },
+  {
     slug: 'confidence-development',
     title: 'Confidence & Personal Development',
     talkTo: ['carl']
@@ -61,10 +71,10 @@ const allFocuses: IFocus[] = [
     talkTo: []
   },
   {
-    slug: 'health-wellbeing',
-    title: 'Health & Wellbeing',
-    talkTo: ['carl']
-  }
+    slug: 'illness-disability',
+    title: 'Illness & Disability',
+    talkTo: ['helen', 'carl']
+  },
 ];
 
 export const focuses = {
