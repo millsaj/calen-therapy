@@ -1,5 +1,3 @@
-'use client';
-
 import { StripedSection } from '@app/_components/sections/StripedSection';
 import { CallToAction } from '@app/_components/sections/CallToAction';
 import NormalPageHero from '@app/_components/hero/NormalPageHero';
@@ -8,6 +6,12 @@ import { routes } from '@app/_config/routes';
 import { contactDetails } from '@app/_config/main';
 import Link from 'next/link';
 import { mapLinks, MapComponent } from './Map';
+import { buildMetadata } from '@app/_config/metadata';
+
+export const metadata = buildMetadata({
+  title: 'In Person',
+  url: routes.sessionTypes.inPerson(),
+});
 
 export default function InPersonPage() {
   const renderContentSection = (title: string, body: React.ReactNode) => (

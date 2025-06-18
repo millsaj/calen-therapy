@@ -29,7 +29,7 @@ const therapists: ITherapist[] = [
       'Sex addiction',
       'Life coaching'
     ],
-    imagePath: images.helen.main.src,
+    imagePath: images.helen.main.url,
     learnMoreLink: routes.helen(),
   },
   {
@@ -47,7 +47,7 @@ const therapists: ITherapist[] = [
       'Overcoming fears & phobias',
       'Encouraging new habits such as sport'
     ],
-    imagePath: images.carl.main.src,
+    imagePath: images.carl.main.url,
     learnMoreLink: routes.helen(),
   },
 ];

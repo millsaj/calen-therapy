@@ -1,5 +1,3 @@
-'use client';
-
 import { IFocus } from '@app/_config/focuses';
 import { routes } from '@app/_config/routes';
 import Link from 'next/link';

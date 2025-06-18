@@ -1,5 +1,3 @@
-'use client';
-
 import { Testimonials } from '@app/_components/sections/Testimonials';
 import { testimonials } from '@app/_config/testimonials';
 import { focuses } from '@app/_config/focuses';
@@ -13,14 +11,21 @@ import { StripedSection } from '@app/_components/sections/StripedSection';
 import { CallToAction } from '@app/_components/sections/CallToAction';
 import Link from 'next/link';
 import Image from 'next/image';
+import { buildMetadata } from '@app/_config/metadata';
+
+export const metadata = buildMetadata({
+  title: 'Helen',
+  image: images.helen.main,
+  url: routes.helen(),
+  ogType: 'profile'
+});
 
 export default function HelenPage() {
-
   return (
     <div>
       {/* Hero Section */}
       <SplitPageHero
-        imageSrc={images.helen.main.src}
+        imageSrc={images.helen.main.url}
         imageAlt={images.helen.main.alt}
         title='Helen Mills Porter'>
 
@@ -37,7 +42,7 @@ export default function HelenPage() {
 
         <Link href={routes.external.helenBacp()} target="_blank">
           <Image
-            src={images.helen.bacp.src}
+            src={images.helen.bacp.url}
             alt={images.helen.bacp.alt}
             width={250}
             height={0}

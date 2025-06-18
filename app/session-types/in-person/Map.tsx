@@ -1,5 +1,3 @@
-'use client';
-
 import { contactDetails } from '@app/_config/main';
 
 const place = contactDetails.address.full.split(" ").join("+");

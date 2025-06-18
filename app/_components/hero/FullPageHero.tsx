@@ -26,7 +26,7 @@ export const FullPageHero = ({
     <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src={images.general.homeHero.src}
+          src={images.general.homeHero.url}
           alt={images.general.homeHero.alt}
           fill
           className="object-cover opacity-70"

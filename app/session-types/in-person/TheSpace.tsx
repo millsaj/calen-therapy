@@ -27,7 +27,7 @@ export const TheSpace: React.FC<ITheSpaceProps> = ({
           renderItem={(img, i) => (
             <div key={i} className="relative w-full h-96">
               <Image
-                  src={img.src}
+                  src={img.url}
                   alt={img.alt}
                   fill
                   className="object-cover"

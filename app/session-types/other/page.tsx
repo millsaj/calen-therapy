@@ -1,10 +1,14 @@
-'use client';
-
 import { StripedSection } from '@app/_components/sections/StripedSection';
 import { CallToAction } from '@app/_components/sections/CallToAction';
 import NormalPageHero from '@app/_components/hero/NormalPageHero';
 import { routes } from '@app/_config/routes';
 import Link from 'next/link';
+import { buildMetadata } from '@app/_config/metadata';
+
+export const metadata = buildMetadata({
+  title: 'Other Session Types',
+  url: routes.sessionTypes.other(),
+});
 
 export default function OtherSessionTypesPage() {
   const renderContentSection = (title: string, body: React.ReactNode) => (

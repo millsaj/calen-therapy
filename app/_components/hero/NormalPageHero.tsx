@@ -1,5 +1,3 @@
-'use client';
-
 export interface ISplitHeroArgs {
   title: string;
   subtitle?: string;

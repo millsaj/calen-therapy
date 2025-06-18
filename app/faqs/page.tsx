@@ -1,5 +1,3 @@
-'use client';
-
 import { Testimonials } from '@app/_components/sections/Testimonials';
 import { testimonials } from '@app/_config/testimonials';
 import { StripedSection } from '@app/_components/sections/StripedSection';
@@ -9,6 +7,12 @@ import { FAQSection } from './FAQSection';
 import { routes } from '@app/_config/routes';
 import { contactDetails, pricing } from '@app/_config/main';
 import Link from 'next/link';
+import { buildMetadata } from '@app/_config/metadata';
+
+export const metadata = buildMetadata({
+  title: 'FAQs & Pricing',
+  url: routes.faqs(),
+});
 
 const pricingQs = [
   {

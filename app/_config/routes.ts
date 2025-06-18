@@ -1,6 +1,10 @@
 // This file defines the routes for the application.
+const baseUrl = "https://calen-therapy.co.uk";
+
 export const createRoutes = () => ({
-  baseUrl: 'https://calen-therapy.co.uk',
+  baseUrl: () => baseUrl,
+  url: (path: string = "") => baseUrl + path,
+  
   styles: {
     systemic: () => '/styles/systemic' as const,
     psychodynamic: () => '/styles/psychodynamic' as const,

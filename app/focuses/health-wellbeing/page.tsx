@@ -1,6 +1,12 @@
 import Link from 'next/link';
 import { routes } from '@app/_config/routes';
 import { FocusPage } from '../FocusPage';
+import { buildMetadata } from '@app/_config/metadata';
+
+export const metadata = buildMetadata({
+  title: 'Health & Wellbeing',
+  url: routes.focuses.healthWellbeing(),
+});
 
 export default function HealthWellbeingPage() {
   return (

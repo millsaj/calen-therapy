@@ -9,6 +9,12 @@ import { testimonials } from '@app/_config/testimonials';
 import Therapists from '@app/_components/home/Therapists';
 import FullPageHero from '@app/_components/hero/FullPageHero';
 import { pricing } from '@app/_config/main';
+import { buildMetadata } from '@app/_config/metadata';
+import { routes } from './_config/routes';
+
+export const metadata = buildMetadata({
+  url: routes.home(),
+});
 
 export default function Home() {
   return (

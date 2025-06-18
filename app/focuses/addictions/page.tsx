@@ -1,6 +1,12 @@
 import Link from 'next/link';
 import { routes } from '@app/_config/routes';
 import { FocusPage } from '../FocusPage';
+import { buildMetadata } from '@app/_config/metadata';
+
+export const metadata = buildMetadata({
+  title: 'Addictions',
+  url: routes.focuses.addictions(),
+});
 
 export default function AddictionsPage() {
   return (

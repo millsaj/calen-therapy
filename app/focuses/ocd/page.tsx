@@ -1,6 +1,12 @@
 import { routes } from '@app/_config/routes';
 import { FocusPage } from '../FocusPage';
 import Link from 'next/link';
+import { buildMetadata } from '@app/_config/metadata';
+
+export const metadata = buildMetadata({
+  title: 'OCD',
+  url: routes.focuses.ocd(),
+});
 
 export default function OCDPage() {
   return (

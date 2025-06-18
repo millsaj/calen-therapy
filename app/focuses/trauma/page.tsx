@@ -1,6 +1,12 @@
 import { routes } from '@app/_config/routes';
 import { FocusPage } from '../FocusPage';
 import Link from 'next/link';
+import { buildMetadata } from '@app/_config/metadata';
+
+export const metadata = buildMetadata({
+  title: 'Trauma',
+  url: routes.focuses.trauma(),
+});
 
 export default function TraumaPage() {
   return (

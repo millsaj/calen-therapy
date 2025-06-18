@@ -1,5 +1,3 @@
-'use client';
-
 import { Testimonials } from '@app/_components/sections/Testimonials';
 import { testimonials } from '@app/_config/testimonials';
 import { focuses } from '@app/_config/focuses';
@@ -9,10 +7,19 @@ import { SplitPageHero } from '@app/_components/hero/SplitPageHero';
 import { StripedSection } from '@app/_components/sections/StripedSection';
 import { CallToAction } from '@app/_components/sections/CallToAction';
 import Link from 'next/link';
+import { buildMetadata } from '@app/_config/metadata';
+import { routes } from '@app/_config/routes';
 
 // Have you heard of NLP but not sure how it works?
 // Neuro-Linguistic Programming is all about how you process information and experience the world.
 // It can help amplify your ability to manage your own internal state and how you regulate.
+
+export const metadata = buildMetadata({
+  title: 'Carl',
+  image: images.carl.main,
+  url: routes.carl(),
+  ogType: 'profile'
+});
 
 export default function CarlPage() {
 
@@ -20,7 +27,7 @@ export default function CarlPage() {
     <div>
       {/* Hero Section */}
       <SplitPageHero
-        imageSrc={images.carl.main.src}
+        imageSrc={images.carl.main.url}
         imageAlt={images.carl.main.alt}
         title='Carl Porter' >
 

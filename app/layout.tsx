@@ -1,13 +1,10 @@
-import type { Metadata } from 'next';
 import Header from '@app/_components/layout/Header';
 import Footer from '@app/_components/layout/Footer';
 import ColorPaletteSwitcher from '@app/_components/ui/ColorPaletteSwitcher';
 import './globals.css';
+import { buildMetadata } from './_config/metadata';
 
-export const metadata: Metadata = {
-  title: 'Calen Therapy',
-  description: 'Professional therapy services in Wigan',
-};
+export const metadata = buildMetadata({});
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

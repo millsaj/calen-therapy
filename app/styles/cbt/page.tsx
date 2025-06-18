@@ -1,4 +1,11 @@
 import { StylePage } from '../StylePage';
+import { routes } from '@app/_config/routes';
+import { buildMetadata } from '@app/_config/metadata';
+
+export const metadata = buildMetadata({
+  title: 'CBT',
+  url: routes.styles.cbt(),
+});
 
 export default function CbtPage() {
   return (
