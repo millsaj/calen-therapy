@@ -1,5 +1,5 @@
 // This file defines the routes for the application.
-const baseUrl = "https://www.calentherapy.co.uk";
+const baseUrl = "https://calentherapy.co.uk";
 
 export const createRoutes = () => ({
   baseUrl: () => baseUrl,
