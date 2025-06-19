@@ -1,5 +1,7 @@
 # Calen Therapy Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/adc0320a-9768-4d48-9e40-a639f1a05b70/deploy-status)](https://app.netlify.com/projects/calen-therapy/deploys)
+
 A professional website for Calen Therapy, offering various therapy services provided by Helen Mills Porter and Carl Porter (my parents).
 
 ## Tech Stack
