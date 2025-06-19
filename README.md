@@ -53,3 +53,9 @@ yarn build
 This project is deployed using netifly.
 
 Production Env: https://calentherapy.co.uk.
+
+## License
+
+This project follows a dual license: CC BY-NC-ND 4.0 for website content and MIT for code. See [LICENSE.txt](./LICENSE.txt) for more detail.
+
+For any licensing questions or permission requests, please contact h.m.porter@hotmail.com.
