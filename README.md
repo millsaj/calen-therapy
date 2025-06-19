@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/adc0320a-9768-4d48-9e40-a639f1a05b70/deploy-status)](https://app.netlify.com/projects/calen-therapy/deploys)
 
-A professional website for Calen Therapy, offering various therapy services provided by Helen Mills Porter and Carl Porter (my parents).
+A professional website for Calen Therapy, offering various therapy services provided by my parents: Helen Mills Porter and Carl Porter.
 
 ## Tech Stack
 
@@ -19,6 +19,13 @@ A professional website for Calen Therapy, offering various therapy services prov
 - `/public` - Static assets
 
 In typescript you can access `/app/*` with `import "@app/_components/layout/Footer"`.
+
+## Links
+
+- [Public URL](https://calentherapy.co.uk)
+- [Source Code](https://github.com/millsaj/calen-therapy)
+- [DNS hosting](https://login.yola.com/)
+- [Site hosting & DNS management](https://app.netlify.com) (Logged in using GitHub Account)
 
 ## Getting Started
 
