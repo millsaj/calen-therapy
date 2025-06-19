@@ -16,10 +16,11 @@ import { buildMetadata } from '@app/_config/metadata';
 export const metadata = buildMetadata({
   pageTitle: 'Carl Porter - Solution Focused Hypnotherapist',
   description: 'Meet Carl Porter, qualified solution focused hypnotherapist in Wigan. Specializing in hypnotherapy for anxiety, phobias, smoking cessation, and weight loss with proven results.',
-  additionalKeywords: ["hypnotherapist Wigan", "NLP practitioner", "solution focused hypnotherapy", "registered hypnotherapist", "AFSFH member", "male hypnotherapist"],
+  additionalKeywords: ["hypnotherapist Wigan", "NLP practitioner", "hypnotherapy", "weight loss", "smoking cessation", "Carl Porter", "registered hypnotherapist", "AFSFH member", "male hypnotherapist"],
   image: images.carl.hero,
   path: routes.carl(),
-  ogType: 'profile'
+  ogType: 'profile',
+  includeLocalBusinessSchema: true,
 });
 
 export default function CarlPage() {

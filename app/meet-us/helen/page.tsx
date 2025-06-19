@@ -11,12 +11,13 @@ import Image from 'next/image';
 import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
-  pageTitle: 'Helen Mills Porter - BACP Registered Therapist',
-  description: 'Meet Helen Mills Porter, experienced BACP registered psychotherapist in Wigan with over 30 years of experience. Specializing in psychodynamic therapy, CBT, trauma, and sex addiction treatment.',
-  additionalKeywords: ["BACP registered therapist", "psychotherapist in Wigan", "experienced therapist", "Helen Mills Porter", "female therapist Wigan", "qualified psychotherapist"],
+  pageTitle: 'Helen Mills Porter - BACP Member',
+  description: 'Meet Helen Mills Porter, experienced BACP registered psychotherapist in Wigan / St Helens with over 30 years of experience. Specializing in psychodynamic therapy, CBT, trauma, and sex addiction treatment.',
+  additionalKeywords: ["BACP registered therapist", "psychotherapist", "experienced therapist", "Helen Porter", "female therapist", "qualified psychotherapist", "cbt", "sex addiction"],
   image: images.helen.hero,
   path: routes.helen(),
-  ogType: 'profile'
+  ogType: 'profile',
+  includeLocalBusinessSchema: true,
 });
 
 export default function HelenPage() {
