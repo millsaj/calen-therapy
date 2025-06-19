@@ -42,6 +42,6 @@ export const contactDetails: IContactDetails = {
   },
   emails: {
     helen: "h.m.porter@hotmail.com",
-    carl: "carl.porter@hotmail.com",
+    carl: "carl.porter@hotmail.co.uk",
   },
 };
