@@ -1,3 +1,7 @@
+/**
+ * Client testimonial configuration
+ */
+
 export interface ITestimonial {
   content: string;
   author: string;
@@ -7,6 +11,7 @@ export interface ITestimonial {
 // TODO: When real testimonials are available, set this to true
 export const showTestimonials = false;
 
+// All testimonials for the site
 export const testimonials: ITestimonial[] = [
   {
     content: "Helen helped me see things clearly. Highly recommended!",
@@ -40,3 +45,14 @@ export const testimonials: ITestimonial[] = [
   },
 ];
 
+/**
+ * Helper functions for accessing testimonials
+ */
+export const testimonialHelpers = {
+  all: () => testimonials,
+  forHelen: () => testimonials.filter(t => t.therapists.includes('helen')),
+  forCarl: () => testimonials.filter(t => t.therapists.includes('carl')),
+  forBoth: () => testimonials.filter(t => 
+    t.therapists.includes('helen') && t.therapists.includes('carl')
+  ),
+};

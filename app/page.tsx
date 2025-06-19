@@ -3,14 +3,17 @@ import { Focuses } from '@app/_components/sections/Focuses';
 import { Testimonials } from '@app/_components/sections/Testimonials';
 import { CallToAction } from '@app/_components/sections/CallToAction';
 import { StripedSection } from '@app/_components/sections/StripedSection';
-import { approaches } from '@app/_config/approaches';
-import { focuses } from '@app/_config/focuses';
-import { showTestimonials, testimonials } from '@app/_config/testimonials';
+import {
+  approaches,
+  focuses,
+  showTestimonials,
+  testimonials,
+  pricing,
+  buildMetadata,
+  routes
+} from '@app/_config';
 import Therapists from '@app/_components/home/Therapists';
 import FullPageHero from '@app/_components/hero/FullPageHero';
-import { pricing } from '@app/_config/main';
-import { buildMetadata } from '@app/_config/metadata';
-import { routes } from './_config/routes';
 
 export const metadata = buildMetadata({
   pageTitle: "Professional Therapy Services for Anxiety, Depression, Sex Addiction & Relationships",

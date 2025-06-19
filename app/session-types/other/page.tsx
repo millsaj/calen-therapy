@@ -1,9 +1,8 @@
 import { StripedSection } from '@app/_components/sections/StripedSection';
 import { CallToAction } from '@app/_components/sections/CallToAction';
 import NormalPageHero from '@app/_components/hero/NormalPageHero';
-import { routes } from '@app/_config/routes';
+import { routes, buildMetadata } from '@app/_config';
 import Link from 'next/link';
-import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
   pageTitle: 'Alternative Therapy Options',

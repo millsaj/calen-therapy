@@ -3,8 +3,7 @@ import { CallToAction } from '@app/_components/sections/CallToAction';
 import NormalPageHero from '@app/_components/hero/NormalPageHero';
 import { TheSpace } from '@app/_components/sections/TheSpace';
 import { FindUs } from '@app/_components/sections/FindUs';
-import { buildMetadata } from '@app/_config/metadata';
-import { routes } from '@app/_config/routes';
+import { buildMetadata, routes } from '@app/_config';
 
 export const metadata = buildMetadata({
   pageTitle: 'Find Our Therapy Practice in Billinge',

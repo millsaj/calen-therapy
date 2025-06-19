@@ -1,5 +1,4 @@
-import { IFocus } from '@app/_config/focuses';
-import { routes } from '@app/_config/routes';
+import { IFocus, routes } from '@app/_config';
 import Link from 'next/link';
 
 interface IFocusesProps {

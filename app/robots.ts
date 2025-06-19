@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { routes } from '@app/_config/routes'
+import { routes } from '@app/_config'
 
 // Force static generation for robots.txt
 export const dynamic = "force-static"

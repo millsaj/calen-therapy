@@ -2,7 +2,7 @@
 
 import { useState, FormEvent } from 'react';
 import Link from 'next/link';
-import { routes } from '@app/_config/routes';
+import { routes } from '@app/_config';
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -17,23 +17,23 @@ export function ContactForm() {
 
     const form = event.target as HTMLFormElement;
     const formData = new FormData(form);
-    
+
     try {
       // Convert FormData to a format compatible with URLSearchParams
       const formEntries = Array.from(formData.entries()).reduce<Record<string, string>>(
         (acc, [key, value]) => {
           acc[key] = value.toString();
           return acc;
-        }, 
+        },
         {}
       );
-      
+
       await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formEntries).toString(),
       });
-      
+
       // Reset form
       form.reset();
       setIsSuccess(true);
@@ -47,13 +47,13 @@ export function ContactForm() {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <form 
-        name="contact-us" 
+      <form
+        name="contact-us"
         className='card p-8 bg-secondary shadow-md rounded-lg relative'
         onSubmit={handleFormSubmit}
       >
         <input type="hidden" name="form-name" value="contact-us" />
-        
+
         {/* Overlay that appears during form submission */}
         {isSubmitting && (
           <div className="absolute z-30 inset-0 bg-white/70 backdrop-blur-sm flex flex-col items-center justify-center z-10 rounded-lg">
@@ -61,7 +61,7 @@ export function ContactForm() {
             <p className="mt-4 text-accent font-medium">Sending your message...</p>
           </div>
         )}
-        
+
         <h2 className="text-2xl font-bold mb-4">Send Helen an email</h2>
 
         <div className="hidden">
@@ -116,19 +116,19 @@ export function ContactForm() {
             required
           ></textarea>
         </div>
-        
+
         {isSuccess && (
           <div className="mb-4 p-3 border-2 border-primary text-accent rounded-md text-center">
             Your message has been sent successfully. We'll get back to you soon.
           </div>
         )}
-        
+
         {isError && (
           <div className="mb-4 p-3 border-2 border-red-500 text-red-800 rounded-md text-center">
             There was an error sending your message. Please try again or contact us directly.
           </div>
         )}
-        
+
         <div className="text-right">
           <button
             type="submit"

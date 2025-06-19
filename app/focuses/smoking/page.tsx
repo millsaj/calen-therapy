@@ -1,6 +1,5 @@
-import { routes } from '@app/_config/routes';
+import { routes, buildMetadata } from '@app/_config';
 import { FocusPage } from '../FocusPage';
-import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
   pageTitle: 'Stop Smoking Hypnotherapy',

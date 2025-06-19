@@ -1,4 +1,4 @@
-import { contactDetails } from '@app/_config/main';
+import { contactDetails } from '@app/_config';
 
 const place = contactDetails.address.full.split(" ").join("+");
 const lat = contactDetails.address.coordinates.lat;

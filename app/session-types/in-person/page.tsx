@@ -3,9 +3,8 @@ import { CallToAction } from '@app/_components/sections/CallToAction';
 import NormalPageHero from '@app/_components/hero/NormalPageHero';
 import { TheSpace } from '@app/_components/sections/TheSpace';
 import { FindUs } from '@app/_components/sections/FindUs';
-import { routes } from '@app/_config/routes';
+import { routes, buildMetadata } from '@app/_config';
 import Link from 'next/link';
-import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
   pageTitle: 'Face-to-Face Therapy Sessions',

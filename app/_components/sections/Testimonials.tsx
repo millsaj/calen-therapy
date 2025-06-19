@@ -1,7 +1,7 @@
 'use client';
 
 import { Carousel } from '../ui/Carousel';
-import { ITestimonial } from '@app/_config/testimonials';
+import { ITestimonial } from '@app/_config';
 
 interface ITestimonialsProps {
   title?: string;

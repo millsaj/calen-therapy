@@ -1,7 +1,6 @@
-import { routes } from '@app/_config/routes';
-import { FocusPage } from '../FocusPage';
 import Link from 'next/link';
-import { buildMetadata } from '@app/_config/metadata';
+import { routes, buildMetadata } from '@app/_config';
+import { FocusPage } from '../FocusPage';
 
 export const metadata = buildMetadata({
   pageTitle: 'Relationship & Family Therapy Services',

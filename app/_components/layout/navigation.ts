@@ -1,6 +1,4 @@
-import { routes } from '@app/_config/routes';
-import { approaches } from '@app/_config/approaches';
-import { focuses } from '@app/_config/focuses';
+import { routes, approaches, focuses } from '@app/_config';
 
 export interface INavItem {
   label: string;

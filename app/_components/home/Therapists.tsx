@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import { images } from '@app/_config/images';
-import { routes } from '@app/_config/routes';
+import { images, routes } from '@app/_config';
 import { LearnMoreLink } from './LearnMoreLink';
 
 interface ITherapist {
@@ -69,7 +68,7 @@ export const Therapists: React.FC = ({
         {therapists.map((therapist, index) => (
           <div key={index}>
             <div className="mb-8 relative">
-              <div className="w-[288px] h-[288px] sm:w-[384px] sm:h-[384px] md:w-[288px] md:h-[288px] lg:w-[384px] lg:h-[384px] mx-auto"> 
+              <div className="w-[288px] h-[288px] sm:w-[384px] sm:h-[384px] md:w-[288px] md:h-[288px] lg:w-[384px] lg:h-[384px] mx-auto">
                 <Image
                   src={therapist.imagePath}
                   alt={therapist.name}

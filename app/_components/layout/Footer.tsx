@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { MapPinIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
-import { routes } from '@app/_config/routes';
-import { contactDetails } from '@app/_config/main';
+import { routes, contactDetails } from '@app/_config';
 
 export default function Footer() {
   return (

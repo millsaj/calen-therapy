@@ -1,6 +1,5 @@
 import { ApproachPage } from '../ApproachPage';
-import { routes } from '@app/_config/routes';
-import { buildMetadata } from '@app/_config/metadata';
+import { routes, buildMetadata } from '@app/_config';
 
 export const metadata = buildMetadata({
   pageTitle: 'Solution Focused Hypnotherapy',

@@ -77,6 +77,9 @@ const allFocuses: IFocus[] = [
   },
 ];
 
+/**
+ * Helper functions for accessing focuses
+ */
 export const focuses = {
   all: () => allFocuses,
   home: () => allFocuses.filter((focus) => focus.displayOn.includes('home')),

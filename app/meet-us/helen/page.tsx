@@ -1,6 +1,4 @@
-import { focuses } from '@app/_config/focuses';
-import { images } from '@app/_config/images';
-import { routes } from '@app/_config/routes';
+import { focuses, images, routes, buildMetadata } from '@app/_config';
 import { Focuses } from '@app/_components/sections/Focuses';
 import { SplitPageHero } from '@app/_components/hero/SplitPageHero';
 import { StripedSection } from '@app/_components/sections/StripedSection';
@@ -8,7 +6,6 @@ import { CallToAction } from '@app/_components/sections/CallToAction';
 import { TheSpace } from '@app/_components/sections/TheSpace';
 import Link from 'next/link';
 import Image from 'next/image';
-import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
   pageTitle: 'Helen Mills Porter - BACP Member',
@@ -31,12 +28,12 @@ export default function HelenPage() {
 
         <p>
           Hi, I'm Helen. I've spent the last 30 years working as a psychotherapist.
-          
+
           I've worked with individuals, couples, and families across a wide range of concerns.
         </p>
         <p>
           I specialise in <Link href={routes.approaches.psychodynamic()} className='text-primary hover:underline hover:text-accent'>Psychodynamic Psychotherapy</Link>, <Link href={routes.approaches.systemic()} className='text-primary hover:underline hover:text-accent'>Systemic Therapy</Link>, and <Link href={routes.approaches.cbt()} className='text-primary hover:underline hover:text-accent'>Cognitive Behavioral Therapy (CBT)</Link>.
-          
+
           I also have some specialist training in working with <Link href={routes.focuses.sexAddiction()} className='text-primary hover:underline hover:text-accent'>sex addiction</Link>, <Link href={routes.focuses.trauma()} className='text-primary hover:underline hover:text-accent'>trauma</Link>, and autism. See my full of qualifications and experience below.
         </p>
         <p>

@@ -2,8 +2,7 @@
 
 import Link from 'next/link';
 import { mapLinks, MapComponent } from '@app/_components/ui/Map';
-import { contactDetails } from '@app/_config/main';
-import { routes } from '@app/_config/routes';
+import { contactDetails, routes } from '@app/_config';
 
 interface IFindUsProps {
   title?: string;

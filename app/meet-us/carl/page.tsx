@@ -1,13 +1,10 @@
-import { focuses } from '@app/_config/focuses';
-import { images } from '@app/_config/images';
-import { routes } from '@app/_config/routes';
+import { focuses, images, routes, buildMetadata } from '@app/_config';
 import { Focuses } from '@app/_components/sections/Focuses';
 import { SplitPageHero } from '@app/_components/hero/SplitPageHero';
 import { StripedSection } from '@app/_components/sections/StripedSection';
 import { CallToAction } from '@app/_components/sections/CallToAction';
 import { TheSpace } from '@app/_components/sections/TheSpace';
 import Link from 'next/link';
-import { buildMetadata } from '@app/_config/metadata';
 
 // Have you heard of NLP but not sure how it works?
 // Neuro-Linguistic Programming is all about how you process information and experience the world.

@@ -3,8 +3,7 @@
 import PageDownButton from '../home/PageDownButton';
 import Image from 'next/image';
 import Link from 'next/link';
-import { images } from '@app/_config/images';
-import { routes } from '@app/_config/routes';
+import { images, routes } from '@app/_config';
 
 interface IFullPageHeroProps {
   title: string;

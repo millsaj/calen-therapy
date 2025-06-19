@@ -1,4 +1,4 @@
-import { routes } from '@app/_config/routes';
+import { routes } from '@app/_config';
 
 interface ICallToActionProps {
   title?: string;

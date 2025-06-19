@@ -1,7 +1,6 @@
-import { routes } from '@app/_config/routes';
+import { routes, buildMetadata } from '@app/_config';
 import { FocusPage } from '../FocusPage';
 import Link from 'next/link';
-import { buildMetadata } from '@app/_config/metadata';
 
 export const metadata = buildMetadata({
   pageTitle: 'Phobia Treatment & Therapy',

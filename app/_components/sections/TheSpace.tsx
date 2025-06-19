@@ -2,8 +2,7 @@
 
 import Image from 'next/image';
 import { Carousel } from '@app/_components/ui/Carousel';
-
-import { images } from '@app/_config/images';
+import { images } from '@app/_config';
 
 interface ITheSpaceProps {
     title?: string;

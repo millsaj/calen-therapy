@@ -1,10 +1,13 @@
 import { Metadata } from "next";
-
 import { ICalenImage, images } from "./images";
 import { routes } from "./routes";
-import { contactDetails } from "./main";
+import { contactDetails } from "./contact";
 
-interface ICalenMetadata {
+/**
+ * Metadata configuration for SEO and Open Graph
+ */
+
+export interface ICalenMetadata {
     pageTitle: string;
     siteTitle?: string;
     description?: string;
@@ -32,6 +35,9 @@ const baseKeywords = [
     "solution-focused hypnotherapy",
 ];
 
+/**
+ * Builds metadata for a page
+ */
 export const buildMetadata = ({
     pageTitle,
     siteTitle = "Calen Therapy in Wigan & St Helens",
@@ -43,7 +49,7 @@ export const buildMetadata = ({
     includeLocalBusinessSchema = false,
 }: ICalenMetadata): Metadata => {
     const title = `${pageTitle} | ${siteTitle}`;
-    
+
     const metadataResult: Metadata = {
         metadataBase: new URL(routes.baseUrl()),
         title,
@@ -69,7 +75,7 @@ export const buildMetadata = ({
             canonical: path,
         }
     };
-    
+
     if (includeLocalBusinessSchema) {
         const structuredData = {
             "@context": "https://schema.org",
@@ -103,10 +109,10 @@ export const buildMetadata = ({
 
         const otherData: Record<string, string | number | (string | number)[]> =
             metadataResult.other as Record<string, string | number | (string | number)[]> || {};
-        
+
         otherData["script:ld+json"] = JSON.stringify(structuredData);
         metadataResult.other = otherData;
     }
-    
+
     return metadataResult;
 };

@@ -1,7 +1,6 @@
 'use client';
 
-import { routes } from '@app/_config/routes'
-import { ITherapyApproach } from '@app/_config/approaches';
+import { routes, ITherapyApproach } from '@app/_config';
 import { LearnMoreLink } from '@app/_components/home/LearnMoreLink';
 
 interface TherapyApproachProps {

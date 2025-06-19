@@ -2,10 +2,8 @@ import { StripedSection } from '@app/_components/sections/StripedSection';
 import { CallToAction } from '@app/_components/sections/CallToAction';
 import NormalPageHero from '@app/_components/hero/NormalPageHero';
 import { FAQSection } from './FAQSection';
-import { routes } from '@app/_config/routes';
-import { contactDetails, pricing } from '@app/_config/main';
+import { routes, contactDetails, pricing, buildMetadata } from '@app/_config';
 import Link from 'next/link';
-import { buildMetadata } from '@app/_config/metadata';
 import { FindUs } from '@app/_components/sections/FindUs';
 
 export const metadata = buildMetadata({
@@ -163,7 +161,7 @@ export default function FAQPage() {
       <StripedSection secondary={true} primary={false}>
         <FindUs />
       </StripedSection>
-      
+
       <StripedSection secondary={false} primary={true}>
         <CallToAction />
       </StripedSection>

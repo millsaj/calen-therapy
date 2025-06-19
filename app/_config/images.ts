@@ -3,11 +3,17 @@ export interface ICalenImage {
   alt: string;
 }
 
+/**
+ * "Constructor" to create image objects with consistent structure
+ */
 const calenImage = (url: string, alt: string): ICalenImage => ({
   url,
   alt,
 });
 
+/**
+ * All images used throughout the site
+ */
 export const images = {
   helen: {
     main: calenImage("/images/helen/helen.jpg", "Helen Porter"),

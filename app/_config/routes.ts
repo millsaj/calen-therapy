@@ -1,7 +1,64 @@
-// This file defines the routes for the application.
+/**
+ * Route definitions for the application
+ */
+
 const baseUrl = "https://calentherapy.co.uk";
 
-export const createRoutes = () => ({
+interface IRoutes {
+  baseUrl: () => string;
+  url: (path?: string) => string;
+  approaches: {
+    systemic: () => string;
+    psychodynamic: () => string;
+    hypnotherapy: () => string;
+    cbt: () => string;
+    personCentered: () => string;
+    lifeCoaching: () => string;
+    show: (approach: string) => string;
+  };
+  focuses: {
+    anxietyStress: () => string;
+    depression: () => string;
+    relationships: () => string;
+    griefLoss: () => string;
+    trauma: () => string;
+    addictions: () => string;
+    sexAddiction: () => string;
+    confidenceDevelopment: () => string;
+    ocd: () => string;
+    phobias: () => string;
+    lifeChanges: () => string;
+    illnessDisability: () => string;
+    smoking: () => string;
+    weightLoss: () => string;
+    show: (focus: string) => string;
+  };
+  sessionTypes: {
+    inPerson: () => string;
+    online: () => string;
+    other: () => string;
+  };
+  helen: () => string;
+  carl: () => string;
+  faqs: () => string;
+  findUs: () => string;
+  contact: () => string;
+  notFound: () => string;
+  home: () => string;
+  sitemap: () => string;
+  robots: () => string;
+  formSubmission: () => string;
+  external: {
+    helenBacp: () => string;
+    helenCounsellingDirectory: () => string;
+    helenPsychologyToday: () => string;
+    carlHypnotherapyDirectory: () => string;
+    formUserLink: () => string;
+    relate: () => string;
+  };
+}
+
+export const createRoutes = (): IRoutes => ({
   baseUrl: () => baseUrl,
   url: (path: string = "") => baseUrl + path,
   approaches: {

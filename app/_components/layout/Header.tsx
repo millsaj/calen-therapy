@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 import { INavItem } from './navigation';
-import { routes } from '@app/_config/routes';
+import { routes } from '@app/_config';
 import { usePathname, useRouter } from 'next/navigation';
 import { mainNav } from '@app/_components/layout/navigation';
 
@@ -48,7 +48,7 @@ export default function Header() {
   }, []);
 
   const handleNavLinkHover = (itemLabel: string, hover: boolean) => {
-    if (hover) {        
+    if (hover) {
       if (closeTimeout) {
         clearTimeout(closeTimeout);
       }
@@ -59,7 +59,7 @@ export default function Header() {
 
     setCloseTimeout(setTimeout(() => {
       setHoveredDropdown(null);
-    }, 200)); 
+    }, 200));
   };
 
   const handleNavLinkPin = (itemLabel: string) => {
@@ -99,7 +99,7 @@ export default function Header() {
                 closeAllMenus={closeAllMenus}
               />
             ))}
-            <Link 
+            <Link
               href={routes.contact()}
               className={`
                 px-4 sm:px-5 py-1 sm:py-1.5 rounded-full
@@ -165,7 +165,7 @@ export default function Header() {
                 px-4 py-4 rounded-full
                 bg-primary
                 font-semibold
-                text-white  
+                text-white
                 hover:bg-accent
                 transition-colors
                 text-center mt-2`}

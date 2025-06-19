@@ -1,15 +1,11 @@
 import { Testimonials } from '@app/_components/sections/Testimonials';
-import { showTestimonials, testimonials } from '@app/_config/testimonials';
+import { showTestimonials, testimonials, routes, images, contactDetails, buildMetadata } from '@app/_config';
 import { StripedSection } from '@app/_components/sections/StripedSection';
 import { CallToAction } from '@app/_components/sections/CallToAction';
 import NormalPageHero from '@app/_components/hero/NormalPageHero';
-import { routes } from '@app/_config/routes';
-import { images } from '@app/_config/images';
-import { contactDetails } from '@app/_config/main';
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
-import { buildMetadata } from '@app/_config/metadata';
 import { ContactForm } from './ContactForm';
 
 export const metadata = buildMetadata({
@@ -59,7 +55,7 @@ export default function ContactUsPage() {
             {contactSections.map((contact, index) => {
               return <div key={index}>
                 <div className="mb-8 relative">
-                  <div className="w-[288px] h-[288px] mx-auto"> 
+                  <div className="w-[288px] h-[288px] mx-auto">
                     <Image
                       src={contact.image.url}
                       alt={contact.image.alt}
