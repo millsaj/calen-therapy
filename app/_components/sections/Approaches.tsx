@@ -2,6 +2,7 @@
 
 import { routes, ITherapyApproach } from '@app/_config';
 import { LearnMoreLink } from '@app/_components/home/LearnMoreLink';
+import Link from 'next/link';
 
 interface TherapyApproachProps {
   title?: string;
@@ -30,7 +31,10 @@ export const TherapyApproaches: React.FC<TherapyApproachProps> = ({
             className={`${striped ? 'bg-white' : 'bg-secondary'} rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow flex flex-col h-full`}
           >
             <div className="p-6 flex flex-col flex-grow">
-              <h3 className="text-xl font-bold mb-3 text-primary">{approach.title}</h3>
+              <Link href={routes.approaches.show(approach.slug)} >
+                  <h3 className="text-xl font-bold mb-3 text-primary hover:text-accent cursor-pointer">{approach.title}</h3>
+              </Link>
+
               <p className="text-gray-600 mb-4">{approach.content}</p>
               <div className="mt-auto pt-4">
                 <LearnMoreLink href={routes.approaches.show(approach.slug)} />

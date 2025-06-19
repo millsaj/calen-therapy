@@ -30,10 +30,10 @@ export const Focuses: React.FC<IFocusesProps> = ({
           return (
             <Link
               key={focus.title}
-              className={`${striped ? 'bg-white' : 'bg-secondary'} p-4 md:p-8 rounded-xl shadow text-center hover:shadow-md transition-shadow flex flex-col justify-center`}
+              className={`${striped ? 'bg-white border-white' : 'bg-secondary border-secondary'} p-4 md:p-8 rounded-xl shadow text-center hover:shadow-md text-primary hover:text-accent border-2 hover:border-accent transition-shadow flex flex-col justify-center`}
               href={routes.focuses.show(focus.slug)} >
 
-              <h3 className="text-lg font-bold text-primary">{focus.title}</h3>
+              <h3 className="text-lg font-bold">{focus.title}</h3>
             </Link>
           );
         })}

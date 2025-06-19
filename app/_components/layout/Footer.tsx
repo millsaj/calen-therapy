@@ -21,7 +21,7 @@ export default function Footer() {
               <li>
                 <Link
                   href={routes.helen()}
-                  className="text-gray-600 hover:text-gray-800 transition-colors"
+                  className="text-gray-600 hover:text-accent transition-colors"
                 >
                   Helen
                 </Link>
@@ -29,7 +29,7 @@ export default function Footer() {
               <li>
                 <Link
                  href={routes.carl()}
-                  className="text-gray-600 hover:text-gray-800 transition-colors"
+                  className="text-gray-600 hover:text-accent transition-colors"
                 >
                   Carl
                 </Link>
@@ -38,7 +38,7 @@ export default function Footer() {
                 <MapPinIcon className="h-5 w-5 mr-3 mt-0.5" />
                 <Link
                   href="/find-us"
-                  className="text-gray-600 hover:text-gray-800 transition-colors"
+                  className="text-gray-600 hover:text-accent transition-colors"
                 >
                   Find Us
                 </Link>
@@ -54,7 +54,7 @@ export default function Footer() {
                 <EnvelopeIcon className="h-5 w-5 mr-3 mt-0.5" />
                 <Link
                   href={`mailto:${contactDetails.emails.helen}`}
-                  className="text-gray-600 hover:text-gray-800 transition-colors break-all"
+                  className="text-gray-600 hover:text-accent transition-colors break-all"
                 >
                   {contactDetails.emails.helen}
                 </Link>
@@ -63,7 +63,7 @@ export default function Footer() {
                 <EnvelopeIcon className="h-5 w-5 mr-3 mt-0.5" />
                 <Link
                  href={`mailto:${contactDetails.emails.carl}`}
-                  className="text-gray-600 hover:text-gray-800 transition-colors break-all"
+                  className="text-gray-600 hover:text-accent transition-colors break-all"
                 >
                   {contactDetails.emails.carl}
                 </Link>
@@ -72,7 +72,7 @@ export default function Footer() {
                 <PhoneIcon className="h-5 w-5 mr-3 mt-0.5" />
                 <Link
                   href={`tel:${contactDetails.phones.helen}`}
-                  className="text-gray-600 hover:text-gray-800 transition-colors break-all"
+                  className="text-gray-600 hover:text-accent transition-colors break-all"
                 >
                   Helen: {contactDetails.phones.helen}
                 </Link>
@@ -81,7 +81,7 @@ export default function Footer() {
                 <PhoneIcon className="h-5 w-5 mr-3 mt-0.5" />
                 <Link
                   href={`tel:${contactDetails.phones.carl}`}
-                  className="text-gray-600 hover:text-gray-800 transition-colors break-all"
+                  className="text-gray-600 hover:text-accent transition-colors break-all"
                 >
                   Carl: {contactDetails.phones.carl}
                 </Link>

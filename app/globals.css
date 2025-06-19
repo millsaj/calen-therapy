@@ -3,9 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --color-primary: #512c60;
-  --color-secondary: #F6F3F9;
-  --color-accent: #380a4a;
+  --color-primary: #5c3781;
+  --color-secondary: #f2edf7;
+  --color-accent: #3f2558;
 
   /* Uncomment for simulating accessibility settings */
   /* font-size: 130% !important; */
