@@ -9,3 +9,4 @@ export * from './focuses';
 export * from './contact';
 export * from './pricing';
 export * from './testimonials';
+export * from './experience';

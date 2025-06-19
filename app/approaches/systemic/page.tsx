@@ -1,5 +1,5 @@
 import { ApproachPage } from '../ApproachPage';
-import { routes, buildMetadata } from '@app/_config';
+import { routes, buildMetadata, experience } from '@app/_config';
 
 export const metadata = buildMetadata({
   pageTitle: 'Systemic Therapy for Families & Relationships',
@@ -36,7 +36,7 @@ export default function SystemicPage() {
               Systemic therapy is particularly valuable because it recognizes that we exist within interconnected networks of relationships that significantly influence our thoughts, feelings, and behaviors. By addressing these systems, this approach can create more sustainable and widespread positive change.
             </p>
             <p className='mb-4'>
-              Helen holds a Post Graduate qualification in Systemic Therapy and has extensive experience as a Relate practitioner, working with families, couples, and individuals for over 30 years. This background provides her with deep insight into how relationship patterns influence wellbeing.
+              Helen holds a Post Graduate qualification in Systemic Therapy and has extensive experience as a Relate practitioner, working with families, couples, and individuals for over {experience.helen.total()} years. This background provides her with deep insight into how relationship patterns influence wellbeing.
             </p>
             <p className='mb-4'>
               This approach is effective for a wide range of issues including family conflicts, couple difficulties, communication problems, life transitions, and situations where individual problems seem connected to broader relational patterns. Systemic therapy helps create shifts in these patterns, opening up new possibilities for all involved.

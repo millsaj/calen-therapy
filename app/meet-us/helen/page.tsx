@@ -1,4 +1,4 @@
-import { focuses, images, routes, buildMetadata } from '@app/_config';
+import { focuses, images, routes, buildMetadata, experience } from '@app/_config';
 import { Focuses } from '@app/_components/sections/Focuses';
 import { SplitPageHero } from '@app/_components/hero/SplitPageHero';
 import { StripedSection } from '@app/_components/sections/StripedSection';
@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 export const metadata = buildMetadata({
   pageTitle: 'Helen Mills Porter - BACP Member',
-  description: 'Meet Helen Mills Porter, experienced BACP registered psychotherapist in Wigan / St Helens with over 30 years of experience. Specializing in psychodynamic therapy, CBT, trauma, and sex addiction treatment.',
+  description: `Meet Helen Mills Porter, experienced BACP registered psychotherapist in Wigan / St Helens with over ${experience.helen.total()} years of experience. Specializing in psychodynamic therapy, CBT, trauma, and sex addiction treatment.`,
   additionalKeywords: ["BACP registered therapist", "psychotherapist", "experienced therapist", "Helen Porter", "female therapist", "qualified psychotherapist", "cbt", "sex addiction"],
   image: images.helen.hero,
   path: routes.helen(),
@@ -27,7 +27,7 @@ export default function HelenPage() {
         title='Helen Mills Porter'>
 
         <p>
-          Hi, I'm Helen. I've spent the last 30 years working as a psychotherapist.
+          Hi, I'm Helen. I've spent the last {experience.helen.total()} years working as a psychotherapist.
 
           I've worked with individuals, couples, and families across a wide range of concerns.
         </p>
@@ -60,7 +60,7 @@ export default function HelenPage() {
 
           <div className="prose prose-lg">
             <p className="mb-4">
-              I've been a psychotherapist for over 30 years, working with individuals, couples, and families. I spent many years working with <Link href={routes.external.relate()} target="_blank" className="text-primary hover:underline hover:text-accent">Relate</Link> and have been working for myself for the past 10 years.
+              I've been a psychotherapist for over {experience.helen.total()} years, working with individuals, couples, and families. I spent {experience.helen.relate(false)} years working with <Link href={routes.external.relate()} target="_blank" className="text-primary hover:underline hover:text-accent">Relate</Link> and have been working for myself for the past {experience.helen.calen(false)} years.
             </p>
 
             <ul className="list-disc pl-6 mb-4">

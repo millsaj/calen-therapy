@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { images, routes } from '@app/_config';
+import { images, routes, experience } from '@app/_config';
 import { LearnMoreLink } from './LearnMoreLink';
 
 interface ITherapist {
@@ -16,8 +16,8 @@ const therapists: ITherapist[] = [
     name: 'Helen Mills Porter',
     credentials: 'B.A., PGDip., MBACP., GQHP',
     descriptions: [
-      'For over 25 years I have worked as a psychotherapist. I worked as a Relate practitioner for many years, supporting families, couples, individuals, and children of all ages through various concerns.',
-      'I have numerous qualifications including a post-graduate (level 7) diploma in Psychodynamic and Systemic Psychotherapy.',
+      `For over ${experience.helen.total()} years I have worked as a psychotherapist. I worked as a Relate practitioner for many years, supporting families, couples, individuals, and children of all ages through various concerns.`,
+      `I have numerous qualifications including a post-graduate (level 7) diploma in Psychodynamic and Systemic Psychotherapy.`,
     ],
     specialties: [
       'Stress & Anxiety',
