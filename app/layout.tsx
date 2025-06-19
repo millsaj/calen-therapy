@@ -1,6 +1,5 @@
 import Header from '@app/_components/layout/Header';
 import Footer from '@app/_components/layout/Footer';
-import ColorPaletteSwitcher from '@app/_components/ui/ColorPaletteSwitcher';
 import './globals.css';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
