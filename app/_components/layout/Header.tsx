@@ -85,7 +85,7 @@ export default function Header() {
           </div>
 
           <nav
-            className={`hidden md:flex items-center space-x-3 sm:space-x-6 ${imageContrast ? 'text-white' : ''}`}
+            className={`hidden md:flex items-center space-x-1 lg:space-x-2 xl:space-x-4 ${imageContrast ? 'text-white' : ''}`}
             aria-label="Main navigation"
           >
             {items.map(item => (
