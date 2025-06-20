@@ -18,7 +18,7 @@ export interface ICalenMetadata {
     includeLocalBusinessSchema?: boolean;
 }
 
-const defaultDescription = "Professional therapy services for individuals, couples, and families in Wigan, St Helens, and online. Expert support for anxiety, depression, trauma, and relationship issues.";
+const defaultDescription = "Counselling, CBT, hypnotherapy, and psychotherapy for individuals, couples, and families in Wigan, St Helens, and online. Support for anxiety, depression, trauma, and relationship issues.";
 const baseKeywords = [
     "therapy",
     "counselling",

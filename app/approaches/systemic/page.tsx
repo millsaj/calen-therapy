@@ -4,7 +4,7 @@ import { routes, buildMetadata, experience } from '@app/_config';
 export const metadata = buildMetadata({
   pageTitle: 'Systemic Therapy for Families & Relationships',
   description: 'Expert systemic family therapy to address relationship patterns, improve communication, and resolve conflicts within your family or relationship system.',
-  additionalKeywords: ["family therapy", "relationship therapy", "family systems", "systemic approach", "relationship patterns", "family dynamics", "circular questioning"],
+  additionalKeywords: ["family therapy", "marriage counselling", "relationship therapy", "family systems", "systemic approach", "relationship patterns", "family dynamics", "circular questioning"],
   path: routes.approaches.systemic(),
 });
 
