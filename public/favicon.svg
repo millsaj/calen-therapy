@@ -1,20 +1,19 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-    <!-- Background with rounded corners using the primary color from CSS -->
-    <rect width='100' height='100' rx='15' fill='#512c60' />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <title>Calen CT Logo</title>
 
-    <!-- CT letters with styling -->
-    <text
-        x='50'
-        y='70'
-        text-anchor='middle'
-        font-family='Arial, sans-serif'
-        font-weight='bold'
-        font-size='45'
-        fill='white'
-        >
-        CT
-    </text>
-
-    <!-- Subtle circular highlight using the accent color -->
-    <circle cx='75' cy='25' r='15' fill='rgba(56, 10, 74, 0.5)' />
+  <rect width="100" height="100" rx="15" fill="#5c3781" />
+  <text
+    x="50"
+    y="70"
+    text-anchor="middle"
+    font-family="sans-serif"
+    font-weight="bold"
+    font-size="65"
+    text-transform="uppercase"
+    fill="#F6F3F9"
+    stroke="#3f2558"
+    stroke-width="2"
+    paint-order="stroke"
+    style="letter-spacing:-2px"
+  >CT</text>
 </svg>

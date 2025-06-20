@@ -3,7 +3,7 @@
 import PageDownButton from '../home/PageDownButton';
 import Image from 'next/image';
 import Link from 'next/link';
-import { images, routes } from '@app/_config';
+import { getImageUrl, images, routes } from '@app/_config';
 
 interface IFullPageHeroProps {
   title: string;
@@ -25,7 +25,7 @@ export const FullPageHero = ({
     <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src={images.general.homeHero.url}
+          src={getImageUrl(images.general.homeHero, 1366, 768)}
           alt={images.general.homeHero.alt}
           fill
           className="object-cover opacity-70"

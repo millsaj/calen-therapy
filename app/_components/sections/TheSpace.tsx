@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { Carousel } from '@app/_components/ui/Carousel';
-import { images } from '@app/_config';
+import { getImageUrl, images } from '@app/_config';
 
 interface ITheSpaceProps {
     title?: string;
@@ -26,7 +26,7 @@ export const TheSpace: React.FC<ITheSpaceProps> = ({
           renderItem={(img, i) => (
             <div key={i} className="relative w-full h-96">
               <Image
-                  src={img.url}
+                  src={getImageUrl(img, 500, 500)}
                   alt={img.alt}
                   fill
                   className="object-cover"

@@ -1,5 +1,5 @@
 import { Testimonials } from '@app/_components/sections/Testimonials';
-import { showTestimonials, testimonials, routes, images, contactDetails, buildMetadata } from '@app/_config';
+import { showTestimonials, testimonials, routes, images, contactDetails, buildMetadata, getImageUrl } from '@app/_config';
 import { StripedSection } from '@app/_components/sections/StripedSection';
 import { CallToAction } from '@app/_components/sections/CallToAction';
 import NormalPageHero from '@app/_components/hero/NormalPageHero';
@@ -57,7 +57,7 @@ export default function ContactUsPage() {
                 <div className="mb-8 relative">
                   <div className="w-[288px] h-[288px] mx-auto">
                     <Image
-                      src={contact.image.url}
+                      src={getImageUrl(contact.image, 288, 288)}
                       alt={contact.image.alt}
                       width={288}
                       height={288}

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { images, routes, experience } from '@app/_config';
+import { images, routes, experience, ICalenImage, getImageUrl } from '@app/_config';
 import { LearnMoreLink } from './LearnMoreLink';
 
 interface ITherapist {
@@ -7,7 +7,7 @@ interface ITherapist {
   credentials: string;
   descriptions: string[];
   specialties: string[];
-  imagePath: string;
+  image: ICalenImage;
   learnMoreLink: string;
 }
 
@@ -28,7 +28,7 @@ const therapists: ITherapist[] = [
       'Sex addiction',
       'Life coaching'
     ],
-    imagePath: images.helen.main.url,
+    image: images.helen.main,
     learnMoreLink: routes.helen(),
   },
   {
@@ -46,7 +46,7 @@ const therapists: ITherapist[] = [
       'Overcoming fears & phobias',
       'Encouraging new habits such as sport'
     ],
-    imagePath: images.carl.main.url,
+    image: images.carl.main,
     learnMoreLink: routes.helen(),
   },
 ];
@@ -70,10 +70,10 @@ export const Therapists: React.FC = ({
             <div className="mb-8 relative">
               <div className="w-[288px] h-[288px] sm:w-[384px] sm:h-[384px] md:w-[288px] md:h-[288px] lg:w-[384px] lg:h-[384px] mx-auto">
                 <Image
-                  src={therapist.imagePath}
+                  src={getImageUrl(therapist.image, 384, 384)}
                   alt={therapist.name}
-                  width={288}
-                  height={288}
+                  width={384}
+                  height={384}
                   className="w-full h-full object-cover rounded-full shadow-lg ring-4 ring-white"
                 />
               </div>

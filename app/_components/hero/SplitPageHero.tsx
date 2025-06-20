@@ -1,28 +1,27 @@
 import Image from 'next/image';
 import PageDownButton from '../home/PageDownButton';
+import { ICalenImage, getImageUrl } from '@app/_config';
 
 export interface ISplitHeroArgs {
-  imageSrc: string;
-  imageAlt: string;
+  image: ICalenImage;
   title: string;
   children?: React.ReactNode;
 }
 
 export const SplitPageHero = ({
-  imageSrc,
-  imageAlt,
+  image,
   title,
   children,
 }: ISplitHeroArgs) => {
   return (
     <section className="pt-18 lg:h-screen relative overflow-hidden">
       <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
-        <div className='w-full min-h-96 relative'>
+        <div className='w-full min-h-64 sm:min-h-96 relative'>
           <Image
-            src={imageSrc}
-            alt={imageAlt}
+            src={getImageUrl(image)}
+            alt={image.alt}
             fill
-            className="object-cover"
+            className="object-cover object-[0%_40%] lg:object-center"
             priority
           />
         </div>

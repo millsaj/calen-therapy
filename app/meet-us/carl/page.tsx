@@ -26,8 +26,7 @@ export default function CarlPage() {
     <div>
       {/* Hero Section */}
       <SplitPageHero
-        imageSrc={images.carl.hero.url}
-        imageAlt={images.carl.hero.alt}
+        image={images.carl.hero}
         title='Carl Porter' >
 
         <p>

@@ -1,4 +1,4 @@
-import { focuses, images, routes, buildMetadata, experience } from '@app/_config';
+import { focuses, images, routes, buildMetadata, experience, getImageUrl } from '@app/_config';
 import { Focuses } from '@app/_components/sections/Focuses';
 import { SplitPageHero } from '@app/_components/hero/SplitPageHero';
 import { StripedSection } from '@app/_components/sections/StripedSection';
@@ -22,8 +22,7 @@ export default function HelenPage() {
     <div>
       {/* Hero Section */}
       <SplitPageHero
-        imageSrc={images.helen.hero.url}
-        imageAlt={images.helen.hero.alt}
+        image={images.helen.hero}
         title='Helen Mills Porter'>
 
         <p>
@@ -45,7 +44,7 @@ export default function HelenPage() {
 
         <Link href={routes.external.helenBacp()} target="_blank">
           <Image
-            src={images.helen.bacp.url}
+            src={getImageUrl(images.helen.bacp, 250)}
             alt={images.helen.bacp.alt}
             width={250}
             height={0}

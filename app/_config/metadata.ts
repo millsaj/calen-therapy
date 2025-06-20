@@ -1,7 +1,8 @@
 import { Metadata } from "next";
-import { ICalenImage, images } from "./images";
+import { getImageUrl, ICalenImage, images } from "./images";
 import { routes } from "./routes";
 import { contactDetails } from "./contact";
+import { url } from "inspector";
 
 /**
  * Metadata configuration for SEO and Open Graph
@@ -49,6 +50,10 @@ export const buildMetadata = ({
     includeLocalBusinessSchema = false,
 }: ICalenMetadata): Metadata => {
     const title = `${pageTitle} | ${siteTitle}`;
+    const ogImage = {
+      url: getImageUrl(image, 1200, 630, 'cover', 'center'),
+      alt: image.alt || title,
+    };
 
     const metadataResult: Metadata = {
         metadataBase: new URL(routes.baseUrl()),
@@ -60,7 +65,7 @@ export const buildMetadata = ({
             description,
             url: path,
             type: ogType,
-            images: [image],
+            images: [ogImage],
             siteName: "Calen Therapy",
             locale: "en_GB",
             countryName: "United Kingdom"
@@ -69,7 +74,7 @@ export const buildMetadata = ({
             card: "summary_large_image",
             title,
             description,
-            images: [image.url],
+            images: [ogImage],
         },
         alternates: {
             canonical: path,
