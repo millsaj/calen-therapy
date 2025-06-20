@@ -27,7 +27,7 @@ const helen: { [key: string]: IExperience } = {
 const getCalculator = (exp: IExperience) => {
   return (exact: boolean = false) => {
     const exactVal = exp.end - exp.start;
-    return exact ? exactVal : Math.round(exactVal / 5) * 5;
+    return exact ? exactVal : Math.floor(exactVal / 5) * 5;
   };
 };
 

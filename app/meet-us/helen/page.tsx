@@ -59,7 +59,7 @@ export default function HelenPage() {
 
           <div className="prose prose-lg">
             <p className="mb-4">
-              I've been a psychotherapist for over {experience.helen.total()} years, working with individuals, couples, and families. I spent {experience.helen.relate(false)} years working with <Link href={routes.external.relate()} target="_blank" className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Relate</Link> and have been working for myself for the past {experience.helen.calen(false)} years.
+              I've been a psychotherapist for over {experience.helen.total()} years, working with individuals, couples, and families. I spent {experience.helen.relate(true)} years working with <Link href={routes.external.relate()} target="_blank" className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Relate</Link> and have been working for myself for the past {experience.helen.calen(true)} years.
             </p>
 
             <ul className="list-disc pl-6 mb-4">
