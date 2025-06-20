@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { routes, buildMetadata } from '@app/_config';
 import { FocusPage } from '../FocusPage';
 

@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import { getImageUrl, ICalenImage, images } from "./images";
 import { routes } from "./routes";
 import { contactDetails } from "./contact";
-import { url } from "inspector";
 
 /**
  * Metadata configuration for SEO and Open Graph
