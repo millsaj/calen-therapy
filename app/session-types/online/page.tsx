@@ -70,7 +70,7 @@ export default function OnlinePage() {
               <li className="mb-2"><strong>Options for Different Needs:</strong> Choose between video or phone depending on your comfort level, technological access, and personal preference.</li>
             </ul>
 
-            <p className="mb-4">We understand that different preferences and circumstances might make remote or <Link href={routes.sessionTypes.inPerson()} className="text-primary hover:underline hover:text-accent">in-person sessions</Link> more suitable for you. We're happy to discuss which option might work best for your specific situation.</p>
+            <p className="mb-4">We understand that different preferences and circumstances might make remote or <Link href={routes.sessionTypes.inPerson()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">in-person sessions</Link> more suitable for you. We're happy to discuss which option might work best for your specific situation.</p>
           </>
         )}
       </StripedSection>

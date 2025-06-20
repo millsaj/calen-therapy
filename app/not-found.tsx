@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { routes } from './_config';
 
 export default function NotFound() {
   return (
@@ -10,25 +11,25 @@ export default function NotFound() {
         </div>
 
         <h1 className="text-3xl font-light text-gray-800 mb-4">
-          Oops, looks like we misplaced this page!
+          Oops! We couldn't find that page.
         </h1>
 
         <p className="text-lg text-gray-600 mb-8">
-          Our bad! It seems this page took a wrong turn. Let's help you find your way back.
+          Our bad! The page you are looking for might have been moved. Please check the URL or return to the homepage.
         </p>
 
         <div className="space-y-4">
           <Link
-            href="/"
+            href={routes.home()}
             className="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-accent transition-colors"
           >
             Back to Homepage
           </Link>
 
-          <div className="mt-6">
-            <p className="text-sm text-gray-500">
+          <div className="mt-4">
+            <p className="text-gray-500">
               Need help?{' '}
-              <Link href="/contact-us" className="text-primary hover:text-accent underline">
+              <Link href={routes.contact()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">
                 Contact us
               </Link>
             </p>

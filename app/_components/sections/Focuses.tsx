@@ -41,7 +41,7 @@ export const Focuses: React.FC<IFocusesProps> = ({
 
       <div className="text-center max-w-3xl mx-auto mt-12 text-gray-500 text-sm md:text-base">
         <p>
-          Don't see your specific concern listed? Please <Link href={routes.contact()} className='text-primary hover:underline hover:text-accent'>reach out</Link> to us anyway.
+          Don't see your specific concern listed? Please <Link href={routes.contact()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>reach out</Link> to us anyway.
         </p>
         <p>
           We may be able to help you or refer you to someone who can.

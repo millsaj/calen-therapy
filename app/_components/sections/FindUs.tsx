@@ -34,9 +34,9 @@ export const FindUs: React.FC<IFindUsProps> = ({
 
           <h3 className="text-xl font-semibold mb-3">Get Directions:</h3>
           <div className="flex flex-col space-y-2">
-            <a href={mapLinks.google} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline hover:text-accent">Google Maps</a>
-            <a href={mapLinks.apple} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline hover:text-accent">Apple Maps</a>
-            <a href={mapLinks.openStreetMap} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline hover:text-accent">OpenStreetMap</a>
+            <a href={mapLinks.google} target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Google Maps</a>
+            <a href={mapLinks.apple} target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Apple Maps</a>
+            <a href={mapLinks.openStreetMap} target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">OpenStreetMap</a>
           </div>
         </div>
 
@@ -57,7 +57,7 @@ export const FindUs: React.FC<IFindUsProps> = ({
             <li>There is one step at the entrance to the therapy room</li>
             <li>Support handles are available to assist with access</li>
             <li>Private driveway parking available close to the entrance</li>
-            <li>Please <Link className='text-primary hover:underline hover:text-accent' href={routes.contact()}>contact us</Link> in advance if you have specific accessibility requirements</li>
+            <li>Please <Link className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60' href={routes.contact()}>contact us</Link> in advance if you have specific accessibility requirements</li>
           </ul>
         </div>
       </div>

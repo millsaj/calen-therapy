@@ -116,13 +116,13 @@ export default function LifeChangesPage() {
             <ul className="list-disc pl-6 mb-4">
               <li className="mb-2"><strong>With Helen:</strong> Helen's approach draws from:
                 <ul className="list-disc pl-6 ">
-                  <li><strong><Link href={routes.approaches.personCentered()} className="text-primary hover:underline hover:text-accent">Person-Centered Therapy</Link></strong> - Creating a supportive environment where you can explore your reactions to change and clarify your needs and values</li>
-                  <li><strong><Link href={routes.approaches.psychodynamic()} className="text-primary hover:underline hover:text-accent">Psychodynamic approaches</Link></strong> - Understanding how your past experiences influence your response to present transitions</li>
+                  <li><strong><Link href={routes.approaches.personCentered()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Person-Centered Therapy</Link></strong> - Creating a supportive environment where you can explore your reactions to change and clarify your needs and values</li>
+                  <li><strong><Link href={routes.approaches.psychodynamic()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Psychodynamic approaches</Link></strong> - Understanding how your past experiences influence your response to present transitions</li>
                   <li><strong>Systemic perspective</strong> - Examining how life changes affect your relationships and broader life systems</li>
-                  <li><strong><Link href={routes.approaches.show('lifecoaching')} className="text-primary hover:underline hover:text-accent">Life Coaching</Link></strong> - Setting concrete goals and developing actionable plans for your next chapter</li>
+                  <li><strong><Link href={routes.approaches.show('lifecoaching')} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Life Coaching</Link></strong> - Setting concrete goals and developing actionable plans for your next chapter</li>
                 </ul>
               </li>
-              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.approaches.hypnotherapy()} className="text-primary hover:underline hover:text-accent">Solution-Focused Hypnotherapy</Link> can help you:
+              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.approaches.hypnotherapy()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Solution-Focused Hypnotherapy</Link> can help you:
                 <ul className="list-disc pl-6 ">
                   <li>Develop a positive vision for your future beyond this transition</li>
                   <li>Access inner resources and strengths through relaxation techniques</li>

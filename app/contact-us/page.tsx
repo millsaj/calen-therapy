@@ -5,8 +5,8 @@ import { CallToAction } from '@app/_components/sections/CallToAction';
 import NormalPageHero from '@app/_components/hero/NormalPageHero';
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import Link from 'next/link';
 import { ContactForm } from './ContactForm';
+import { LearnMoreLink } from '@app/_components/home/LearnMoreLink';
 
 export const metadata = buildMetadata({
   pageTitle: 'Contact Our Therapists',
@@ -23,7 +23,7 @@ const contactSections = [
     email: contactDetails.emails.helen,
     phone: contactDetails.phones.helen,
     image: images.helen.main,
-    description: ['Psychotherapy, CBT, Counselling', 'For individuals, couples, and families.'],
+    description: "Contact for psychotherapy, CBT, and counselling. Individuals, couples, and families welcome.",
     link: routes.helen(),
   },
   {
@@ -32,7 +32,7 @@ const contactSections = [
     email: contactDetails.emails.carl,
     phone: contactDetails.phones.carl,
     image: images.carl.main,
-    description: ['Solution-focused Hypnotherapy', 'Make positive change.'],
+    description: "Contact for Hypnotherapy. Make positive change.",
     link: routes.carl(),
   }
 ];
@@ -51,7 +51,7 @@ export default function ContactUsPage() {
       <StripedSection secondary={true} primary={false}>
         <div className="max-w-4xl mx-auto">
           {/* Contact Details */}
-          <div className="grid md:grid-cols-2 gap-16 max-w-6xl mx-auto text-center items-center">
+          <div className="grid md:grid-cols-2 gap-16 max-w-6xl mx-auto text-left items-center">
             {contactSections.map((contact, index) => {
               return <div key={index}>
                 <div className="mb-8 relative">
@@ -73,19 +73,22 @@ export default function ContactUsPage() {
                   </div>
 
                   <ul className='mb-6'>
-                    <li className="flex justify-center">
+                    <li className="flex justify-left">
                       <EnvelopeIcon className="h-5 w-5 mr-3 mt-0.5" />
-                      <a href={`mailto:${contact.email}`} className="hover:underline">{contact.email}</a>
+                      <a href={`mailto:${contact.email}`} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">{contact.email}</a>
                     </li>
-                    <li className="flex justify-center">
+                    <li className="flex justify-left">
                       <PhoneIcon className="h-5 w-5 mr-3 mt-0.5" />
-                      <a href={`tel:${contact.phone}`} className="hover:underline">{contact.phone}</a>
+                      <a href={`tel:${contact.phone}`} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">{contact.phone}</a>
                     </li>
                   </ul>
+
                   <p>
-                    <Link href={contact.link} className="hover:underline text-gray-500">
-                      See profile
-                    </Link>
+                    {contact.description}
+                  </p>
+
+                  <p>
+                    <LearnMoreLink text='See profile' href={contact.link} />
                   </p>
                 </div>
               </div>

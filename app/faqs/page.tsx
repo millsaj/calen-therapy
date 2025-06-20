@@ -121,7 +121,7 @@ const locationQs = [
     a: [
       contactDetails.address.full,
       <div key="map-link">
-        You can find more information about where we are and the therapy space <Link href={routes.findUs()} className='text-primary hover:underline hover:text-accent'>here</Link>.
+        You can find more information about where we are and the therapy space <Link href={routes.findUs()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>here</Link>.
       </div>,
     ]
   },
@@ -130,7 +130,7 @@ const locationQs = [
     a: [
       "Yes, we offer online therapy sessions (usually via Zoom).",
       <div key="online-link">
-        Read more <Link href={routes.sessionTypes.online()} className='text-primary hover:underline hover:text-accent'>here</Link>.
+        Read more <Link href={routes.sessionTypes.online()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>here</Link>.
       </div>
     ]
   },
@@ -138,7 +138,7 @@ const locationQs = [
     q: "Are there any accessibility options?",
     a: [
       <div key="accessibility-link">
-        Please see our <Link href={routes.findUs()} className='text-primary hover:underline hover:text-accent'>Find Us</Link> section for details on accessibility.
+        Please see our <Link href={routes.findUs()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>Find Us</Link> section for details on accessibility.
       </div>
     ]
   },

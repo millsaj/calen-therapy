@@ -32,12 +32,12 @@ export default function HelenPage() {
           I've worked with individuals, couples, and families across a wide range of concerns.
         </p>
         <p>
-          I specialise in <Link href={routes.approaches.psychodynamic()} className='text-primary hover:underline hover:text-accent'>Psychodynamic Psychotherapy</Link>, <Link href={routes.approaches.systemic()} className='text-primary hover:underline hover:text-accent'>Systemic Therapy</Link>, and <Link href={routes.approaches.cbt()} className='text-primary hover:underline hover:text-accent'>Cognitive Behavioral Therapy (CBT)</Link>.
+          I specialise in <Link href={routes.approaches.psychodynamic()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>Psychodynamic Psychotherapy</Link>, <Link href={routes.approaches.systemic()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>Systemic Therapy</Link>, and <Link href={routes.approaches.cbt()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>Cognitive Behavioral Therapy (CBT)</Link>.
 
-          I also have some specialist training in working with <Link href={routes.focuses.sexAddiction()} className='text-primary hover:underline hover:text-accent'>sex addiction</Link>, <Link href={routes.focuses.trauma()} className='text-primary hover:underline hover:text-accent'>trauma</Link>, and autism. See my full of qualifications and experience below.
+          I also have some specialist training in working with <Link href={routes.focuses.sexAddiction()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>sex addiction</Link>, <Link href={routes.focuses.trauma()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>trauma</Link>, and autism. See my full of qualifications and experience below.
         </p>
         <p>
-          Whether you're facing an <Link href={routes.focuses.addictions()} className='text-primary hover:underline hover:text-accent'>addiction</Link>, <Link href={routes.focuses.anxietyStress()} className='text-primary hover:underline hover:text-accent'>anxiety, stress</Link>, <Link href={routes.focuses.illnessDisability()} className='text-primary hover:underline hover:text-accent'>a long term illness</Link> or <Link href={routes.focuses.relationships()} className='text-primary hover:underline hover:text-accent'>relationship problems</Link>; I provide a safe, confidential, and non-judgmental space where you can explore your thoughts and feelings at your own pace.
+          Whether you're facing an <Link href={routes.focuses.addictions()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>addiction</Link>, <Link href={routes.focuses.anxietyStress()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>anxiety, stress</Link>, <Link href={routes.focuses.illnessDisability()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>a long term illness</Link> or <Link href={routes.focuses.relationships()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>relationship problems</Link>; I provide a safe, confidential, and non-judgmental space where you can explore your thoughts and feelings at your own pace.
         </p>
         <p>
           Together, we'll work toward meaningful and lasting positive change in your life.
@@ -60,7 +60,7 @@ export default function HelenPage() {
 
           <div className="prose prose-lg">
             <p className="mb-4">
-              I've been a psychotherapist for over {experience.helen.total()} years, working with individuals, couples, and families. I spent {experience.helen.relate(false)} years working with <Link href={routes.external.relate()} target="_blank" className="text-primary hover:underline hover:text-accent">Relate</Link> and have been working for myself for the past {experience.helen.calen(false)} years.
+              I've been a psychotherapist for over {experience.helen.total()} years, working with individuals, couples, and families. I spent {experience.helen.relate(false)} years working with <Link href={routes.external.relate()} target="_blank" className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Relate</Link> and have been working for myself for the past {experience.helen.calen(false)} years.
             </p>
 
             <ul className="list-disc pl-6 mb-4">
@@ -79,17 +79,17 @@ export default function HelenPage() {
 
             <ul className="list-disc pl-6">
               <li>
-                <Link href={routes.external.helenBacp()} target="_blank" className="text-primary hover:underline hover:text-accent">
+                <Link href={routes.external.helenBacp()} target="_blank" className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">
                   BACP (Registered Member)
                 </Link>
               </li>
               <li>
-                <Link href={routes.external.helenCounsellingDirectory()} target="_blank" className="text-primary hover:underline hover:text-accent">
+                <Link href={routes.external.helenCounsellingDirectory()} target="_blank" className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">
                   Counselling Directory
                 </Link>
               </li>
               <li>
-                <Link href={routes.external.helenPsychologyToday()} target="_blank" className="text-primary hover:underline hover:text-accent">
+                <Link href={routes.external.helenPsychologyToday()} target="_blank" className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">
                   Psychology Today
                 </Link>
               </li>

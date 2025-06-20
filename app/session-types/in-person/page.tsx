@@ -65,7 +65,7 @@ export default function InPersonPage() {
               <li className="mb-2"><strong>Ritual of Attending:</strong> The act of travelling to therapy can provide valuable transition time to prepare mentally before sessions and process afterwards.</li>
             </ul>
 
-            <p className="mb-4">We understand that different preferences and circumstances might make either in-person or <Link href={routes.sessionTypes.online()} className="text-primary hover:underline hover:text-accent">online sessions</Link> more suitable for you. We're happy to discuss which option might work best for your specific situation.</p>
+            <p className="mb-4">We understand that different preferences and circumstances might make either in-person or <Link href={routes.sessionTypes.online()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">online sessions</Link> more suitable for you. We're happy to discuss which option might work best for your specific situation.</p>
           </>
         )}
       </StripedSection>

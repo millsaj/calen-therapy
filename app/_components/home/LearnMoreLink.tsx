@@ -10,7 +10,7 @@ interface LearnMoreLinkProps {
 export const LearnMoreLink: React.FC<LearnMoreLinkProps> = ({
   href,
   text = 'Learn more',
-  className = 'text-primary font-semibold hover:underline hover:text-accent inline-flex items-center',
+  className = 'font-semibold inline-flex items-center text-primary underline hover:text-accent hover:no-underline decoration-primary/60',
 }) => {
   return (
     <Link href={href} className={className}>

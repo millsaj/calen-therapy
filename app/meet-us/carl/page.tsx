@@ -31,13 +31,13 @@ export default function CarlPage() {
         title='Carl Porter' >
 
         <p>
-          Hi, I'm Carl. I provide a confidential and professional hypnotherapy service alongside my wife <Link href={routes.helen()} className='text-primary hover:underline hover:text-accent'>Helen</Link>, who is a psychotherapist and relationship therapist.
+          Hi, I'm Carl. I provide a confidential and professional hypnotherapy service alongside my wife <Link href={routes.helen()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>Helen</Link>, who is a psychotherapist and relationship therapist.
         </p>
         <p>
-          Qualified in hypnotherapy and as an NLP practitioner, I will enable you to make significant changes to your life and wellbeing. I completed my Solution Focused Hypnotherapy Diploma in 2020 and have since been helping clients overcome a wide range of issues, including <Link href={routes.focuses.anxietyStress()} className='text-primary hover:underline hover:text-accent'>anxiety</Link>, <Link href={routes.focuses.phobias()} className='text-primary hover:underline hover:text-accent'>phobias</Link>, <Link href={routes.focuses.weightLoss()} className='text-primary hover:underline hover:text-accent'>weight loss</Link>, <Link href={routes.focuses.smoking()} className='text-primary hover:underline hover:text-accent'>smoking</Link>, and more.
+          Qualified in hypnotherapy and as an NLP practitioner, I will enable you to make significant changes to your life and wellbeing. I completed my Solution Focused Hypnotherapy Diploma in 2020 and have since been helping clients overcome a wide range of issues, including <Link href={routes.focuses.anxietyStress()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>anxiety</Link>, <Link href={routes.focuses.phobias()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>phobias</Link>, <Link href={routes.focuses.weightLoss()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>weight loss</Link>, <Link href={routes.focuses.smoking()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>smoking</Link>, and more.
         </p>
         <p>
-          I am a <Link href={routes.external.carlHypnotherapyDirectory()} className="text-primary hover:underline hover:text-accent">registered practitioner</Link> with the Hypnotherapy Directory and a member of AFSFH (Association for Solution Focused Hypnotherapy).
+          I am a <Link href={routes.external.carlHypnotherapyDirectory()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">registered practitioner</Link> with the Hypnotherapy Directory and a member of AFSFH (Association for Solution Focused Hypnotherapy).
         </p>
       </SplitPageHero>
 

@@ -119,13 +119,13 @@ export default function OCDPage() {
             <ul className="list-disc pl-6 mb-4">
               <li className="mb-2"><strong>With Helen:</strong> Helen's approach includes:
                 <ul className="list-disc pl-6 ">
-                  <li><strong><Link href={routes.approaches.cbt()} className="text-primary hover:underline hover:text-accent">Cognitive Behavioral Therapy (CBT)</Link></strong> - The gold standard treatment for OCD</li>
+                  <li><strong><Link href={routes.approaches.cbt()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Cognitive Behavioral Therapy (CBT)</Link></strong> - The gold standard treatment for OCD</li>
                   <li><strong>Exposure and Response Prevention (ERP)</strong> - A specialized form of CBT that is particularly effective for OCD</li>
                   <li><strong>Acceptance and Commitment Therapy (ACT)</strong> - Helping you relate differently to intrusive thoughts</li>
                   <li><strong>Metacognitive approaches</strong> - Changing how you respond to obsessive thoughts</li>
                 </ul>
               </li>
-              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.approaches.hypnotherapy()} className="text-primary hover:underline hover:text-accent">Solution Focused Hypnotherapy</Link> can complement OCD treatment by:
+              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.approaches.hypnotherapy()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Solution Focused Hypnotherapy</Link> can complement OCD treatment by:
                 <ul className="list-disc pl-6 ">
                   <li>Reducing overall anxiety and stress that can exacerbate OCD symptoms</li>
                   <li>Enhancing relaxation skills and developing coping strategies</li>

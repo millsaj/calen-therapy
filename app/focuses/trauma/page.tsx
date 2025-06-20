@@ -116,11 +116,11 @@ export default function TraumaPage() {
             <ul className="list-disc pl-6 mb-4">
               <li className="mb-2"><strong>With Helen:</strong> Helen's approach to trauma therapy prioritizes safety, choice, and empowerment:
                 <ul className="list-disc pl-6 ">
-                  <li><strong><Link href={routes.approaches.show('trauma-informed')} className="text-primary hover:underline hover:text-accent">Trauma-Informed Care</Link></strong> - Recognition of how trauma affects the brain and body, prioritizing safety and client choice</li>
-                  <li><strong><Link href={routes.approaches.psychodynamic()} className="text-primary hover:underline hover:text-accent">Psychodynamic Therapy</Link></strong> - Exploring how past experiences shape current patterns while building internal resources</li>
-                  <li><strong><Link href={routes.approaches.cbt()} className="text-primary hover:underline hover:text-accent">Cognitive Behavioral Techniques</Link></strong> - Addressing trauma-related beliefs and thought patterns</li>
+                  <li><strong><Link href={routes.approaches.show('trauma-informed')} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Trauma-Informed Care</Link></strong> - Recognition of how trauma affects the brain and body, prioritizing safety and client choice</li>
+                  <li><strong><Link href={routes.approaches.psychodynamic()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Psychodynamic Therapy</Link></strong> - Exploring how past experiences shape current patterns while building internal resources</li>
+                  <li><strong><Link href={routes.approaches.cbt()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Cognitive Behavioral Techniques</Link></strong> - Addressing trauma-related beliefs and thought patterns</li>
                   <li><strong>Body-Aware Approaches</strong> - Recognizing how trauma is stored in the body and developing skills for regulation</li>
-                  <li><strong><Link href={routes.approaches.show('lifecoaching')} className="text-primary hover:underline hover:text-accent">Life Coaching</Link></strong> - Setting goals and developing practical strategies for moving forward after trauma</li>
+                  <li><strong><Link href={routes.approaches.show('lifecoaching')} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Life Coaching</Link></strong> - Setting goals and developing practical strategies for moving forward after trauma</li>
                 </ul>
               </li>
             </ul>
