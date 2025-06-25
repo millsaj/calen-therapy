@@ -4,7 +4,7 @@
 
     <meta name="robots" content="noindex, nofollow">
 
-    <!-- 
+    <!--
       This file is used by Netlify to define form structure for server-side processing.
       In Next.js, this hidden page allows Netlify Forms to work even with client-side routing.
       This is a workaround since Netlify needs HTML form definitions at build time.
@@ -42,17 +42,18 @@
     <!-- Hidden form definitions for Netlify -->
     <form
         name="contact-us"
-        data-netlify="true" 
-        netlify-honeypot="email" 
+        data-netlify="true"
+        netlify-honeypot="firstName"
         hidden>
 
       <input type="hidden" name="form-name" value="contact-us" />
 
       <!-- Honeypot field to prevent spam -->
-      <input id="email" name="email" />
+      <input id="firstName" name="firstName" />
 
       <input id="name" name="name" type="text" />
-      <input id="contact" name="contact" type="text" />
+      <input id="email" name="email" type="email" />
+      <input id="phone" name="phone" type="tel" />
       <input id="message" name="message" type="text" />
     </form>
 

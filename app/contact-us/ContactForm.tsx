@@ -8,15 +8,27 @@ export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
+  const [contactError, setContactError] = useState(null as string | null);
 
   const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSubmitting(true);
     setIsSuccess(false);
     setIsError(false);
+    setContactError(null);
 
     const form = event.target as HTMLFormElement;
     const formData = new FormData(form);
+
+    // Validate that at least one contact method is provided
+    const email = formData.get('email')?.toString().trim();
+    const phone = formData.get('phone')?.toString().trim();
+
+    if (!email && !phone) {
+      setContactError('Please provide either an email address or phone number.');
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
       // Convert FormData to a format compatible with URLSearchParams
@@ -65,15 +77,14 @@ export function ContactForm() {
         <h2 className="text-2xl font-bold mb-4">Send Helen an email</h2>
 
         <div className="hidden">
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-            Email (do not fill this in)
+          <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
+            First Name (do not fill this in)
           </label>
           <input
             type="text"
-            id="email"
-            name="email"
+            id="firstName"
+            name="firstName"
             className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-accent focus:border-accent"
-            placeholder="Your Name"
           />
         </div>
 
@@ -90,19 +101,33 @@ export function ContactForm() {
             required
           />
         </div>
+
         <div className="mb-4">
-          <label htmlFor="contact" className="block text-sm font-medium text-gray-700">
-            Contact Details
+          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            Email Address
           </label>
           <input
-            type="text"
-            id="contact"
-            name="contact"
+            type="email"
+            id="email"
+            name="email"
             className="mt-1 block w-full border bg-white border-gray-300 rounded-md shadow-sm p-2 focus:ring-accent focus:border-accent"
-            placeholder="Your Email or Phone No."
-            required
+            placeholder="your.email@example.com"
           />
         </div>
+
+        <div className="mb-4">
+          <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+            Phone Number
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            className="mt-1 block w-full border bg-white border-gray-300 rounded-md shadow-sm p-2 focus:ring-accent focus:border-accent"
+            placeholder="Your phone number"
+          />
+        </div>
+
         <div className="mb-4">
           <label htmlFor="message" className="block text-sm font-medium text-gray-700">
             Message
@@ -123,8 +148,14 @@ export function ContactForm() {
           </div>
         )}
 
+        {contactError && (
+          <div className="mb-4 p-3 border-2 border-red-800 text-red-800 rounded-md text-center">
+            {contactError}
+          </div>
+        )}
+
         {isError && (
-          <div className="mb-4 p-3 border-2 border-red-500 text-red-800 rounded-md text-center">
+          <div className="mb-4 p-3 border-2 border-red-800 text-red-800 rounded-md text-center">
             There was an error sending your message. Please try again or contact us directly.
           </div>
         )}
