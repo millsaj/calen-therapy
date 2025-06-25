@@ -48,6 +48,8 @@ export default function ContactUsPage() {
         <ContactForm />
       </StripedSection>
 
+      <a id="direct-contact-info-start" className="invisible"></a>
+
       <StripedSection secondary={true} primary={false}>
         <div className="max-w-4xl mx-auto">
           {/* Contact Details */}

@@ -57,6 +57,18 @@ export function ContactForm() {
     }
   };
 
+  const handleScrollToContact = () => {
+    const contactSection = document.getElementById('direct-contact-info-start');
+    console.log(contactSection);
+
+    if (contactSection) {
+      contactSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <div className="max-w-4xl mx-auto">
       <form
@@ -74,7 +86,7 @@ export function ContactForm() {
           </div>
         )}
 
-        <h2 className="text-2xl font-bold mb-4">Send Helen an email</h2>
+        <h2 className="text-2xl font-bold mb-4">Send us an email</h2>
 
         <div className="hidden">
           <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
@@ -173,10 +185,15 @@ export function ContactForm() {
 
       <div className="text-center max-w-3xl mx-auto mt-12 text-gray-500">
         <p>
-          This form uses <Link href={routes.external.formUserLink()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Netlify Forms</Link> to send an email to helen.
+          This form uses <Link href={routes.external.formUserLink()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Netlify Forms</Link> to send an email to both Helen and Carl.
         </p>
         <p>
-          You can also contact either of us directly via email or phone.
+          You can also contact either of us{' '}
+          <button
+            onClick={handleScrollToContact}
+            className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60 cursor-pointer"
+          >directly</button>
+          {' '}via email or phone.
         </p>
       </div>
     </div>
