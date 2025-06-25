@@ -136,7 +136,7 @@ export function ContactForm() {
             id="phone"
             name="phone"
             className="mt-1 block w-full border bg-white border-gray-300 rounded-md shadow-sm p-2 focus:ring-accent focus:border-accent"
-            placeholder="Your phone number"
+            placeholder="07123 456 789"
           />
         </div>
 
@@ -149,7 +149,7 @@ export function ContactForm() {
             name="message"
             rows={4}
             className="mt-1 block w-full border bg-white border-gray-300 rounded-md shadow-sm p-2 min-h-24 focus:ring-accent focus:border-accent"
-            placeholder="Hi Helen, I would like to book an appointment for..."
+            placeholder="Hi Helen / Carl, I would like to book an appointment for..."
             required
           ></textarea>
         </div>
