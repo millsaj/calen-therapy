@@ -29,7 +29,7 @@ export const contactDetails: IContactDetails = {
     postcode: "WN5 7LD",
     street: "Windsor Road",
     town: "Billinge",
-    city: "Wigan",
+    city: "Wigan / St Helens",
     country: "England",
     coordinates: {
       lat: 53.4962795232559,

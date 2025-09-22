@@ -9,7 +9,7 @@ import { ContactForm } from './ContactForm';
 import { LearnMoreLink } from '@app/_components/home/LearnMoreLink';
 
 export const metadata = buildMetadata({
-  pageTitle: 'Contact Our Therapists',
+  pageTitle: 'Contact Us',
   description: 'Contact our therapy team for appointments and inquiries. Reach out to Helen for psychotherapy and CBT or Carl for hypnotherapy via phone, email or our online form.',
   additionalKeywords: ["book therapy session", "therapy appointment", "contact therapist", "therapy inquiry", "therapy consultation", "phone consultation"],
   path: routes.contact(),
