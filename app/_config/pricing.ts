@@ -7,6 +7,6 @@ export interface IPricing {
 }
 
 export const pricing: IPricing = {
-  rateValue: 50,
-  rate: "£50 per hour",
+  rateValue: 55,
+  rate: "£55 per hour",
 };
