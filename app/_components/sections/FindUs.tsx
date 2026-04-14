@@ -57,7 +57,7 @@ export const FindUs: React.FC<IFindUsProps> = ({
             <li>There is one step at the entrance to the therapy room</li>
             <li>Support handles are available to assist with access</li>
             <li>Private driveway parking available close to the entrance</li>
-            <li>Please <Link className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60' href={routes.contact()}>contact us</Link> in advance if you have specific accessibility requirements</li>
+            <li>Please <Link className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60' href={routes.contact}>contact us</Link> in advance if you have specific accessibility requirements</li>
           </ul>
         </div>
       </div>

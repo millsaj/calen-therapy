@@ -211,32 +211,32 @@ export const FocusPage: React.FC<IFocusPageProps> = ({
       />
 
       {/* Introduction Section */}
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection>
         {renderContentSection(intro.title, intro.body)}
       </StripedSection>
 
       {/* Common Section */}
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         {renderContentSection(common.title, common.body)}
       </StripedSection>
 
       {/* Signs Section */}
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection>
         {renderSignsSection(signs.title, signs.subtitle, signs.items)}
       </StripedSection>
 
       {/* Reminder Banner */}
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         {renderReminderSection(reminder.title, reminder.subtitle)}
       </StripedSection>
 
       {/* Expectations Sections */}
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection>
         {renderExpectationsSection(expectations.title, expectations.body)}
       </StripedSection>
 
       {/* Expected Results Section */}
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         {renderResultsSection(
           results.title,
           results.intro,
@@ -247,7 +247,7 @@ export const FocusPage: React.FC<IFocusPageProps> = ({
       </StripedSection>
 
       {/* Call to Action Section */}
-      <StripedSection secondary={false} primary={true}>
+      <StripedSection variant="primary">
         <CallToAction
           title={cta.title}
           description={[cta.description]}

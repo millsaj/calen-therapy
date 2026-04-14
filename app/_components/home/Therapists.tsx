@@ -16,7 +16,7 @@ const therapists: ITherapist[] = [
     name: 'Helen Mills Porter',
     credentials: 'B.A., PGDip., MBACP., GQHP',
     descriptions: [
-      `For over ${experience.helen.total()} years I have worked as a psychotherapist. I worked as a Relate practitioner for many years, supporting families, couples, individuals, and children of all ages through various concerns.`,
+      `For over ${experience.helen.total} years I have worked as a psychotherapist. I worked as a Relate practitioner for many years, supporting families, couples, individuals, and children of all ages through various concerns.`,
       `I have numerous qualifications including a post-graduate (level 7) diploma in Psychodynamic and Systemic Psychotherapy.`,
     ],
     specialties: [
@@ -29,7 +29,7 @@ const therapists: ITherapist[] = [
       'Life coaching'
     ],
     image: images.helen.main,
-    learnMoreLink: routes.helen(),
+    learnMoreLink: routes.helen,
   },
   {
     name: 'Carl Porter',
@@ -47,7 +47,7 @@ const therapists: ITherapist[] = [
       'Encouraging new habits such as sport'
     ],
     image: images.carl.main,
-    learnMoreLink: routes.carl(),
+    learnMoreLink: routes.carl,
   },
 ];
 

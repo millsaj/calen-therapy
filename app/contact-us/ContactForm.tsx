@@ -184,7 +184,7 @@ export function ContactForm() {
 
       <div className="text-center max-w-3xl mx-auto mt-12 text-gray-500">
         <p>
-          This form uses <Link href={routes.external.formUserLink()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Netlify Forms</Link> to send an email to both Helen and Carl.
+          This form uses <Link href={routes.external.formUserLink} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Netlify Forms</Link> to send an email to both Helen and Carl.
         </p>
         <p>
           You can also contact either of us{' '}

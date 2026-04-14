@@ -1,8 +1,15 @@
+/** An image asset used on the site. */
 export interface ICalenImage {
+  /** Absolute path to the image file (e.g. '/images/helen/helen.jpg'). */
   path: string;
+  /** Alt text for accessibility and SEO. */
   alt: string;
 }
 
+/**
+ * Returns the URL for an image, using the Netlify Image CDN when deployed.
+ * Falls back to the raw file path in local development.
+ */
 export const getImageUrl = (
   image: ICalenImage,
   w?: number,

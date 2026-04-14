@@ -1,17 +1,15 @@
-/**
- * Client testimonial configuration
- */
-
+/** A client testimonial. */
 export interface ITestimonial {
   content: string;
   author: string;
+  /** Which therapist(s) this testimonial relates to. */
   therapists: ('helen' | 'carl')[];
 }
 
 // TODO: When real testimonials are available, set this to true
 export const showTestimonials = false;
 
-// All testimonials for the site
+/** All client testimonials. Filter by `therapists` field to show per-therapist subsets. */
 export const testimonials: ITestimonial[] = [
   {
     content: "Helen helped me see things clearly. Highly recommended!",
@@ -44,15 +42,3 @@ export const testimonials: ITestimonial[] = [
     therapists: ['helen', 'carl'],
   },
 ];
-
-/**
- * Helper functions for accessing testimonials
- */
-export const testimonialHelpers = {
-  all: () => testimonials,
-  forHelen: () => testimonials.filter(t => t.therapists.includes('helen')),
-  forCarl: () => testimonials.filter(t => t.therapists.includes('carl')),
-  forBoth: () => testimonials.filter(t => 
-    t.therapists.includes('helen') && t.therapists.includes('carl')
-  ),
-};

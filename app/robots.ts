@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: ['*'],
       allow: ['/'],
     },
-    sitemap: routes.url(routes.sitemap()),
-    host: routes.baseUrl(),
+    sitemap: routes.url(routes.sitemap),
+    host: routes.baseUrl,
   }
 }

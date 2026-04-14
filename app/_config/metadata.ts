@@ -7,15 +7,24 @@ import { contactDetails } from "./contact";
  * Metadata configuration for SEO and Open Graph
  */
 
+/** Configuration passed to `buildMetadata()` for each page. */
 export interface ICalenMetadata {
-    pageTitle: string;
-    siteTitle?: string;
-    description?: string;
-    additionalKeywords?: string[];
-    image?: ICalenImage;
-    path?: string;
-    ogType?: "website" | "article" | "profile";
-    includeLocalBusinessSchema?: boolean;
+  /** Page-specific title (prepended to the site title). */
+  pageTitle: string;
+  /** Overrides the default site title suffix. */
+  siteTitle?: string;
+  /** Meta description for SEO. Defaults to the site-wide description. */
+  description?: string;
+  /** Extra keywords appended to the base keyword list. */
+  additionalKeywords?: string[];
+  /** Open Graph image. Defaults to the home hero image. */
+  image?: ICalenImage;
+  /** Canonical path for this page (e.g. '/meet-us/helen'). */
+  path?: string;
+  /** Open Graph type. Defaults to 'website'. */
+  ogType?: "website" | "article" | "profile";
+  /** When true, injects a LocalBusiness JSON-LD schema block. */
+  includeLocalBusinessSchema?: boolean;
 }
 
 const defaultDescription = "Counselling, CBT, hypnotherapy, and psychotherapy for individuals, couples, and families in Wigan, St Helens, and online. Support for anxiety, depression, trauma, and relationship issues.";
@@ -55,7 +64,7 @@ export const buildMetadata = ({
     };
 
     const metadataResult: Metadata = {
-        metadataBase: new URL(routes.baseUrl()),
+        metadataBase: new URL(routes.baseUrl),
         title,
         description,
         keywords: baseKeywords.concat(additionalKeywords),
@@ -84,10 +93,10 @@ export const buildMetadata = ({
         const structuredData = {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "@id": routes.baseUrl(),
+            "@id": routes.baseUrl,
             "name": "Calen Therapy",
             "description": defaultDescription,
-            "url": routes.baseUrl(),
+            "url": routes.baseUrl,
             "telephone": contactDetails.phones.helen,
             "address": {
                 "@type": "PostalAddress",

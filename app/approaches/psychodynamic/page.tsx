@@ -5,7 +5,7 @@ export const metadata = buildMetadata({
   pageTitle: 'Psychodynamic Therapy',
   description: 'Professional psychodynamic therapy with 30+ years of experience. Explore past experiences to understand current behaviors and resolve deep-rooted emotional issues.',
   additionalKeywords: ["psychodynamic approach", "unconscious mind", "past experiences", "emotional insight", "deep-rooted issues", "long-term therapy", "Freudian therapy"],
-  path: routes.approaches.psychodynamic(),
+  path: routes.approaches.psychodynamic,
 });
 
 export default function PsychodynamicPage() {
@@ -36,7 +36,7 @@ export default function PsychodynamicPage() {
               Psychodynamic therapy is particularly valuable because it addresses the root causes of problems rather than just managing symptoms. By exploring the deeper meaning behind your thoughts, feelings, and behaviors, this approach helps create lasting change that extends beyond specific symptoms.
             </p>
             <p className='mb-4'>
-              Helen brings over {experience.helen.total()} years of experience to her psychodynamic practise, with post-graduate qualifications in Psychodynamic Psychotherapy, allowing her to help clients uncover the underlying causes of their challenges.
+              Helen brings over {experience.helen.total} years of experience to her psychodynamic practise, with post-graduate qualifications in Psychodynamic Psychotherapy, allowing her to help clients uncover the underlying causes of their challenges.
             </p>
             <ul className="list-disc pl-6 mb-4">
               <li>Helps reveal unconscious patterns that contribute to current difficulties</li>

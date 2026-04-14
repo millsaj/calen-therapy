@@ -23,12 +23,13 @@ All site content and configuration lives here — **this is where most content c
 
 - `contact.ts` — address, phone numbers, emails
 - `pricing.ts` — session rate (`rateValue` + formatted `rate` string)
-- `approaches.ts` — therapy approaches (each tagged with which therapist offers it: `helen` / `carl`)
-- `focuses.ts` — therapy focus areas (same therapist tagging pattern)
+- `approaches.ts` — exports `approaches: ITherapyApproach[]` (plain array; each tagged with which therapist offers it: `helen` / `carl`)
+- `focuses.ts` — exports `focuses: IFocus[]` (plain array; tagged with `displayOn: ('home' | 'helen' | 'carl')[]`)
 - `images.ts` — all image paths + Netlify image transform helper (`getImageUrl`)
-- `routes.ts` — all internal and external URLs in one place
+- `routes.ts` — all internal and external URLs as a plain `const` object. **String properties for fixed routes** (e.g. `routes.helen`, `routes.contact`); **functions only for parameterised routes** (`routes.url(path)`, `routes.approaches.show(slug)`, `routes.focuses.show(slug)`)
 - `metadata.ts` — `buildMetadata()` helper used on every page for SEO/OG tags
-- `testimonials.ts`, `experience.ts` — therapist background and testimonial data
+- `experience.ts` — exports `experience.helen.{ total, relate, calen }` as pre-computed numbers (no functions)
+- `testimonials.ts` — `showTestimonials` flag + `testimonials` array (currently hidden)
 - `index.ts` — re-exports everything; import from `@app/_config`
 
 ### Page structure
@@ -46,7 +47,7 @@ All site content and configuration lives here — **this is where most content c
 ### Layout + sections
 
 - `app/_components/layout/` — `Header`, `Footer`, and `navigation.ts` (nav items built from config)
-- `app/_components/sections/` — reusable section blocks: `StripedSection`, `CallToAction`, `Testimonials`, `Approaches`, `Focuses`, `FindUs`, `TheSpace`
+- `app/_components/sections/` — reusable section blocks: `StripedSection` (use `variant="secondary"` or `variant="primary"`; default is white), `CallToAction`, `Testimonials`, `Approaches`, `Focuses`, `FindUs`, `TheSpace`
 - `app/_components/hero/` — `FullPageHero`, `NormalPageHero`, `SplitPageHero`
 - `app/_components/home/` — home-page-specific components
 

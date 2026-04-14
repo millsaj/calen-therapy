@@ -200,32 +200,32 @@ export const ApproachPage: React.FC<IApproachPageProps> = ({
       />
 
       {/* Introduction Section */}
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection>
         {renderContentSection(intro.title, intro.body)}
       </StripedSection>
 
       {/* Why Section */}
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         {renderContentSection(why.title, why.body)}
       </StripedSection>
 
       {/* Signs Section */}
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection>
         {renderSignsSection(signs.title, signs.subtitle, signs.items)}
       </StripedSection>
 
       {/* Reminder Banner */}
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         {renderReminderSection(reminder.title, reminder.subtitle)}
       </StripedSection>
 
       {/* Expectations Sections */}
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection>
         {renderContentSection(expectations.title, expectations.body)}
       </StripedSection>
 
       {/* Expected Results Section */}
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         {renderResultsSection(
           results.title,
           results.intro,
@@ -236,7 +236,7 @@ export const ApproachPage: React.FC<IApproachPageProps> = ({
       </StripedSection>
 
       {/* Call to Action Section */}
-      <StripedSection secondary={false} primary={true}>
+      <StripedSection variant="primary">
         <CallToAction
           title={cta.title}
           description={[cta.description]}

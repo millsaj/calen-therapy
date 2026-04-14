@@ -20,7 +20,7 @@ export default function NotFound() {
 
         <div className="space-y-4">
           <Link
-            href={routes.home()}
+            href={routes.home}
             className="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-accent transition-colors"
           >
             Back to Homepage
@@ -29,7 +29,7 @@ export default function NotFound() {
           <div className="mt-4">
             <p className="text-gray-500">
               Need help?{' '}
-              <Link href={routes.contact()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">
+              <Link href={routes.contact} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">
                 Contact us
               </Link>
             </p>

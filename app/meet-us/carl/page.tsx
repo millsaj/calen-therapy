@@ -15,7 +15,7 @@ export const metadata = buildMetadata({
   description: 'Meet Carl Porter, qualified solution focused hypnotherapist in Wigan. Specializing in hypnotherapy for anxiety, phobias, smoking cessation, and weight loss with proven results.',
   additionalKeywords: ["hypnotherapist Wigan", "NLP practitioner", "hypnotherapy", "weight loss", "smoking cessation", "Carl Porter", "registered hypnotherapist", "AFSFH member", "male hypnotherapist"],
   image: images.carl.hero,
-  path: routes.carl(),
+  path: routes.carl,
   ogType: 'profile',
   includeLocalBusinessSchema: true,
 });
@@ -30,17 +30,17 @@ export default function CarlPage() {
         title='Carl Porter' >
 
         <p>
-          Hi, I'm Carl. I provide a confidential and professional hypnotherapy service alongside my wife <Link href={routes.helen()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>Helen</Link>, who is a psychotherapist and relationship therapist.
+          Hi, I'm Carl. I provide a confidential and professional hypnotherapy service alongside my wife <Link href={routes.helen} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>Helen</Link>, who is a psychotherapist and relationship therapist.
         </p>
         <p>
-          Qualified in hypnotherapy and as an NLP practitioner, I will enable you to make significant changes to your life and wellbeing. I completed my Solution Focused Hypnotherapy Diploma in 2020 and have since been helping clients overcome a wide range of issues, including <Link href={routes.focuses.anxietyStress()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>anxiety</Link>, <Link href={routes.focuses.phobias()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>phobias</Link>, <Link href={routes.focuses.weightLoss()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>weight loss</Link>, <Link href={routes.focuses.smoking()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>smoking</Link>, and more.
+          Qualified in hypnotherapy and as an NLP practitioner, I will enable you to make significant changes to your life and wellbeing. I completed my Solution Focused Hypnotherapy Diploma in 2020 and have since been helping clients overcome a wide range of issues, including <Link href={routes.focuses.anxietyStress} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>anxiety</Link>, <Link href={routes.focuses.phobias} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>phobias</Link>, <Link href={routes.focuses.weightLoss} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>weight loss</Link>, <Link href={routes.focuses.smoking} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>smoking</Link>, and more.
         </p>
         <p>
-          I am a <Link href={routes.external.carlHypnotherapyDirectory()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">registered practitioner</Link> with the Hypnotherapy Directory and a member of AFSFH (Association for Solution Focused Hypnotherapy).
+          I am a <Link href={routes.external.carlHypnotherapyDirectory} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">registered practitioner</Link> with the Hypnotherapy Directory and a member of AFSFH (Association for Solution Focused Hypnotherapy).
         </p>
       </SplitPageHero>
 
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         <div className="max-w-6xl mx-auto px-4 py-16">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-800">Solution Focused Hypnotherapy</h2>
@@ -81,21 +81,21 @@ export default function CarlPage() {
         </div>
       </StripedSection>
 
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection>
         <Focuses
           subtitle="Everyone's concerns are unique, but we have some common areas of focus that I can help with."
-          focuses={focuses.carl()}
+          focuses={focuses.filter(f => f.displayOn.includes('carl'))}
           striped={false} />
       </StripedSection>
 
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         <TheSpace
           title="My Therapy Space"
           subtitle="Sessions take place in my comfortable, private therapy room with its own entrance, ensuring your privacy and comfort during our work together."
         />
       </StripedSection>
 
-      <StripedSection secondary={false} primary={true}>
+      <StripedSection variant="primary">
         <CallToAction />
       </StripedSection>
     </div>

@@ -5,7 +5,7 @@ export const metadata = buildMetadata({
   pageTitle: 'Weight Loss Hypnotherapy',
   description: 'Effective weight loss hypnotherapy to address emotional eating, food habits, and mindset for achieving sustainable weight loss with professional therapeutic support.',
   additionalKeywords: ["weight loss therapy", "emotional eating help", "hypnotherapy for weight", "overeating treatment", "food habits support", "binge eating therapy", "mindful eating"],
-  path: routes.focuses.weightLoss(),
+  path: routes.focuses.weightLoss,
 });
 
 export default function WeightLossPage() {

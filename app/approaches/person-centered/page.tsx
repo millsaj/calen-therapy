@@ -5,7 +5,7 @@ export const metadata = buildMetadata({
   pageTitle: 'Person-Centered Therapy',
   description: 'Supportive person-centered therapy with experienced BACP therapists. Non-judgmental counselling focused on your growth, self-discovery and personal development.',
   additionalKeywords: ["client-centered therapy", "humanistic approach", "Carl Rogers", "self-discovery", "non-judgmental therapy", "unconditional positive regard", "empathic understanding"],
-  path: routes.approaches.personCentered(),
+  path: routes.approaches.personCentered,
 });
 
 export default function PersonCenteredPage() {

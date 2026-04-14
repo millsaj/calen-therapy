@@ -1,44 +1,19 @@
-export interface IExperience {
-  start: number;
-  end: number;
+/** Pre-computed years of experience for each therapist. Values are calculated once at build time. */
+
+const thisYear = new Date().getFullYear();
+
+/** Calculates years between two years, rounded down to the nearest 5. */
+function yearsRounded(start: number, end: number): number {
+  return Math.floor((end - start) / 5) * 5;
 }
 
-const helen: { [key: string]: IExperience } = {
-  total: {
-    start: 1993,
-    end: new Date().getFullYear(),
-  },
-  relate: {
-    start: 2005,
-    end: 2016,
-  },
-  calen: {
-    start: 2011,
-    end: new Date().getFullYear(),
-  },
-};
-
-
-/**
- * Helper to calculate years of experience
- * @param exp Experience duration object
- * @returns Function that calculates years, optionally rounding to nearest 5
- */
-const getCalculator = (exp: IExperience) => {
-  return (exact: boolean = false) => {
-    const exactVal = exp.end - exp.start;
-    return exact ? exactVal : Math.floor(exactVal / 5) * 5;
-  };
-};
-
 export const experience = {
-
-  /**
-   * Access Helen's experience durations
-   */
   helen: {
-    total: getCalculator(helen.total),
-    relate: getCalculator(helen.relate),
-    calen: getCalculator(helen.calen),
+    /** Total years as a therapist, rounded down to the nearest 5 (e.g. 30). */
+    total: yearsRounded(1993, thisYear),
+    /** Exact years working with Relate (2005–2016). */
+    relate: 2016 - 2005,
+    /** Exact years running Calen Therapy. */
+    calen: thisYear - 2011,
   },
 };

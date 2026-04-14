@@ -1,10 +1,15 @@
+/** A therapy focus area offered at Calen Therapy. */
 export interface IFocus {
+  /** URL-safe identifier used in page routes (e.g. 'anxiety-stress'). */
   slug: string;
+  /** Display name shown in navigation and page headings. */
   title: string;
+  /** Which pages this focus is shown on. Controls which therapist profiles and the home page list it. */
   displayOn: ('home' | 'helen' | 'carl')[];
 }
 
-const allFocuses: IFocus[] = [
+/** All therapy focus areas offered at Calen Therapy. */
+export const focuses: IFocus[] = [
   {
     slug: 'anxiety-stress',
     title: 'Anxiety & Stress',
@@ -76,15 +81,3 @@ const allFocuses: IFocus[] = [
     displayOn: ['home', 'helen']
   },
 ];
-
-/**
- * Helper functions for accessing focuses
- */
-export const focuses = {
-  all: () => allFocuses,
-  home: () => allFocuses.filter((focus) => focus.displayOn.includes('home')),
-  nav: () => allFocuses,
-  carl: () => allFocuses.filter((focus) => focus.displayOn.includes('carl')),
-  helen: () => allFocuses.filter((focus) => focus.displayOn.includes('helen')),
-  getBySlug: (slug: string) => allFocuses.find((focus) => focus.slug === slug),
-};

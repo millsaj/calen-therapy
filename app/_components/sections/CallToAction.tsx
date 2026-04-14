@@ -18,11 +18,11 @@ export const CallToAction: React.FC<ICallToActionProps> = ({
   description = ["Ready to get started? Or just have some questions?"],
   primaryButton = {
     text: "Reach Out Today",
-    href: routes.contact()
+    href: routes.contact
   },
   secondaryButton = {
     text: "FAQs & Pricing",
-    href: routes.faqs()
+    href: routes.faqs
   },
 }) => {
   return (

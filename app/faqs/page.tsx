@@ -10,7 +10,7 @@ export const metadata = buildMetadata({
   pageTitle: 'Therapy FAQs & Pricing Information',
   description: 'Find answers to frequently asked questions about our therapy services. Learn about session costs, appointment booking, what to expect in therapy, and more.',
   additionalKeywords: ["therapy pricing", "session costs", "appointment booking", "what to expect", "therapy process", "payment methods", "first session"],
-  path: routes.faqs(),
+  path: routes.faqs,
 });
 
 // Any react node can be used in the answers, so we can use links and other components.
@@ -121,7 +121,7 @@ const locationQs = [
     a: [
       contactDetails.address.full,
       <div key="map-link">
-        You can find more information about where we are and the therapy space <Link href={routes.findUs()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>here</Link>.
+        You can find more information about where we are and the therapy space <Link href={routes.findUs} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>here</Link>.
       </div>,
     ]
   },
@@ -130,7 +130,7 @@ const locationQs = [
     a: [
       "Yes, we offer online therapy sessions (usually via Zoom).",
       <div key="online-link">
-        Read more <Link href={routes.sessionTypes.online()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>here</Link>.
+        Read more <Link href={routes.sessionTypes.online} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>here</Link>.
       </div>
     ]
   },
@@ -138,7 +138,7 @@ const locationQs = [
     q: "Are there any accessibility options?",
     a: [
       <div key="accessibility-link">
-        Please see our <Link href={routes.findUs()} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>Find Us</Link> section for details on accessibility.
+        Please see our <Link href={routes.findUs} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>Find Us</Link> section for details on accessibility.
       </div>
     ]
   },
@@ -151,18 +151,18 @@ export default function FAQPage() {
         title='FAQs & Pricing'
         subtitle='This page contains answers to questions you may have if you are considering therapy.' />
 
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection>
         <FAQSection title="Pricing" faqs={pricingQs} />
         <FAQSection title="All Therapy" faqs={therapyQs} />
         <FAQSection title="Hypnotherapy" faqs={hypnotherapyQs} />
         <FAQSection title="Location" faqs={locationQs} />
       </StripedSection>
 
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         <FindUs />
       </StripedSection>
 
-      <StripedSection secondary={false} primary={true}>
+      <StripedSection variant="primary">
         <CallToAction />
       </StripedSection>
     </>

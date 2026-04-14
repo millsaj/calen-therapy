@@ -5,7 +5,7 @@ export const metadata = buildMetadata({
   pageTitle: 'Solution Focused Hypnotherapy',
   description: 'Effective solution focused hypnotherapy services for anxiety, stress relief, smoking cessation, weight loss & confidence building with professional therapists.',
   additionalKeywords: ["clinical hypnotherapy", "hypnosis therapy", "subconscious mind", "smoking cessation", "weight loss hypnotherapy", "trance state"],
-  path: routes.approaches.hypnotherapy(),
+  path: routes.approaches.hypnotherapy,
 });
 
 export default function HypnotherapyPage() {

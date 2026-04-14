@@ -20,7 +20,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href={routes.helen()}
+                  href={routes.helen}
                   className="text-gray-600 hover:text-accent transition-colors"
                 >
                   Helen
@@ -28,7 +28,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                 href={routes.carl()}
+                 href={routes.carl}
                   className="text-gray-600 hover:text-accent transition-colors"
                 >
                   Carl

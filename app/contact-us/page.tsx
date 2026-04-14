@@ -12,7 +12,7 @@ export const metadata = buildMetadata({
   pageTitle: 'Contact Us',
   description: 'Contact our therapy team for appointments and inquiries. Reach out to Helen for psychotherapy and CBT or Carl for hypnotherapy via phone, email or our online form.',
   additionalKeywords: ["book therapy session", "therapy appointment", "contact therapist", "therapy inquiry", "therapy consultation", "phone consultation"],
-  path: routes.contact(),
+  path: routes.contact,
   includeLocalBusinessSchema: true,
 });
 
@@ -24,7 +24,7 @@ const contactSections = [
     phone: contactDetails.phones.helen,
     image: images.helen.main,
     description: "Contact for psychotherapy, CBT, and counselling. Individuals, couples, and families welcome.",
-    link: routes.helen(),
+    link: routes.helen,
   },
   {
     name: 'Carl',
@@ -33,7 +33,7 @@ const contactSections = [
     phone: contactDetails.phones.carl,
     image: images.carl.main,
     description: "Contact for Hypnotherapy. Make positive change.",
-    link: routes.carl(),
+    link: routes.carl,
   }
 ];
 
@@ -44,13 +44,13 @@ export default function ContactUsPage() {
         title='Contact Us'
         subtitle='This page contains information on how to get in touch with us for any inquiries or support.' />
 
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection>
         <ContactForm />
       </StripedSection>
 
       <a id="direct-contact-info-start" className="invisible"></a>
 
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         <div className="max-w-4xl mx-auto">
           {/* Contact Details */}
           <div className="grid md:grid-cols-2 gap-16 max-w-6xl mx-auto text-left items-center">
@@ -100,12 +100,12 @@ export default function ContactUsPage() {
       </StripedSection>
 
       {showTestimonials && (
-        <StripedSection secondary={false} primary={false}>
+        <StripedSection>
           <Testimonials testimonials={testimonials} />
         </StripedSection>
       )}
 
-      <StripedSection secondary={false} primary={true}>
+      <StripedSection variant="primary">
         <CallToAction />
       </StripedSection>
     </>

@@ -81,7 +81,7 @@ export default function Header() {
       <div className="container h-18 mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className={`text-2xl font-bold truncate max-w-[70vw] ${imageContrast ? 'text-white' : ''}`}>
-            <Link href={routes.home()}>Calen Therapy</Link>
+            <Link href={routes.home}>Calen Therapy</Link>
           </div>
 
           <nav
@@ -100,7 +100,7 @@ export default function Header() {
               />
             ))}
             <Link
-              href={routes.contact()}
+              href={routes.contact}
               className={`
                 px-4 sm:px-5 py-1 sm:py-1.5 rounded-full
                 bg-primary text-white
@@ -160,7 +160,7 @@ export default function Header() {
               </div>
             ))}
             <Link
-              href={routes.contact()}
+              href={routes.contact}
               className={`
                 px-4 py-4 rounded-full
                 bg-primary

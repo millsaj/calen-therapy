@@ -5,7 +5,7 @@ export const metadata = buildMetadata({
   pageTitle: 'Therapy for Long-term Illness & Disability',
   description: 'Supportive therapy for those living with chronic illness, pain, or disability. Professional help with emotional adjustment, identity changes, and finding meaning despite health challenges.',
   additionalKeywords: ["chronic illness therapy", "disability counselling", "chronic pain support", "medical trauma", "health anxiety", "chronic condition support", "illness adjustment"],
-  path: routes.focuses.illnessDisability(),
+  path: routes.focuses.illnessDisability,
 });
 
 export default function IllnessDisabilityPage() {

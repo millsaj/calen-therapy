@@ -5,7 +5,7 @@ export const metadata = buildMetadata({
   pageTitle: 'Professional Life Coaching Services',
   description: 'Transform your life with expert life coaching. Set meaningful goals, overcome obstacles, and create the future you want with our experienced coach.',
   additionalKeywords: ["personal coaching", "goal setting", "career coaching", "professional development", "life transformation", "personal growth", "action planning"],
-  path: routes.approaches.lifeCoaching(),
+  path: routes.approaches.lifeCoaching,
 });
 
 export default function LifeCoachingPage() {
@@ -36,7 +36,7 @@ export default function LifeCoachingPage() {
               Life Coaching is particularly valuable when you're seeking structured support to achieve specific goals, navigate transitions, or enhance your overall quality of life. It provides accountability, perspective, and practical tools that accelerate your progress and help you overcome barriers to success.
             </p>
             <p className='mb-4'>
-              Helen completed her Life Coaching diploma in 2012, adding this goal-oriented approach to her extensive therapeutic toolkit. With over {experience.helen.total()} years of experience across multiple modalities, she brings a unique blend of coaching techniques and psychological insights to help you create tangible results and lasting change.
+              Helen completed her Life Coaching diploma in 2012, adding this goal-oriented approach to her extensive therapeutic toolkit. With over {experience.helen.total} years of experience across multiple modalities, she brings a unique blend of coaching techniques and psychological insights to help you create tangible results and lasting change.
             </p>
             <ul className="list-disc pl-6 mb-4">
               <li>Provides structure and accountability for achieving specific goals</li>

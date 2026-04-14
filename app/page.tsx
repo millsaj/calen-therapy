@@ -18,37 +18,35 @@ import FullPageHero from '@app/_components/hero/FullPageHero';
 export const metadata = buildMetadata({
   pageTitle: "Counselling for Relationships, Anxiety, and Addictions",
   additionalKeywords: ["relationship counselling", "BACP therapist", "online therapy", "solution-focused hypnotherapy", "marriage counselling", "porn addiction", "CBT therapy", "family therapy"],
-  path: routes.home(),
+  path: routes.home,
   includeLocalBusinessSchema: true,
 });
 
 export default function Home() {
   return (
     <div>
-      <FullPageHero
-        title = 'Begin Your Journey to Healing and Growth'
-        subtitle = 'Professional, confidential, and affordable therapy services in a comfortable environment.' />
-      <StripedSection secondary={false} primary={false}>
+      <FullPageHero />
+      <StripedSection>
         <Therapists />
       </StripedSection>
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         <TherapyApproaches
-          approaches={approaches.home()}
+          approaches={approaches}
           striped={true} />
       </StripedSection>
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection>
         <Focuses
-          focuses={focuses.home()}
+          focuses={focuses.filter(f => f.displayOn.includes('home'))}
           striped={false} />
       </StripedSection>
 
       {showTestimonials && (
-        <StripedSection secondary={true} primary={false}>
+        <StripedSection variant="secondary">
           <Testimonials testimonials={testimonials} striped={true} />
         </StripedSection>
       )}
 
-      <StripedSection secondary={false} primary={true}>
+      <StripedSection variant="primary">
         <CallToAction
           title="Ready to Begin Your Journey?"
           description={[

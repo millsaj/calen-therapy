@@ -9,7 +9,7 @@ export const metadata = buildMetadata({
   siteTitle: 'Calen Therapy - Remote Therapy',
   description: 'Professional online therapy from the comfort of your home. Secure video sessions and telephone counselling with qualified therapists for effective remote support.',
   additionalKeywords: ["online counselling", "virtual therapy", "video therapy", "remote counselling", "telephone therapy", "zoom therapy sessions", "digital therapy"],
-  path: routes.sessionTypes.online(),
+  path: routes.sessionTypes.online,
 });
 
 export default function OnlinePage() {
@@ -28,7 +28,7 @@ export default function OnlinePage() {
         title='Online & Phone Therapy'
         subtitle='Effective therapy from the comfort of your own space via secure video sessions or telephone calls.' />
 
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection>
         {renderContentSection(
           'Remote Therapy Experience',
           <>
@@ -39,7 +39,7 @@ export default function OnlinePage() {
         )}
       </StripedSection>
 
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         {renderContentSection(
           'What to Expect',
           <>
@@ -55,7 +55,7 @@ export default function OnlinePage() {
         )}
       </StripedSection>
 
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection>
         {renderContentSection(
           'Benefits of Remote Therapy',
           <>
@@ -70,13 +70,13 @@ export default function OnlinePage() {
               <li className="mb-2"><strong>Options for Different Needs:</strong> Choose between video or phone depending on your comfort level, technological access, and personal preference.</li>
             </ul>
 
-            <p className="mb-4">We understand that different preferences and circumstances might make remote or <Link href={routes.sessionTypes.inPerson()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">in-person sessions</Link> more suitable for you. We're happy to discuss which option might work best for your specific situation.</p>
+            <p className="mb-4">We understand that different preferences and circumstances might make remote or <Link href={routes.sessionTypes.inPerson} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">in-person sessions</Link> more suitable for you. We're happy to discuss which option might work best for your specific situation.</p>
           </>
         )}
       </StripedSection>
 
 
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Choosing Between Video and Phone Sessions</h2>
           <div className="prose prose-lg">
@@ -111,7 +111,7 @@ export default function OnlinePage() {
         </div>
       </StripedSection>
 
-      <StripedSection secondary={true} primary={true}>
+      <StripedSection variant="primary">
         <CallToAction />
       </StripedSection>
     </div>

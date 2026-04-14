@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   pageTitle: 'Anxiety & Stress Therapy',
   description: 'Expert anxiety & stress therapy with professional support for panic attacks, generalized anxiety disorder, social anxiety & work-related stress.',
   additionalKeywords: ["panic attack treatment", "generalized anxiety disorder", "social phobia", "workplace stress", "chronic stress", "anxiety symptoms", "stress reduction"],
-  path: routes.focuses.anxietyStress(),
+  path: routes.focuses.anxietyStress,
 });
 
 export default function AnxietyStressPage() {
@@ -102,9 +102,9 @@ export default function AnxietyStressPage() {
             </p>
             <ul className="list-disc pl-6 mb-4">
               <li className="mb-2"><strong>With Helen:</strong> Helen's extensive training allows her to draw from multiple approaches
-              including <Link href={routes.approaches.cbt()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Cognitive Behavioral Therapy (CBT)</Link>, which helps identify and challenge anxious thought patterns, <Link href={routes.approaches.personCentered()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Person-Centered
+              including <Link href={routes.approaches.cbt} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Cognitive Behavioral Therapy (CBT)</Link>, which helps identify and challenge anxious thought patterns, <Link href={routes.approaches.personCentered} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Person-Centered
               therapy</Link> which provides a supportive environment to explore your concerns at your own pace, and <Link href={routes.approaches.show('lifecoaching')} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Life Coaching</Link> which focuses on setting goals and developing practical strategies to manage stress.</li>
-              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.approaches.hypnotherapy()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Solution Focused Hypnotherapy</Link> combines relaxation techniques with a focus on positive
+              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.approaches.hypnotherapy} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Solution Focused Hypnotherapy</Link> combines relaxation techniques with a focus on positive
               goals rather than problems, helping calm your nervous system and develop new ways of responding to stressors.</li>
             </ul>
             <p className="mb-4">

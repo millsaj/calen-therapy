@@ -5,7 +5,7 @@ export const metadata = buildMetadata({
   pageTitle: 'Systemic Therapy for Families & Relationships',
   description: 'Expert systemic family therapy to address relationship patterns, improve communication, and resolve conflicts within your family or relationship system.',
   additionalKeywords: ["family therapy", "marriage counselling", "relationship therapy", "family systems", "systemic approach", "relationship patterns", "family dynamics", "circular questioning"],
-  path: routes.approaches.systemic(),
+  path: routes.approaches.systemic,
 });
 
 export default function SystemicPage() {
@@ -36,7 +36,7 @@ export default function SystemicPage() {
               Systemic therapy is particularly valuable because it recognizes that we exist within interconnected networks of relationships that significantly influence our thoughts, feelings, and behaviors. By addressing these systems, this approach can create more sustainable and widespread positive change.
             </p>
             <p className='mb-4'>
-              Helen holds a Post Graduate qualification in Systemic Therapy and has extensive experience as a Relate practitioner, working with families, couples, and individuals for over {experience.helen.total()} years. This background provides her with deep insight into how relationship patterns influence wellbeing.
+              Helen holds a Post Graduate qualification in Systemic Therapy and has extensive experience as a Relate practitioner, working with families, couples, and individuals for over {experience.helen.total} years. This background provides her with deep insight into how relationship patterns influence wellbeing.
             </p>
             <p className='mb-4'>
               This approach is effective for a wide range of issues including family conflicts, couple difficulties, communication problems, life transitions, and situations where individual problems seem connected to broader relational patterns. Systemic therapy helps create shifts in these patterns, opening up new possibilities for all involved.

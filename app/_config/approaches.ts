@@ -1,11 +1,17 @@
+/** A therapy approach offered at Calen Therapy. */
 export interface ITherapyApproach {
+  /** URL-safe identifier used in page routes (e.g. 'psychodynamic'). */
   slug: string;
+  /** Display name shown in navigation and page headings. */
   title: string;
+  /** Short summary shown on cards and approach page introductions. */
   content: string;
+  /** Which therapist(s) offer this approach. */
   talkTo: ('helen' | 'carl')[];
 }
 
-const allApproaches: ITherapyApproach[] = [
+/** All therapy approaches offered at Calen Therapy. */
+export const approaches: ITherapyApproach[] = [
   {
     slug: 'psychodynamic',
     title: 'Psychodynamic',
@@ -43,12 +49,3 @@ const allApproaches: ITherapyApproach[] = [
     talkTo: ['helen'],
   },
 ];
-
-export const approaches = {
-  all: () => allApproaches,
-  home: () => allApproaches,
-  nav: () => allApproaches,
-  carl: () => allApproaches.filter((s) => s.talkTo.includes('carl')),
-  helen: () => allApproaches.filter((s) => s.talkTo.includes('helen')),
-  getBySlug: (slug: string) => allApproaches.find((s) => s.slug === slug),
-};

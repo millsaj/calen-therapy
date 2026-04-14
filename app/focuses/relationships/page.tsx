@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   pageTitle: 'Relationship & Family Therapy Services',
   description: 'Specialized relationship counselling for couples, families and individuals. Professional support for communication issues, trust rebuilding, and conflict resolution.',
   additionalKeywords: ["couples counselling", "marriage therapy", "conflict resolution", "communication skills", "infidelity counselling", "attachment patterns", "relationship dynamics"],
-  path: routes.focuses.relationships(),
+  path: routes.focuses.relationships,
 });
 
 export default function RelationshipsPage() {
@@ -106,9 +106,9 @@ export default function RelationshipsPage() {
             <ul className="list-disc pl-6 mb-4">
               <li className="mb-2"><strong>With Helen:</strong> Helen's qualifications in relationship therapy include:
                 <ul className="list-disc pl-6 ">
-                  <li><strong><Link href={routes.approaches.systemic()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Systemic Therapy</Link></strong> - Examining how family systems, social contexts, and relationship patterns influence current challenges</li>
-                  <li><strong><Link href={routes.approaches.psychodynamic()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Psychodynamic Approaches</Link></strong> - Understanding how past experiences shape current relationship patterns</li>
-                  <li><strong><Link href={routes.approaches.personCentered()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Person-Centered Techniques</Link></strong> - Creating a supportive environment for exploring feelings and needs</li>
+                  <li><strong><Link href={routes.approaches.systemic} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Systemic Therapy</Link></strong> - Examining how family systems, social contexts, and relationship patterns influence current challenges</li>
+                  <li><strong><Link href={routes.approaches.psychodynamic} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Psychodynamic Approaches</Link></strong> - Understanding how past experiences shape current relationship patterns</li>
+                  <li><strong><Link href={routes.approaches.personCentered} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Person-Centered Techniques</Link></strong> - Creating a supportive environment for exploring feelings and needs</li>
                   <li><strong><Link href={routes.approaches.show('lifecoaching')} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Life Coaching</Link></strong> - Developing clear goals and practical strategies for relationship growth</li>
                 </ul>
               </li>

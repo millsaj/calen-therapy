@@ -9,7 +9,7 @@ export const metadata = buildMetadata({
   pageTitle: 'Find Our Therapy Practice in Billinge',
   description: 'Directions to our comfortable therapy space in Billinge. Easily accessible location with private parking, serving clients from surrounding areas.',
   additionalKeywords: ["therapy location", "Billinge address", "therapy directions", "private parking", "therapy space", "comfortable therapy room", "accessibility"],
-  path: routes.findUs(),
+  path: routes.findUs,
   includeLocalBusinessSchema: true,
 });
 
@@ -20,17 +20,17 @@ export default function FindUsPage() {
         title='Find Us'
         subtitle='Where are we based and how to get here' />
 
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection>
         <FindUs title='Our Location' />
       </StripedSection>
 
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         <TheSpace
           subtitle="Our therapy space is designed to be comfortable, private and welcoming. Located in our home in Billinge, it features comfortable seating, calming decor, and a peaceful ambiance to help you feel at ease during your therapy sessions."
         />
       </StripedSection>
 
-      <StripedSection secondary={false} primary={true}>
+      <StripedSection variant="primary">
         <CallToAction />
       </StripedSection>
     </div>

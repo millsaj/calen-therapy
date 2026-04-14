@@ -10,7 +10,7 @@ export const metadata = buildMetadata({
   pageTitle: 'Face-to-Face Therapy Sessions',
   description: 'Experience effective in-person therapy sessions in our comfortable, private space in Billinge. Professional counselling with qualified therapists in a calm environment.',
   additionalKeywords: ["face-to-face therapy", "in-person counselling", "therapy room", "private therapy space", "comfortable counselling environment", "local therapist"],
-  path: routes.sessionTypes.inPerson(),
+  path: routes.sessionTypes.inPerson,
 });
 
 export default function InPersonPage() {
@@ -29,13 +29,13 @@ export default function InPersonPage() {
         title='In Person Therapy'
         subtitle='Face-to-face therapy sessions in our dedicated space in Billinge.' />
 
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection>
         <TheSpace
           subtitle="Our therapy space is designed to be comfortable, private and welcoming. Located in our home in Billinge, it features comfortable seating, calming decor, and a peaceful ambiance to help you feel at ease during your therapy sessions."
         />
       </StripedSection>
 
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         {renderContentSection(
           'What to Expect',
           <>
@@ -51,7 +51,7 @@ export default function InPersonPage() {
         )}
       </StripedSection>
 
-      <StripedSection secondary={false} primary={false}>
+      <StripedSection>
         {renderContentSection(
           'Benefits of In-Person Therapy',
           <>
@@ -65,16 +65,16 @@ export default function InPersonPage() {
               <li className="mb-2"><strong>Ritual of Attending:</strong> The act of travelling to therapy can provide valuable transition time to prepare mentally before sessions and process afterwards.</li>
             </ul>
 
-            <p className="mb-4">We understand that different preferences and circumstances might make either in-person or <Link href={routes.sessionTypes.online()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">online sessions</Link> more suitable for you. We're happy to discuss which option might work best for your specific situation.</p>
+            <p className="mb-4">We understand that different preferences and circumstances might make either in-person or <Link href={routes.sessionTypes.online} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">online sessions</Link> more suitable for you. We're happy to discuss which option might work best for your specific situation.</p>
           </>
         )}
       </StripedSection>
 
-      <StripedSection secondary={true} primary={false}>
+      <StripedSection variant="secondary">
         <FindUs />
       </StripedSection>
 
-      <StripedSection secondary={false} primary={true}>
+      <StripedSection variant="primary">
         <CallToAction />
       </StripedSection>
     </div>

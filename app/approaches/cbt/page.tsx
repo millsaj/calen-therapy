@@ -5,7 +5,7 @@ export const metadata = buildMetadata({
   pageTitle: 'Cognitive Behavioral Therapy (CBT) for Anxiety & Depression',
   description: 'Professional CBT therapy using evidence-based approaches to transform negative thinking patterns, reduce anxiety & improve emotional wellbeing.',
   additionalKeywords: ["CBT techniques", "negative thinking patterns", "evidence-based therapy", "behavioral therapy", "cognitive therapy", "thought restructuring"],
-  path: routes.approaches.cbt(),
+  path: routes.approaches.cbt,
 });
 
 export default function CbtPage() {
@@ -36,7 +36,7 @@ export default function CbtPage() {
               CBT is one of the most widely researched and effective therapeutic approaches, with strong evidence supporting its use for a wide range of mental health concerns and life challenges. Its practical, structured approach makes it particularly valuable because it equips you with specific skills and techniques you can use throughout your life.
             </p>
             <p className='mb-4'>
-              Helen completed her CBT diploma in 2023, adding this powerful approach to her extensive therapeutic toolkit. With over {experience.helen.total()} years of experience and multiple therapeutic qualifications, she skillfully integrates CBT techniques with other approaches when appropriate to provide personalized support for your unique situation.
+              Helen completed her CBT diploma in 2023, adding this powerful approach to her extensive therapeutic toolkit. With over {experience.helen.total} years of experience and multiple therapeutic qualifications, she skillfully integrates CBT techniques with other approaches when appropriate to provide personalized support for your unique situation.
             </p>
             <ul className="list-disc pl-6 mb-4">
               <li>Helps you identify and challenge distorted thinking patterns</li>

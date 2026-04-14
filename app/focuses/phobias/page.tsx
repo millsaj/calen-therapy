@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   pageTitle: 'Phobia Treatment & Therapy',
   description: 'Effective phobia treatment using evidence-based approaches. Expert therapy for specific phobias, social anxiety, and agoraphobia to overcome fear and avoidance behaviors.',
   additionalKeywords: ["fear therapy", "specific phobias", "agoraphobia", "fear of flying", "exposure therapy", "fear of heights", "systematic desensitization"],
-  path: routes.focuses.phobias(),
+  path: routes.focuses.phobias,
 });
 
 export default function PhobiasPage() {
@@ -120,12 +120,12 @@ export default function PhobiasPage() {
             <ul className="list-disc pl-6 mb-4">
               <li className="mb-2"><strong>With Helen:</strong> Helen's approach includes:
                 <ul className="list-disc pl-6 ">
-                  <li><strong><Link href={routes.approaches.cbt()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Cognitive Behavioral Therapy (CBT)</Link></strong> - Evidence-based approach specifically developed for phobias</li>
+                  <li><strong><Link href={routes.approaches.cbt} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Cognitive Behavioral Therapy (CBT)</Link></strong> - Evidence-based approach specifically developed for phobias</li>
                   <li><strong>Exposure Therapy</strong> - Gradual, controlled exposure to feared stimuli to reduce anxiety responses</li>
-                  <li><strong><Link href={routes.approaches.psychodynamic()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Psychodynamic elements</Link></strong> - Exploring underlying patterns that may contribute to phobic responses</li>
+                  <li><strong><Link href={routes.approaches.psychodynamic} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Psychodynamic elements</Link></strong> - Exploring underlying patterns that may contribute to phobic responses</li>
                 </ul>
               </li>
-              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.approaches.hypnotherapy()} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Solution Focused Hypnotherapy</Link> can be particularly effective for phobias by:
+              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.approaches.hypnotherapy} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Solution Focused Hypnotherapy</Link> can be particularly effective for phobias by:
                 <ul className="list-disc pl-6 ">
                   <li>Helping you access a relaxed state where the mind is more receptive to change</li>
                   <li>Creating new associations with feared stimuli through visualization and suggestion</li>
