@@ -24,7 +24,7 @@ export const PageDownButton = () => {
   };
 
   return (
-    <div className={`invisible sm:visible transition-opacity duration-300 absolute bottom-8 left-1/2 transform -translate-x-1/2 z-100 ${isScrolled ? 'opacity-0' : 'opacity-100'}`}>
+    <div className={`invisible sm:visible transition-opacity duration-300 absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50 ${isScrolled ? 'opacity-0' : 'opacity-100'}`}>
       <button
         onClick={handleScroll}
         className="animate-bounce bg-primary hover:bg-primary hover:cursor-pointer rounded-full p-4"

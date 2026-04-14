@@ -78,7 +78,7 @@ const therapyQs = [
     ]
   },
   {
-    q: "Can you me help with ____?",
+    q: "Can you help me with ____?",
     a: [
       "Probably! We have a wide range of experience and training in various areas. You can explore the site to see more on what we commonly help with.",
       "We encourage you to ask about specific issues or concerns you may have. We are very likely to be able to help or to refer you to someone who can.",

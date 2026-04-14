@@ -39,15 +39,15 @@ const therapists: ITherapist[] = [
       'Solution Focused Hypnotherapy is a powerful approach that empowers you to move forward positively, helping your unconscious mind find alternatives to unwanted negative feelings, thinking, and behaviors. My sessions are designed to help you better manage daily stresses while developing new, healthier coping strategies.',
     ],
     specialties: [
-      'Quiting smoking',
-      'Quiting an unwanted addiction or habit',
+      'Quitting smoking',
+      'Quitting an unwanted addiction or habit',
       'Stress & Anxiety',
       'Losing weight',
       'Overcoming fears & phobias',
       'Encouraging new habits such as sport'
     ],
     image: images.carl.main,
-    learnMoreLink: routes.helen(),
+    learnMoreLink: routes.carl(),
   },
 ];
 

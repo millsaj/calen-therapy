@@ -70,7 +70,7 @@ export default function CarlPage() {
             </div>
 
             <div className="flex items-center justify-center my-8">
-              <Link href="/styles/hypnotherapy" className="inline-flex items-center px-5 py-3 bg-primary text-white rounded-full font-medium hover:bg-accent transition-colors">
+              <Link href="/approaches/hypnotherapy" className="inline-flex items-center px-5 py-3 bg-primary text-white rounded-full font-medium hover:bg-accent transition-colors">
                 Learn more about hypnotherapy
                 <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

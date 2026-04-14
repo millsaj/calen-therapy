@@ -75,11 +75,11 @@ export default function ContactUsPage() {
                   </div>
 
                   <ul className='mb-6'>
-                    <li className="flex justify-left">
+                    <li className="flex justify-start">
                       <EnvelopeIcon className="h-5 w-5 mr-3 mt-0.5" />
                       <a href={`mailto:${contact.email}`} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">{contact.email}</a>
                     </li>
-                    <li className="flex justify-left">
+                    <li className="flex justify-start">
                       <PhoneIcon className="h-5 w-5 mr-3 mt-0.5" />
                       <a href={`tel:${contact.phone}`} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">{contact.phone}</a>
                     </li>

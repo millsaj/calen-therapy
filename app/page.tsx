@@ -17,7 +17,7 @@ import FullPageHero from '@app/_components/hero/FullPageHero';
 
 export const metadata = buildMetadata({
   pageTitle: "Counselling for Relationships, Anxiety, and Addictions",
-  additionalKeywords: ["relationship counselling", "BACP therapist", "online therapy", "solution-focused hypnotherapy", "marriage counelling", "porn addiction", "CBT therapy", "family therapy"],
+  additionalKeywords: ["relationship counselling", "BACP therapist", "online therapy", "solution-focused hypnotherapy", "marriage counselling", "porn addiction", "CBT therapy", "family therapy"],
   path: routes.home(),
   includeLocalBusinessSchema: true,
 });
