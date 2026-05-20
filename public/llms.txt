@@ -1,0 +1,72 @@
+# Calen Therapy - LLM Site Information
+
+## About This Site
+
+Calen Therapy is a counselling and therapy practice in Wigan/St Helens, UK, run by Helen and Carl Porter.
+
+### Contact Information
+
+- **Address**: Windsor Road, Billinge, Wigan, WN5 7LD, England
+- **Helen Porter**: 07584040947 | h.m.porter@hotmail.com
+- **Carl Porter**: 07599571360 | carl.porter@hotmail.co.uk
+
+### Key Information
+
+- **Session Rate**: £60 per session
+- **Location**: Wigan / St Helens, UK
+- **Therapists**: Helen Porter and Carl Porter
+
+---
+
+## Sitemap
+
+### Main Pages
+- Home: https://calentherapy.co.uk/
+- Meet Helen: https://calentherapy.co.uk/meet-us/helen
+- Meet Carl: https://calentherapy.co.uk/meet-us/carl
+- Contact Us: https://calentherapy.co.uk/contact-us
+- FAQs: https://calentherapy.co.uk/faqs
+- Find Us: https://calentherapy.co.uk/find-us
+
+### Session Types
+- In-Person: https://calentherapy.co.uk/session-types/in-person
+- Online: https://calentherapy.co.uk/session-types/online
+- Other: https://calentherapy.co.uk/session-types/other
+
+### Therapy Approaches
+- Psychodynamic: https://calentherapy.co.uk/approaches/psychodynamic (Helen)
+- Systemic: https://calentherapy.co.uk/approaches/systemic (Helen)
+- Cognitive Behavioral Therapy (CBT): https://calentherapy.co.uk/approaches/cbt (Helen)
+- Person Centered: https://calentherapy.co.uk/approaches/person-centered (Helen)
+- Hypnotherapy: https://calentherapy.co.uk/approaches/hypnotherapy (Carl)
+- Life Coaching: https://calentherapy.co.uk/approaches/life-coaching (Helen)
+
+### Therapy Focus Areas
+- Anxiety & Stress: https://calentherapy.co.uk/focuses/anxiety-stress (Carl)
+- Depression: https://calentherapy.co.uk/focuses/depression (Helen, Carl)
+- Relationships & Family: https://calentherapy.co.uk/focuses/relationships (Helen)
+- Grief & Loss: https://calentherapy.co.uk/focuses/grief-loss (Helen)
+- Trauma & PTSD: https://calentherapy.co.uk/focuses/trauma (Helen)
+- Addictions & Habits: https://calentherapy.co.uk/focuses/addictions (Carl)
+- Sex & Porn Addiction: https://calentherapy.co.uk/focuses/sex-addiction (Helen)
+- Stop Smoking: https://calentherapy.co.uk/focuses/smoking (Carl)
+- Weight Loss: https://calentherapy.co.uk/focuses/weight-loss (Carl)
+- Confidence & Development: https://calentherapy.co.uk/focuses/confidence-development (Carl)
+- Phobias: https://calentherapy.co.uk/focuses/phobias (Helen, Carl)
+- OCD: https://calentherapy.co.uk/focuses/ocd (Helen, Carl)
+- Life Changes & Transitions: https://calentherapy.co.uk/focuses/life-changes (Home)
+- Illness & Disability: https://calentherapy.co.uk/focuses/illness-disability (Helen)
+
+---
+
+## Therapist Specializations
+
+### Helen Porter
+- Approaches: Psychodynamic, Systemic, CBT, Person Centered, Life Coaching
+- Focus Areas: Depression, Relationships & Family, Grief & Loss, Trauma & PTSD, Sex & Porn Addiction, Phobias, OCD, Illness & Disability
+- External Profiles: BACP, Counselling Directory, Psychology Today
+
+### Carl Porter
+- Approaches: Hypnotherapy
+- Focus Areas: Anxiety & Stress, Depression, Addictions & Habits, Stop Smoking, Weight Loss, Confidence & Development, Phobias, OCD
+- External Profile: Hypnotherapy Directory
