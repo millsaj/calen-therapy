@@ -14,36 +14,8 @@ interface IHeroVariant {
 /** Rotating hero copy — one is picked at random on each page load. */
 const heroVariants: IHeroVariant[] = [
   {
-    title: 'Begin Your Journey to Healing and Growth',
-    subtitle: 'Professional, confidential, and affordable therapy services in a comfortable environment.',
-  },
-  {
-    title: 'Find Clarity, Peace, and a Path Forward',
-    subtitle: 'Experienced therapists ready to support you — in person in Billinge or online across the UK.',
-  },
-  {
-    title: 'You Don\'t Have to Face This Alone',
-    subtitle: 'Compassionate, confidential counselling for individuals, couples, and families.',
-  },
-  {
-    title: 'Take the First Step Toward Feeling Better',
-    subtitle: 'Personalised therapy tailored to you — because no two journeys are the same.',
-  },
-  {
-    title: 'Talking Helps. We\'re Here to Listen.',
-    subtitle: 'Warm, professional support for anxiety, relationships, grief, and much more.',
-  },
-  {
-    title: 'Your Wellbeing Matters — Let\'s Work on It Together',
-    subtitle: 'Over 30 years of combined experience helping people create lasting change.',
-  },
-  {
-    title: 'Space to Be Heard, Understood, and Supported',
-    subtitle: 'A safe, non-judgmental environment where real change begins.',
-  },
-  {
-    title: 'Overcome What\'s Holding You Back',
-    subtitle: 'Evidence-based therapy and hypnotherapy to help you move forward with confidence.',
+    title: 'Counselling and Hypnotherapy in Wigan and St Helens',
+    subtitle: 'We help individuals, couples, families, teens, and online clients with support for anxiety, depression, relationships, trauma, addictions, and more.',
   },
 ];
 
