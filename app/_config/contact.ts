@@ -16,18 +16,16 @@ export interface IAddress {
   };
 }
 
-/** Contact details for the practice and individual therapists. */
+/** Contact details for the practice. */
 export interface IContactDetails {
   address: IAddress;
-  /** Mobile phone numbers for each therapist. */
+  /** Mobile phone number. */
   phones: {
     helen: string;
-    carl: string;
   };
-  /** Email addresses for each therapist. */
+  /** Email address. */
   emails: {
     helen: string;
-    carl: string;
   };
 }
 
@@ -46,10 +44,8 @@ export const contactDetails: IContactDetails = {
   },
   phones: {
     helen: "07584040947",
-    carl: "07599571360",
   },
   emails: {
     helen: "h.m.porter@hotmail.com",
-    carl: "carl.porter@hotmail.co.uk",
   },
 };

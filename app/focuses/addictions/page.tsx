@@ -114,20 +114,9 @@ export default function AddictionsPage() {
               therapeutic approaches for addictions and problematic habits:
             </p>
             <ul className="list-disc pl-6 mb-4">
-              <li className="mb-2"><strong>With Helen:</strong> Helen's approach includes:
-                <ul className="list-disc pl-6 ">
-                  <li><strong><Link href={routes.approaches.psychodynamic} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Psychodynamic therapy</Link></strong> to explore underlying patterns and triggers for addictive behaviors</li>
-                  <li><strong><Link href={routes.approaches.cbt} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Cognitive Behavioral techniques</Link></strong> to address thought patterns and develop coping strategies</li>
-                  <li>Specialized training in sex addiction (2017 diploma)</li>
-                </ul>
-              </li>
-              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.approaches.hypnotherapy} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Solution-Focused Hypnotherapy</Link>, which can be particularly effective for habits and patterns by:
-                <ul className="list-disc pl-6 ">
-                  <li>Identifying goals for change and building on your existing strengths and resources</li>
-                  <li>Using relaxation and focused attention to access subconscious patterns</li>
-                  <li>Creating new neural pathways for healthier responses</li>
-                </ul>
-              </li>
+              <li><strong><Link href={routes.approaches.psychodynamic} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Psychodynamic therapy</Link></strong> to explore underlying patterns and triggers for addictive behaviors</li>
+              <li><strong><Link href={routes.approaches.cbt} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Cognitive Behavioral techniques</Link></strong> to address thought patterns and develop coping strategies</li>
+              <li>Specialized training in sex addiction (2017 diploma)</li>
             </ul>
             <p className="mb-4">
               Your therapy experience will be personalized but may include:
@@ -167,7 +156,7 @@ export default function AddictionsPage() {
       }}
       cta={{
         title: "Ready to Break Free?",
-        description: "Take the first step toward freedom from unwanted habits and addictions. Carl provides supportive, solution-focused therapy to help you create positive, lasting change."
+        description: "Take the first step toward freedom from unwanted habits and addictions. I provide supportive therapy to help you create positive, lasting change."
       }}
     />
   );

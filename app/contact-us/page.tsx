@@ -9,8 +9,8 @@ import { ContactForm } from './ContactForm';
 import { LearnMoreLink } from '@app/_components/home/LearnMoreLink';
 
 export const metadata = buildMetadata({
-  pageTitle: 'Contact Us',
-  description: 'Contact our therapy team for appointments and inquiries. Reach out to Helen for psychotherapy and CBT or Carl for hypnotherapy via phone, email or our online form.',
+  pageTitle: 'Contact Me',
+  description: 'Contact Helen for psychotherapy, CBT, and counselling appointments and inquiries, via phone, email, or the online form.',
   additionalKeywords: ["book therapy session", "therapy appointment", "contact therapist", "therapy inquiry", "therapy consultation", "phone consultation"],
   path: routes.contact,
   includeLocalBusinessSchema: true,
@@ -26,23 +26,14 @@ const contactSections = [
     description: "Contact for psychotherapy, CBT, and counselling. Individuals, couples, and families welcome.",
     link: routes.helen,
   },
-  {
-    name: 'Carl',
-    credentials: 'Solution Focused Hypnotherapist & NLP Practitioner',
-    email: contactDetails.emails.carl,
-    phone: contactDetails.phones.carl,
-    image: images.carl.main,
-    description: "Contact for Hypnotherapy. Make positive change.",
-    link: routes.carl,
-  }
 ];
 
 export default function ContactUsPage() {
   return (
     <>
       <NormalPageHero
-        title='Contact Us'
-        subtitle='This page contains information on how to get in touch with us for any inquiries or support.' />
+        title='Contact Me'
+        subtitle='This page contains information on how to get in touch with me for any inquiries or support.' />
 
       <StripedSection>
         <ContactForm />
@@ -53,7 +44,7 @@ export default function ContactUsPage() {
       <StripedSection variant="secondary">
         <div className="max-w-4xl mx-auto">
           {/* Contact Details */}
-          <div className="grid md:grid-cols-2 gap-16 max-w-6xl mx-auto text-left items-center">
+          <div className="grid max-w-md mx-auto text-left items-center">
             {contactSections.map((contact, index) => {
               return <div key={index}>
                 <div className="mb-8 relative">

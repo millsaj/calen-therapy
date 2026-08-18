@@ -14,8 +14,8 @@ interface IHeroVariant {
 /** Rotating hero copy — one is picked at random on each page load. */
 const heroVariants: IHeroVariant[] = [
   {
-    title: 'Counselling and Hypnotherapy in Wigan and St Helens',
-    subtitle: 'We help individuals, couples, families, teens, and online clients with support for anxiety, depression, relationships, trauma, addictions, and more.',
+    title: 'Professional Counselling & Psychotherapy Online Across the UK',
+    subtitle: 'Also available face to face in the Wigan and St Helens districts. Support for individuals, couples, families, and teens with anxiety, depression, relationships, trauma, addictions, and more.',
   },
 ];
 
@@ -69,7 +69,7 @@ export const FullPageHero = ({
               href={routes.contact}
               className="bg-white text-primary hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-accent transition-colors text-center w-full sm:w-auto"
             >
-              Contact Us
+              Contact Me
             </Link>
             <button
               onClick={handleScroll}

@@ -85,7 +85,7 @@ export function ContactForm() {
           </div>
         )}
 
-        <h2 className="text-2xl font-bold mb-4">Send us an email</h2>
+        <h2 className="text-2xl font-bold mb-4">Send me an email</h2>
 
         <div className="hidden">
           <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
@@ -148,14 +148,14 @@ export function ContactForm() {
             name="message"
             rows={4}
             className="mt-1 block w-full border bg-white border-gray-300 rounded-md shadow-sm p-2 min-h-24 focus:ring-accent focus:border-accent"
-            placeholder="Hi Helen / Carl, I would like to book an appointment for..."
+            placeholder="Hi Helen, I would like to book an appointment for..."
             required
           ></textarea>
         </div>
 
         {isSuccess && (
           <div className="mb-4 p-3 border-2 border-primary text-accent rounded-md text-center">
-            Your message has been sent successfully. We'll get back to you soon.
+            Your message has been sent successfully. I'll get back to you soon.
           </div>
         )}
 
@@ -167,7 +167,7 @@ export function ContactForm() {
 
         {isError && (
           <div className="mb-4 p-3 border-2 border-red-800 text-red-800 rounded-md text-center">
-            There was an error sending your message. Please try again or contact us directly.
+            There was an error sending your message. Please try again or contact me directly.
           </div>
         )}
 
@@ -184,10 +184,10 @@ export function ContactForm() {
 
       <div className="text-center max-w-3xl mx-auto mt-12 text-gray-500">
         <p>
-          This form uses <Link href={routes.external.formUserLink} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Netlify Forms</Link> to send an email to both Helen and Carl.
+          This form uses <Link href={routes.external.formUserLink} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Netlify Forms</Link> to send me an email.
         </p>
         <p>
-          You can also contact either of us{' '}
+          You can also contact me{' '}
           <button
             onClick={handleScrollToContact}
             className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60 cursor-pointer"

@@ -7,7 +7,7 @@ export interface ITherapyApproach {
   /** Short summary shown on cards and approach page introductions. */
   content: string;
   /** Which therapist(s) offer this approach. */
-  talkTo: ('helen' | 'carl')[];
+  talkTo: ('helen')[];
 }
 
 /** All therapy approaches offered at Calen Therapy. */
@@ -23,12 +23,6 @@ export const approaches: ITherapyApproach[] = [
     title: 'Systemic',
     content: 'Addresses issues within the context of relationships and social systems, ideal for family issues and improving interpersonal dynamics.',
     talkTo: ['helen'],
-  },
-  {
-    slug: 'hypnotherapy',
-    title: 'Hypnotherapy',
-    content: 'Solution Focussed Hypnotherapy is a Psycho-Hypnotherapy used to empower you to be positive and to enact changes to your life for continual improvement.',
-    talkTo: ['carl'],
   },
   {
     slug: 'cbt',

@@ -103,15 +103,9 @@ export default function DepressionPage() {
               therapeutic approaches for depression:
             </p>
             <ul className="list-disc pl-6 mb-4">
-              <li className="mb-2"><strong>With Helen:</strong> Helen draws from several evidence-based approaches including:
-                <ul className="list-disc pl-6 ">
-                  <li><strong><Link href={routes.approaches.psychodynamic} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Psychodynamic therapy</Link></strong> to explore underlying patterns and past experiences that may contribute to depression</li>
-                  <li><strong><Link href={routes.approaches.cbt} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Cognitive Behavioral Therapy (CBT)</Link></strong> to identify and change negative thought patterns and develop new coping strategies</li>
-                  <li><strong><Link href={routes.approaches.personCentered} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Person-Centered therapy</Link></strong> to create a supportive environment for processing difficult emotions</li>
-                </ul>
-              </li>
-              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.approaches.hypnotherapy} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Solution Focused Hypnotherapy</Link> helps redirect your focus toward positive goals
-              and solutions while using relaxation techniques to reduce stress and improve mood.</li>
+              <li><strong><Link href={routes.approaches.psychodynamic} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Psychodynamic therapy</Link></strong> to explore underlying patterns and past experiences that may contribute to depression</li>
+              <li><strong><Link href={routes.approaches.cbt} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Cognitive Behavioral Therapy (CBT)</Link></strong> to identify and change negative thought patterns and develop new coping strategies</li>
+              <li><strong><Link href={routes.approaches.personCentered} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Person-Centered therapy</Link></strong> to create a supportive environment for processing difficult emotions</li>
             </ul>
             <p className="mb-4">
               Your treatment journey typically includes:
@@ -126,7 +120,7 @@ export default function DepressionPage() {
             </ul>
             <p>
               Therapy provides a safe, non-judgmental space to work through your feelings and develop practical
-              skills for managing depression. We will partner with you throughout this process,
+              skills for managing depression. I will partner with you throughout this process,
               adjusting approaches as needed to support your recovery.
             </p>
           </>

@@ -23,15 +23,7 @@ export default function Footer() {
                   href={routes.helen}
                   className="text-gray-600 hover:text-accent transition-colors"
                 >
-                  Helen
-                </Link>
-              </li>
-              <li>
-                <Link
-                 href={routes.carl}
-                  className="text-gray-600 hover:text-accent transition-colors"
-                >
-                  Carl
+                  Meet Helen
                 </Link>
               </li>
               <li className="flex items-start">
@@ -60,30 +52,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="flex items-start">
-                <EnvelopeIcon className="h-5 w-5 mr-3 mt-0.5" />
-                <Link
-                 href={`mailto:${contactDetails.emails.carl}`}
-                  className="text-gray-600 hover:text-accent transition-colors break-all"
-                >
-                  {contactDetails.emails.carl}
-                </Link>
-              </li>
-              <li className="flex items-start">
                 <PhoneIcon className="h-5 w-5 mr-3 mt-0.5" />
                 <Link
                   href={`tel:${contactDetails.phones.helen}`}
                   className="text-gray-600 hover:text-accent transition-colors break-all"
                 >
-                  Helen: {contactDetails.phones.helen}
-                </Link>
-              </li>
-              <li className="flex items-start">
-                <PhoneIcon className="h-5 w-5 mr-3 mt-0.5" />
-                <Link
-                  href={`tel:${contactDetails.phones.carl}`}
-                  className="text-gray-600 hover:text-accent transition-colors break-all"
-                >
-                  Carl: {contactDetails.phones.carl}
+                  {contactDetails.phones.helen}
                 </Link>
               </li>
             </ul>

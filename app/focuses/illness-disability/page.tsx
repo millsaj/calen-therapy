@@ -99,7 +99,7 @@ export default function IllnessDisabilityPage() {
               <li>Developing strategies for self-care and resilience</li>
             </ul>
             <p>
-              Both Helen and Carl can support you, offering a compassionate, non-judgmental space to explore your experiences and strengths.
+              I can support you, offering a compassionate, non-judgmental space to explore your experiences and strengths.
             </p>
           </>
         )
@@ -123,7 +123,7 @@ export default function IllnessDisabilityPage() {
       }}
       cta={{
         title: "Ready to Find Support?",
-        description: "Helen and Carl offer compassionate, experienced support for living with illness or disability. Reach out today."
+        description: "Helen offers compassionate, experienced support for living with illness or disability. Reach out today."
       }}
     />
   );

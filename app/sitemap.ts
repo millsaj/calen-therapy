@@ -23,7 +23,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Therapist profiles - high priority
     createEntry(routes.helen, 0.9, 'monthly'),
-    createEntry(routes.carl, 0.9, 'monthly'),
 
     // Core service pages - high priority
     createEntry(routes.faqs, 0.8, 'monthly'),
