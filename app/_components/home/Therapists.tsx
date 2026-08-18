@@ -31,24 +31,6 @@ const therapists: ITherapist[] = [
     image: images.helen.main,
     learnMoreLink: routes.helen,
   },
-  {
-    name: 'Carl Porter',
-    credentials: 'Solution Focused Hypnotherapist & NLP Practitioner',
-    descriptions: [
-      'Along side my partner Helen, I provide confidential and professional hypnotherapy services. As a qualified hypnotherapist and NLP practitioner, I focus on enabling significant positive changes to your life and wellbeing.',
-      'Solution Focused Hypnotherapy is a powerful approach that empowers you to move forward positively, helping your unconscious mind find alternatives to unwanted negative feelings, thinking, and behaviors. My sessions are designed to help you better manage daily stresses while developing new, healthier coping strategies.',
-    ],
-    specialties: [
-      'Quitting smoking',
-      'Quitting an unwanted addiction or habit',
-      'Stress & Anxiety',
-      'Losing weight',
-      'Overcoming fears & phobias',
-      'Encouraging new habits such as sport'
-    ],
-    image: images.carl.main,
-    learnMoreLink: routes.carl,
-  },
 ];
 
 export const Therapists: React.FC = ({
@@ -56,15 +38,14 @@ export const Therapists: React.FC = ({
   return (
     <>
       <div className="max-w-3xl mx-auto text-center mb-16">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">Who are we?</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">Who am I?</h2>
         <p className="text-gray-600">
-          We are Helen and Carl: two therapists based in Billinge. The core of our practise is built
-          around Helen's long career in psychotherapy and counselling. Hypnotherapy sessions are
-          usually provided by Carl, who is a qualified Solution Focused Hypnotherapist and NLP Practitioner.
+          I'm Helen, a therapist based in Billinge with a long career in psychotherapy and counselling,
+          offering sessions online across the UK and face to face in the Wigan and St Helens districts.
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-16 max-w-6xl mx-auto">
+      <div className="grid max-w-md mx-auto">
         {therapists.map((therapist, index) => (
           <div key={index}>
             <div className="mb-8 relative">

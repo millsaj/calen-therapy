@@ -3,7 +3,7 @@ export interface ITestimonial {
   content: string;
   author: string;
   /** Which therapist(s) this testimonial relates to. */
-  therapists: ('helen' | 'carl')[];
+  therapists: ('helen')[];
 }
 
 // TODO: When real testimonials are available, set this to true
@@ -22,23 +22,13 @@ export const testimonials: ITestimonial[] = [
     therapists: ['helen'],
   },
   {
-    content: "Carl's hypnotherapy worked wonders for my anxiety.",
-    author: 'Client C',
-    therapists: ['carl'],
-  },
-  {
-    content: "Carl's techniques helped me break bad habits quickly.",
-    author: 'Client D',
-    therapists: ['carl'],
-  },
-  {
-    content: "Both therapists at Calen provided excellent support.",
+    content: "Helen provided excellent support throughout.",
     author: 'Client E',
-    therapists: ['helen', 'carl'],
+    therapists: ['helen'],
   },
   {
-    content: "Great experience with the Calen Therapy team!",
+    content: "Great experience with Calen Therapy!",
     author: 'Client F',
-    therapists: ['helen', 'carl'],
+    therapists: ['helen'],
   },
 ];

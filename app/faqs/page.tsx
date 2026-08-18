@@ -8,7 +8,7 @@ import { FindUs } from '@app/_components/sections/FindUs';
 
 export const metadata = buildMetadata({
   pageTitle: 'Therapy FAQs & Pricing Information',
-  description: 'Find answers to frequently asked questions about our therapy services. Learn about session costs, appointment booking, what to expect in therapy, and more.',
+  description: 'Find answers to frequently asked questions about my therapy services. Learn about session costs, appointment booking, what to expect in therapy, and more.',
   additionalKeywords: ["therapy pricing", "session costs", "appointment booking", "what to expect", "therapy process", "payment methods", "first session"],
   path: routes.faqs,
 });
@@ -31,11 +31,11 @@ const pricingQs = [
   },
   {
     q: "What is your cancellation policy?",
-    a: ["Cancellations must be made at least 24 hours in advance to avoid being charged."]
+    a: ["Cancellations must be made at least 48 hours in advance to avoid being charged."]
   },
   {
     q: "Do I have to commit to a certain number of sessions?",
-    a: ["No. You may choose counselling/hypnotherapy as a single session, as a short course over a few weeks or months, or as a longer course that lasts for several months or years - there is no minimum commitment."]
+    a: ["No. You may choose counselling as a single session, as a short course over a few weeks or months, or as a longer course that lasts for several months or years - there is no minimum commitment."]
   },
 ];
 
@@ -44,15 +44,15 @@ const therapyQs = [
     q: "What is therapy?",
     a: [
       "The therapy is a process where you work with a trained professional to address emotional, psychological, or behavioral challenges.",
-      "We offer psychotherapy, counselling, and hypnotherapy to help you navigate life's challenges and improve your mental well-being."
+      "I offer psychotherapy and counselling to help you navigate life's challenges and improve your mental well-being."
     ]
   },
   {
     q: "How do I know what kind of therapy I want?",
     a: [
-      "Our site has information on the different types of therapy we offer. However this can be confusing, and often people's needs only become clear once they start therapy.",
-      "We recommend that you get in contact with Helen and she can work with you to see what the best fit is.",
-      "Our pricing and location are the same for all types of therapy.",
+      "My site has information on the different types of therapy I offer. However this can be confusing, and often people's needs only become clear once they start therapy.",
+      "I recommend that you get in contact with me and I can work with you to see what the best fit is.",
+      "My pricing and location are the same for all types of therapy.",
     ]
   },
   {
@@ -60,13 +60,13 @@ const therapyQs = [
     a: [
       "Therapy can be beneficial for anyone and is not limited to those with mental health issues.",
       "If you are experiencing emotional distress, relationship issues, or any other challenges that affect your well-being, therapy might help you make sense of things.",
-      "It's a personal decision, and can be helpful for anyone. We encourage you to try it out and see if it resonates with you."
+      "It's a personal decision, and can be helpful for anyone. I encourage you to try it out and see if it resonates with you."
     ]
   },
   {
     q: "Is therapy confidential?",
     a: [
-      "Yes, therapy is confidential. We will not share your information without your consent.",
+      "Yes, therapy is confidential. I will not share your information without your consent.",
       "However, there are exceptions, such as if there is a risk of harm to yourself or others.",
     ]
   },
@@ -80,37 +80,14 @@ const therapyQs = [
   {
     q: "Can you help me with ____?",
     a: [
-      "Probably! We have a wide range of experience and training in various areas. You can explore the site to see more on what we commonly help with.",
-      "We encourage you to ask about specific issues or concerns you may have. We are very likely to be able to help or to refer you to someone who can.",
+      "Probably! I have a wide range of experience and training in various areas. You can explore the site to see more on what I commonly help with.",
+      "I encourage you to ask about specific issues or concerns you may have. I am very likely to be able to help or to refer you to someone who can.",
     ]
   },
   {
     q: "Can you prescribe medication?",
     a: [
-      "No, we do not prescribe medication.",
-    ]
-  },
-];
-
-const hypnotherapyQs = [
-  {
-    q: "Is it safe?",
-    a: [
-      "Yes, hypnotherapy is a safe and effective therapeutic technique when conducted by a trained professional.",
-      "It is a natural state of focused attention and relaxation that can help you access your subconscious mind."
-    ]
-  },
-  {
-    q: "Will I be unconscious?",
-    a: [
-      "No, you will not be unconscious during hypnotherapy. You will be in a relaxed state but fully aware of your surroundings.",
-      "You can choose to accept or reject any suggestions made during the session."
-    ]
-  },
-  {
-    q: "Can I get stuck in hypnosis?",
-    a: [
-      "No, you cannot get stuck in hypnosis. You can come out of it at any time, and Carl will guide you back to full awareness."
+      "No, I do not prescribe medication.",
     ]
   },
 ];
@@ -121,14 +98,14 @@ const locationQs = [
     a: [
       contactDetails.address.full,
       <div key="map-link">
-        You can find more information about where we are and the therapy space <Link href={routes.findUs} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>here</Link>.
+        You can find more information about where I am and the therapy space <Link href={routes.findUs} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>here</Link>.
       </div>,
     ]
   },
   {
     q: "Do you offer online sessions?",
     a: [
-      "Yes, we offer online therapy sessions (usually via Zoom).",
+      "Yes, I offer online therapy sessions across the UK (usually via Zoom).",
       <div key="online-link">
         Read more <Link href={routes.sessionTypes.online} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>here</Link>.
       </div>
@@ -154,7 +131,6 @@ export default function FAQPage() {
       <StripedSection>
         <FAQSection title="Pricing" faqs={pricingQs} />
         <FAQSection title="All Therapy" faqs={therapyQs} />
-        <FAQSection title="Hypnotherapy" faqs={hypnotherapyQs} />
         <FAQSection title="Location" faqs={locationQs} />
       </StripedSection>
 

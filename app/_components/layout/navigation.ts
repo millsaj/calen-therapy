@@ -8,13 +8,7 @@ export interface INavItem {
 }
 
 export const mainNav: INavItem[] = [
-  {
-    label: 'Meet Us',
-    children: [
-      { label: 'Helen', href: routes.helen },
-      { label: 'Carl', href: routes.carl },
-    ],
-  },
+  { label: 'Meet Helen', href: routes.helen },
   {
     label: 'Approaches',
     extraClasses: 'block sm:hidden lg:block',

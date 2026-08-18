@@ -71,7 +71,8 @@ export default function HelenPage() {
               <li>Working with Trauma (Diploma)</li>
               <li>Working with Autism (Diploma)</li>
               <li>Psychology & Adult Careers Guidance (Level 5 - 1995)</li>
-              <li>Additional training in Same Sex Relationships & Polyamory, Life Coaching, Hypnotherapy, and Online/Email Therapy</li>
+              <li>Online Therapy (Diploma, 2010)</li>
+              <li>Additional training in Same Sex Relationships & Polyamory, Life Coaching, and Hypnotherapy</li>
             </ul>
 
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Professional Memberships</h3>

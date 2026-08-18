@@ -7,7 +7,7 @@ import Link from 'next/link';
 export const metadata = buildMetadata({
   pageTitle: 'Online & Telephone Therapy Sessions',
   siteTitle: 'Calen Therapy - Remote Therapy',
-  description: 'Professional online therapy from the comfort of your home. Secure video sessions and telephone counselling with qualified therapists for effective remote support.',
+  description: 'Professional online therapy from the comfort of your home. Secure video sessions and telephone counselling for effective remote support, available across the UK.',
   additionalKeywords: ["online counselling", "virtual therapy", "video therapy", "remote counselling", "telephone therapy", "zoom therapy sessions", "digital therapy"],
   path: routes.sessionTypes.online,
 });
@@ -26,13 +26,13 @@ export default function OnlinePage() {
     <div>
       <NormalPageHero
         title='Online & Phone Therapy'
-        subtitle='Effective therapy from the comfort of your own space via secure video sessions or telephone calls.' />
+        subtitle='Effective therapy from the comfort of your own space via secure video sessions or telephone calls, available to clients across the UK.' />
 
       <StripedSection>
         {renderContentSection(
           'Remote Therapy Experience',
           <>
-            <p className="mb-4">Our remote therapy sessions provide the same high-quality care as our in-person sessions but with the added convenience of connecting from wherever you are. Choose between video calls using secure, confidential platforms or traditional telephone sessions - whichever feels most comfortable for you.</p>
+            <p className="mb-4">My remote therapy sessions provide the same high-quality care as in-person sessions but with the added convenience of connecting from wherever you are. Choose between video calls using secure, confidential platforms or traditional telephone sessions - whichever feels most comfortable for you.</p>
 
             <p className="mb-4">Remote therapy has become increasingly popular, and research shows it can be just as effective as face-to-face therapy for many people. It eliminates travel time, provides flexibility with scheduling, and allows you to engage in therapy from a space where you feel most comfortable.</p>
           </>
@@ -43,14 +43,13 @@ export default function OnlinePage() {
         {renderContentSection(
           'What to Expect',
           <>
-            <h3 className="text-xl font-semibold mt-6 mb-3">Before Your Session</h3>
-            <p className="mb-4">After booking, you'll receive details for your session - either a secure link to join your video call or confirmation of the phone number we'll use to reach you. For video calls, we recommend testing your equipment beforehand to ensure everything is working properly.</p>
+            <p className="mb-4">Online therapy offers a convenient and confidential way to access support from the comfort of your own home.</p>
 
-            <h3 className="text-xl font-semibold mt-6 mb-3">During Your Session</h3>
-            <p className="mb-4">Remote sessions follow the same format as in-person therapy. We'll connect at your scheduled time, and we will guide the conversation based on your needs. Sessions typically last 1-2 hours depending on what you've arranged.</p>
+            <p className="mb-4">Sessions are held securely via Zoom, with meetings protected and locked to maintain your privacy. After booking, you'll receive a secure link to join your video call, or confirmation of the phone number I'll use to reach you for telephone sessions. I recommend testing your equipment beforehand to ensure everything is working properly.</p>
 
-            <h3 className="text-xl font-semibold mt-6 mb-3">Privacy</h3>
-            <p className="mb-4">For video calls, we use secure, encrypted platforms that comply with privacy regulations. For all remote sessions, we recommend finding a quiet, private space where you won't be interrupted, and where you feel comfortable speaking openly.</p>
+            <p className="mb-4">If therapy involves more than one person, you do not need to be in the same location - each person can join securely from their own home. Online sessions can be particularly convenient for couples and families who live in different areas, or for busy parents who may prefer to arrange a session once the children are in bed.</p>
+
+            <p className="mb-4">It gives you the flexibility to access therapy in a familiar, comfortable environment, without the need to travel.</p>
           </>
         )}
       </StripedSection>
@@ -70,7 +69,7 @@ export default function OnlinePage() {
               <li className="mb-2"><strong>Options for Different Needs:</strong> Choose between video or phone depending on your comfort level, technological access, and personal preference.</li>
             </ul>
 
-            <p className="mb-4">We understand that different preferences and circumstances might make remote or <Link href={routes.sessionTypes.inPerson} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">in-person sessions</Link> more suitable for you. We're happy to discuss which option might work best for your specific situation.</p>
+            <p className="mb-4">I understand that different preferences and circumstances might make remote or <Link href={routes.sessionTypes.inPerson} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">in-person sessions</Link> more suitable for you. I'm happy to discuss which option might work best for your specific situation.</p>
           </>
         )}
       </StripedSection>
@@ -86,12 +85,12 @@ export default function OnlinePage() {
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold mb-3">Video Sessions</h3>
                 <ul className="list-disc pl-6">
-                  <li className="mb-2">Visual connection with us</li>
+                  <li className="mb-2">Visual connection with me</li>
                   <li className="mb-2">Can pick up on non-verbal cues and facial expressions</li>
                   <li className="mb-2">May feel more similar to in-person therapy</li>
                   <li className="mb-2">Ability to share visuals when relevant</li>
                   <li className="mb-2">Great for those who connect better with visual interaction</li>
-                  <li className="mb-2">Sessions usally take place on Zoom</li>
+                  <li className="mb-2">Sessions usually take place on Zoom</li>
                 </ul>
               </div>
 

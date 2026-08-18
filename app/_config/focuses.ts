@@ -5,7 +5,7 @@ export interface IFocus {
   /** Display name shown in navigation and page headings. */
   title: string;
   /** Which pages this focus is shown on. Controls which therapist profiles and the home page list it. */
-  displayOn: ('home' | 'helen' | 'carl')[];
+  displayOn: ('home' | 'helen')[];
 }
 
 /** All therapy focus areas offered at Calen Therapy. */
@@ -13,12 +13,12 @@ export const focuses: IFocus[] = [
   {
     slug: 'anxiety-stress',
     title: 'Anxiety & Stress',
-    displayOn: ['home', 'carl']
+    displayOn: ['home', 'helen']
   },
   {
     slug: 'depression',
     title: 'Depression',
-    displayOn: ['home', 'helen', 'carl']
+    displayOn: ['home', 'helen']
   },
   {
     slug: 'relationships',
@@ -38,7 +38,7 @@ export const focuses: IFocus[] = [
   {
     slug: 'addictions',
     title: 'Addictions & Habits',
-    displayOn: ['home', 'carl']
+    displayOn: ['home', 'helen']
   },
   {
     slug: 'sex-addiction',
@@ -46,29 +46,19 @@ export const focuses: IFocus[] = [
     displayOn: ['home', 'helen']
   },
   {
-    slug: 'smoking',
-    title: 'Stop Smoking',
-    displayOn: ['carl']
-  },
-  {
-    slug: 'weight-loss',
-    title: 'Weight Loss',
-    displayOn: ['carl']
-  },
-  {
     slug: 'confidence-development',
     title: 'Confidence',
-    displayOn: ['home', 'carl']
+    displayOn: ['home', 'helen']
   },
   {
     slug: 'phobias',
     title: 'Phobias',
-    displayOn: ['home', 'helen', 'carl']
+    displayOn: ['home', 'helen']
   },
   {
     slug: 'ocd',
     title: 'OCD',
-    displayOn: ['home', 'helen', 'carl']
+    displayOn: ['home', 'helen']
   },
   {
     slug: 'life-changes',

@@ -27,7 +27,7 @@ export interface ICalenMetadata {
   includeLocalBusinessSchema?: boolean;
 }
 
-const defaultDescription = "Counselling, CBT, hypnotherapy, and psychotherapy for individuals, couples, and families in Wigan, St Helens, and online. Support for anxiety, depression, trauma, and relationship issues.";
+const defaultDescription = "Counselling, CBT, and psychotherapy for individuals, couples, and families online across the UK and face to face in Wigan and St Helens. Support for anxiety, depression, trauma, and relationship issues.";
 const baseKeywords = [
     "therapy",
     "counselling",
@@ -41,7 +41,7 @@ const baseKeywords = [
     "depression",
     "relationship counselling",
     "CBT",
-    "solution-focused hypnotherapy",
+    "online counselling UK",
 ];
 
 /**

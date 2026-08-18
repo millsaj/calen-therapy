@@ -105,21 +105,10 @@ export default function ConfidenceDevelopmentPage() {
               therapeutic approaches for building confidence and supporting personal development:
             </p>
             <ul className="list-disc pl-6 mb-4">
-              <li className="mb-2"><strong>With Helen:</strong> Helen can draw from:
-                <ul className="list-disc pl-6 ">
-                  <li><strong><Link href={routes.approaches.personCentered} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Person-Centered therapy</Link></strong>, which creates a supportive environment to explore your authentic self and values</li>
-                  <li><strong><Link href={routes.approaches.psychodynamic} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Psychodynamic approaches</Link></strong> to identify and work through patterns that may be holding you back</li>
-                  <li><strong><Link href={routes.approaches.cbt} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Cognitive Behavioral techniques</Link></strong> to address self-critical thoughts and build confidence</li>
-                  <li><strong><Link href={routes.approaches.lifeCoaching} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Life Coaching</Link></strong>, which focuses on setting and achieving personal development goals with accountability and practical action steps</li>
-                </ul>
-              </li>
-              <li className="mb-2"><strong>With Carl:</strong> <Link href={routes.approaches.hypnotherapy} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Solution Focused Hypnotherapy</Link>, which can be particularly effective for confidence building:
-                <ul className="list-disc pl-6 ">
-                  <li>Emphasizing your strengths and resources rather than problems</li>
-                  <li>Helping you envision and move toward your preferred future</li>
-                  <li>Using relaxation and focused attention to address limiting beliefs and establish supportive mental patterns</li>
-                </ul>
-              </li>
+              <li><strong><Link href={routes.approaches.personCentered} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Person-Centered therapy</Link></strong>, which creates a supportive environment to explore your authentic self and values</li>
+              <li><strong><Link href={routes.approaches.psychodynamic} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Psychodynamic approaches</Link></strong> to identify and work through patterns that may be holding you back</li>
+              <li><strong><Link href={routes.approaches.cbt} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Cognitive Behavioral techniques</Link></strong> to address self-critical thoughts and build confidence</li>
+              <li><strong><Link href={routes.approaches.lifeCoaching} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">Life Coaching</Link></strong>, which focuses on setting and achieving personal development goals with accountability and practical action steps</li>
             </ul>
             <p className="mb-4">
               Your therapy experience will be personalized to your goals, but may include:
