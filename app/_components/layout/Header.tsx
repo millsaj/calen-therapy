@@ -110,7 +110,7 @@ export default function Header() {
                 text-sm sm:text-base`}
               onClick={closeAllMenus}
             >
-              Contact Us
+              Contact Me
             </Link>
           </nav>
 
@@ -171,7 +171,7 @@ export default function Header() {
                 text-center mt-2`}
               onClick={closeAllMenus}
             >
-              Contact Us
+              Contact Me
             </Link>
           </nav>
         </div>

@@ -9,8 +9,8 @@ interface IFocusesProps {
 }
 
 export const Focuses: React.FC<IFocusesProps> = ({
-  title = 'Areas we could focus on',
-  subtitle = "Everyone's concerns are unique, but we have some common areas of focus that we can help with.",
+  title = 'Areas I could focus on',
+  subtitle = "Everyone's concerns are unique, but I have some common areas of focus that I can help with.",
   focuses,
   striped,
 }) => {
@@ -41,10 +41,10 @@ export const Focuses: React.FC<IFocusesProps> = ({
 
       <div className="text-center max-w-3xl mx-auto mt-12 text-gray-500 text-sm md:text-base">
         <p>
-          Don't see your specific concern listed? Please <Link href={routes.contact} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>reach out</Link> to us anyway.
+          Don't see your specific concern listed? Please <Link href={routes.contact} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>reach out</Link> to me anyway.
         </p>
         <p>
-          We may be able to help you or refer you to someone who can.
+          I may be able to help you or refer you to someone who can.
         </p>
       </div>
     </>

@@ -1,0 +1,6 @@
+# The Session Types pages were retired. Their content now lives on the
+# Online Therapy focus page, the Find Us page, and the FAQs.
+/session-types/online      /focuses/online-therapy  301
+/session-types/in-person   /find-us                 301
+/session-types/other       /faqs                    301
+/session-types/*           /                        301

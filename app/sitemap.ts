@@ -27,10 +27,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Core service pages - high priority
     createEntry(routes.faqs, 0.8, 'monthly'),
 
-    // Main session types - high priority with moderate change frequency
-    createEntry(routes.sessionTypes.inPerson, 0.8, 'yearly'),
-    createEntry(routes.sessionTypes.online, 0.8, 'yearly'),
-
     // All therapy focuses/issues - medium priority but important for SEO
     ...focuses.map((focus) =>
       createEntry(routes.focuses.show(focus.slug), 0.7, 'yearly')
@@ -40,8 +36,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...approaches.map((style) =>
       createEntry(routes.approaches.show(style.slug), 0.7, 'yearly')
     ),
-
-    // Other service options - lower priority
-    createEntry(routes.sessionTypes.other, 0.5, 'yearly'),
   ]
 }

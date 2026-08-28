@@ -31,7 +31,7 @@ export interface IContactDetails {
 
 export const contactDetails: IContactDetails = {
   address: {
-    full: "Windsor Road, Billinge, Wigan, WN5 7LD",
+    full: "Billinge, WN5 7LD",
     postcode: "WN5 7LD",
     street: "Windsor Road",
     town: "Billinge",

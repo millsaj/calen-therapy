@@ -29,10 +29,10 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPinIcon className="h-5 w-5 mr-3 mt-0.5" />
                 <Link
-                  href="/find-us"
+                  href={routes.findUs}
                   className="text-gray-600 hover:text-accent transition-colors"
                 >
-                  Find Us
+                  Find Me
                 </Link>
               </li>
             </ul>

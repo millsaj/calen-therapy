@@ -131,7 +131,7 @@ export default function CbtPage() {
       }}
       cta={{
         title: "Ready to Transform Your Thinking Patterns?",
-        description: "Take the first step toward developing a healthier mindset and more effective coping strategies. Contact us today to learn how Cognitive Behavioral Therapy with Helen can help you create positive change in your life."
+        description: "Take the first step toward developing a healthier mindset and more effective coping strategies. Contact me today to learn how Cognitive Behavioral Therapy with Helen can help you create positive change in your life."
       }}
     />
   );

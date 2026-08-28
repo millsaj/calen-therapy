@@ -107,7 +107,7 @@ const locationQs = [
     a: [
       "Yes, I offer online therapy sessions across the UK (usually via Zoom).",
       <div key="online-link">
-        Read more <Link href={routes.sessionTypes.online} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>here</Link>.
+        Read more <Link href={routes.focuses.onlineTherapy} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>here</Link>.
       </div>
     ]
   },
@@ -115,8 +115,32 @@ const locationQs = [
     q: "Are there any accessibility options?",
     a: [
       <div key="accessibility-link">
-        Please see our <Link href={routes.findUs} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>Find Us</Link> section for details on accessibility.
+        Please see the <Link href={routes.findUs} className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60'>Find Me</Link> section for details on accessibility.
       </div>
+    ]
+  },
+];
+
+const otherOptionsQs = [
+  {
+    q: "Do you offer home visits?",
+    a: [
+      "Home visits are available for clients with mobility challenges or health conditions that make travel difficult, within a limited area. Additional travel fees may apply.",
+      "This is arranged on a case-by-case basis - please contact me to discuss your specific needs.",
+    ]
+  },
+  {
+    q: "Do you offer written or email therapy?",
+    a: [
+      "Yes, for those who prefer expressing themselves in writing, I offer email or letter-based therapy, with a structured exchange schedule and time to reflect between responses.",
+      "This is arranged on a case-by-case basis - please contact me to discuss your specific needs.",
+    ]
+  },
+  {
+    q: "Do you offer workplace sessions?",
+    a: [
+      "Yes, I offer on-site therapy at your business location for organisations supporting employee mental health, in individual or group formats. A private space is required.",
+      "This is arranged on a case-by-case basis - please contact me to discuss your specific needs.",
     ]
   },
 ];
@@ -132,6 +156,7 @@ export default function FAQPage() {
         <FAQSection title="Pricing" faqs={pricingQs} />
         <FAQSection title="All Therapy" faqs={therapyQs} />
         <FAQSection title="Location" faqs={locationQs} />
+        <FAQSection title="Other Options" faqs={otherOptionsQs} />
       </StripedSection>
 
       <StripedSection variant="secondary">

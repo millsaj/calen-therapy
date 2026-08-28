@@ -131,7 +131,7 @@ export default function LifeCoachingPage() {
       }}
       cta={{
         title: "Ready to Transform Your Goals into Reality?",
-        description: "Take the first step toward creating the life you truly want. Contact us today to learn how Life Coaching with Helen can help you clarify your vision and achieve your most important goals."
+        description: "Take the first step toward creating the life you truly want. Contact me today to learn how Life Coaching with Helen can help you clarify your vision and achieve your most important goals."
       }}
     />
   );

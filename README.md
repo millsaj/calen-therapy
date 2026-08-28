@@ -63,6 +63,21 @@ This project is deployed using netifly.
 
 Production Env: https://calentherapy.co.uk.
 
+### Previewing changes before publishing
+
+To show someone a preview of changes without affecting the live site:
+
+1. Create a branch and push your changes to it (don't push to `main`):
+   ```bash
+   git checkout -b my-preview-branch
+   # commit your changes
+   git push -u origin my-preview-branch
+   ```
+2. Open a pull request from that branch into `main` on GitHub.
+3. Netlify automatically builds a Deploy Preview and comments on the PR with a shareable URL — send that link to whoever needs to review it.
+4. Pushing further commits to the branch updates the same preview URL.
+5. Once approved, merge the PR into `main` to publish to production.
+
 ## License
 
 This project follows a dual license: CC BY-NC-ND 4.0 for website content and MIT for code. See [LICENSE.txt](./LICENSE.txt) for more detail.

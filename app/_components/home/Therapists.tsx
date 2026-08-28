@@ -20,11 +20,12 @@ const therapists: ITherapist[] = [
       `I have numerous qualifications including a post-graduate (level 7) diploma in Psychodynamic and Systemic Psychotherapy.`,
     ],
     specialties: [
+      'Relationships',
+      'Families & Children',
+      'Online therapy',
       'Stress & Anxiety',
       'Long term illness',
       'Bereavement / loss',
-      'Relationships',
-      'Families & Children',
       'Sex addiction',
       'Life coaching'
     ],
@@ -45,11 +46,11 @@ export const Therapists: React.FC = ({
         </p>
       </div>
 
-      <div className="grid max-w-md mx-auto">
+      <div className="grid max-w-4xl mx-auto">
         {therapists.map((therapist, index) => (
-          <div key={index}>
-            <div className="mb-8 relative">
-              <div className="w-[288px] h-[288px] sm:w-[384px] sm:h-[384px] md:w-[288px] md:h-[288px] lg:w-[384px] lg:h-[384px] mx-auto">
+          <div key={index} className="md:flex md:items-start md:gap-12">
+            <div className="mb-8 md:mb-0 relative shrink-0">
+              <div className="w-[288px] h-[288px] sm:w-[384px] sm:h-[384px] md:w-[288px] md:h-[288px] lg:w-[320px] lg:h-[320px] mx-auto">
                 <Image
                   src={getImageUrl(therapist.image, 384, 384)}
                   alt={therapist.name}
@@ -59,7 +60,7 @@ export const Therapists: React.FC = ({
                 />
               </div>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-4 text-center md:text-left">
               <div>
                 <h3 className="text-xl md:text-2xl font-bold">{therapist.name}</h3>
                 <p className="text-sm text-gray-500">{therapist.credentials}</p>
@@ -74,7 +75,7 @@ export const Therapists: React.FC = ({
               <div>
                 <p className="text-gray-600 mb-1">Specialist in:</p>
 
-                <ul className="text-sm text-gray-600 space-y-2">
+                <ul className="text-sm text-gray-600 space-y-2 inline-block text-left">
                   {therapist.specialties.map((specialty, idx) => (
                     <li key={idx}>• {specialty}</li>
                   ))}
