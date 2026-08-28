@@ -130,7 +130,7 @@ export default function SystemicPage() {
       }}
       cta={{
         title: "Ready to Explore Your Relationship Patterns?",
-        description: "Take the first step toward more fulfilling relationships and understanding the systems that shape your life. Contact us today to learn more about how systemic therapy with Helen can help you create positive change."
+        description: "Take the first step toward more fulfilling relationships and understanding the systems that shape your life. Contact me today to learn more about how systemic therapy with Helen can help you create positive change."
       }}
     />
   );

@@ -30,7 +30,7 @@ export default function NotFound() {
             <p className="text-gray-500">
               Need help?{' '}
               <Link href={routes.contact} className="text-primary underline hover:text-accent hover:no-underline decoration-primary/60">
-                Contact us
+                Contact me
               </Link>
             </p>
           </div>

@@ -127,7 +127,7 @@ export default function PsychodynamicPage() {
       }}
       cta={{
         title: "Ready to Explore the Deeper Influences on Your Life?",
-        description: "Take the first step toward understanding yourself more fully and breaking free from limiting patterns. Contact us today to learn how psychodynamic therapy with Helen can help you create lasting positive change."
+        description: "Take the first step toward understanding yourself more fully and breaking free from limiting patterns. Contact me today to learn how psychodynamic therapy with Helen can help you create lasting positive change."
       }}
     />
   );

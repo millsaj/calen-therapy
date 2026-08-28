@@ -100,7 +100,7 @@ export default function HelenPage() {
 
       <StripedSection>
         <Focuses
-          subtitle="Everyone's concerns are unique, but we have some common areas of focus that I can help with."
+          subtitle="Everyone's concerns are unique, but I have some common areas of focus that I can help with."
           focuses={focuses.filter(f => f.displayOn.includes('helen'))}
           striped={false} />
       </StripedSection>

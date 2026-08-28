@@ -26,10 +26,7 @@ export const FindUs: React.FC<IFindUsProps> = ({
         <div>
           <h3 className="text-xl font-semibold mb-4">Address</h3>
           <address className="not-italic mb-6">
-            <p>{contactDetails.address.street}</p>
-            <p>{contactDetails.address.town}</p>
-            <p>{contactDetails.address.city}</p>
-            <p>{contactDetails.address.postcode}</p>
+            <p>{contactDetails.address.full}</p>
           </address>
 
           <h3 className="text-xl font-semibold mb-3">Get Directions:</h3>
@@ -57,7 +54,7 @@ export const FindUs: React.FC<IFindUsProps> = ({
             <li>There is one step at the entrance to the therapy room</li>
             <li>Support handles are available to assist with access</li>
             <li>Private driveway parking available close to the entrance</li>
-            <li>Please <Link className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60' href={routes.contact}>contact us</Link> in advance if you have specific accessibility requirements</li>
+            <li>Please <Link className='text-primary underline hover:text-accent hover:no-underline decoration-primary/60' href={routes.contact}>contact me</Link> in advance if you have specific accessibility requirements</li>
           </ul>
         </div>
       </div>

@@ -56,12 +56,9 @@ export const images = {
     bacp: calenImage("/images/helen/bacp-member.png", "BACP Registered Member 52368"),
   },
   space: [
-    calenImage("/images/space/sat-down-1.jpeg", "Therapy Space"),
-    calenImage("/images/space/center-1.jpeg", "Therapy Space"),
-    calenImage("/images/space/center-2.jpeg", "Therapy Space"),
-    calenImage("/images/space/corner-1.jpeg", "Therapy Space"),
-    calenImage("/images/space/corner-2.jpeg", "Therapy Space"),
-    calenImage("/images/space/corner-3.jpeg", "Therapy Space"),
+    calenImage("/images/space/seating.jpg", "Two soft armchairs in the therapy room, below a wall clock and butterfly wall art"),
+    calenImage("/images/space/entrance-corner.jpg", "The therapy room's own external door, with an armchair and shelves alongside it"),
+    calenImage("/images/space/wall-art.jpg", "Framed prints on the therapy room wall, beside the door through to the bathroom"),
   ],
   general: {
     homeHero: calenImage("/images/general/hands_connecting.webp", "Two hands reaching towards each other"),

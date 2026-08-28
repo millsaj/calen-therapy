@@ -26,6 +26,11 @@ export const focuses: IFocus[] = [
     displayOn: ['home', 'helen']
   },
   {
+    slug: 'online-therapy',
+    title: 'Online Therapy',
+    displayOn: ['home', 'helen']
+  },
+  {
     slug: 'grief-loss',
     title: 'Grief & Loss',
     displayOn: ['home', 'helen']

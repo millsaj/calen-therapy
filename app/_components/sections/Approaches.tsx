@@ -12,8 +12,8 @@ interface TherapyApproachProps {
 }
 
 export const TherapyApproaches: React.FC<TherapyApproachProps> = ({
-  title = 'Our Approach',
-  subtitle = 'Want to learn more about some of the techniques and therapy styles that we use?',
+  title = 'My Approach',
+  subtitle = 'Want to learn more about some of the techniques and therapy styles that I use?',
   approaches = [],
   striped,
 }) => {

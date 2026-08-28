@@ -28,14 +28,9 @@ export const routes = {
     phobias: '/focuses/phobias',
     lifeChanges: '/focuses/life-changes',
     illnessDisability: '/focuses/illness-disability',
+    onlineTherapy: '/focuses/online-therapy',
     /** Returns the path for a given focus slug. */
     show: (focus: string) => `/focuses/${focus}`,
-  },
-
-  sessionTypes: {
-    inPerson: '/session-types/in-person',
-    online: '/session-types/online',
-    other: '/session-types/other',
   },
 
   helen: '/meet-us/helen',

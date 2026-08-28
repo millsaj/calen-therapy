@@ -25,13 +25,5 @@ export const mainNav: INavItem[] = [
       href: routes.focuses.show(focus.slug),
     })),
   },
-  {
-    label: 'Session Types',
-    children: [
-      { label: 'In Person', href: routes.sessionTypes.inPerson },
-      { label: 'Online / Phone', href: routes.sessionTypes.online },
-      { label: 'Other', href: routes.sessionTypes.other },
-    ]
-  },
   { label: 'FAQs & Pricing', href: routes.faqs },
 ];

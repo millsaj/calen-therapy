@@ -130,7 +130,7 @@ export default function PersonCenteredPage() {
       }}
       cta={{
         title: "Ready to Begin Your Journey of Authentic Self-Discovery?",
-        description: "Take the first step toward greater self-understanding and personal growth in a supportive, accepting environment. Contact us today to learn how Person-Centered Therapy with Helen can support your unique journey."
+        description: "Take the first step toward greater self-understanding and personal growth in a supportive, accepting environment. Contact me today to learn how Person-Centered Therapy with Helen can support your unique journey."
       }}
     />
   );

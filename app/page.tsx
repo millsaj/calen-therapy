@@ -31,10 +31,10 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">Online counselling across the UK</h2>
           <p className="text-gray-600 mb-4">
-            I offer secure online counselling to adults throughout the UK, making therapy accessible whether you are at home, working abroad, living overseas, or simply prefer the privacy and convenience of online sessions.
+            I offer secure online counselling to adults throughout the UK, making therapy accessible whether you are at home, or simply prefer the privacy and convenience of online sessions.
           </p>
           <p className="text-gray-600">
-            You don&apos;t need to travel to an appointment. Sessions take place online in a private and confidential environment, at a time that works for you. Face to face sessions are also available in the Wigan and St Helens districts.
+            You don&apos;t need to travel to an appointment. Sessions take place online in a private and confidential environment, at a time that works for you. Face to face sessions are available in the Wigan and St Helens districts.
           </p>
         </div>
       </StripedSection>
